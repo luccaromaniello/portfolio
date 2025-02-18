@@ -1,7 +1,7 @@
 import Image from "next/image";
-import MenuItem from "../MenuItem";
 import Link from "next/link";
 import Footer from "../Footer";
+import { MenuItem } from "../MenuItem";
 
 export default function Navigation() {
   return (<>
@@ -18,10 +18,8 @@ export default function Navigation() {
     A brazilian Frontend Engineer with product design background. <br />
     Open to full-time and freelance opportunities. <br /> <br />
     Projects
-    <MenuItem />
-    <MenuItem />
-    <MenuItem />
-    <MenuItem />
+    <MenuItem name="AB InBev" pageReference="./design/abinbev"/>
+    <MenuItem name="Ânima Educação" pageReference="./design/anima-educacao"/>
     <Footer />
     </>
   )

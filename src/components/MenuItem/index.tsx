@@ -1,3 +1,12 @@
-export default function MenuItem() {
-  return <h1>Teste</h1>
+import Link from "next/link";
+
+interface MenuItemProps {
+  name: string,
+  pageReference: string,
 }
+
+export const MenuItem = ({name, pageReference}: MenuItemProps) => {
+  return <>
+    <Link href={pageReference} className="text-lg">{name}</Link>
+  </>
+};
