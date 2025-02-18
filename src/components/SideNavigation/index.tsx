@@ -3,7 +3,7 @@ import Link from "next/link";
 import Footer from "../Footer";
 import { MenuItem } from "../MenuItem";
 
-export default function Navigation() {
+export default function SideNavigation() {
   return (<>
     <Link href="/">
       <Image
