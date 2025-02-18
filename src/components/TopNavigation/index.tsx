@@ -1,6 +1,7 @@
 import Image from "next/image";
 import MenuItem from "../MenuItem";
 import Link from "next/link";
+import Footer from "../Footer";
 
 export default function Navigation() {
   return (<>
@@ -21,6 +22,7 @@ export default function Navigation() {
     <MenuItem />
     <MenuItem />
     <MenuItem />
+    <Footer />
     </>
   )
 }
