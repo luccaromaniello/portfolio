@@ -7,6 +7,6 @@ interface MenuItemProps {
 
 export const MenuItem = ({name, pageReference}: MenuItemProps) => {
   return <>
-    <Link href={pageReference} className="text-lg">{name}</Link>
+    <Link href={pageReference} className="text-2xl">{name}</Link>
   </>
 };
