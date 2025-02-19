@@ -40,10 +40,10 @@ export default function SideNavigation() {
         <h2 className="text-2xl font-light">A brazilian Frontend Engineer with product design background. <br /> Open to full-time and freelance opportunities.</h2>
       </div>
       <nav className="flex flex-col">
-        Projects
+      Projects
         <ul>
           {cases.map(({ href, title }) => (
-            <li className='m-2' key={title}>
+            <li className='mt-2 mb-2' key={title}>
               <MenuItem name={title} pageReference={href} active={pathname === href}/>
             </li>
           ))}
