@@ -4,8 +4,23 @@ import Footer from "../Footer";
 import { MenuItem } from "../MenuItem";
 
 export default function SideNavigation() {
+  const cases = [
+    {
+      href: '/',
+      title: 'Home',
+    },
+    {
+      href: '/design/abinbev',
+      title: 'AB InBev',
+    },
+    {
+      href: '/design/anima-educacao',
+      title: 'Ânima Educação',
+    },
+  ];
+
   return (
-    <nav className="flex flex-col h-full justify-between">
+    <aside className="flex flex-col h-full justify-between">
       <div className="flex flex-col gap-4">
         <Link href="/">
           <Image
@@ -19,12 +34,17 @@ export default function SideNavigation() {
         <h1 className="text-4xl">Lucca Romaniello</h1>
         <h2 className="text-2xl">A brazilian Frontend Engineer with product design background. <br /> Open to full-time and freelance opportunities.</h2>
       </div>
-      <div className="flex flex-col">
+      <nav className="flex flex-col">
         Projects
-        <MenuItem name="AB InBev" pageReference="./design/abinbev"/>
-        <MenuItem name="Ânima Educação" pageReference="./design/anima-educacao"/>
-      </div>
+        <ul>
+          {cases.map(({ href, title }) => (
+            <li className='m-2' key={title}>
+              <MenuItem name={title} pageReference={href} />
+            </li>
+          ))}
+        </ul>
+      </nav>
       <Footer />
-    </nav>
+    </aside>
   )
 }

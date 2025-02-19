@@ -1,3 +1,12 @@
+import SideNavigation from "@/components/SideNavigation";
+
 export default function AbInbev() {
-  return <h1>ABI case</h1>
+  return (
+    <div className="grid grid-cols-[600px_1fr] p-12 git h-screen">
+      <SideNavigation />
+      <div>
+        This is ABI Content
+      </div>
+    </div>
+  )
 }

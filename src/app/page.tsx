@@ -1,4 +1,3 @@
-import Image from "next/image";
 import SideNavigation from "@/components/SideNavigation";
 
 export default function Home() {
