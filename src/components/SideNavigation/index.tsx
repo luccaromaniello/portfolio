@@ -36,8 +36,8 @@ export default function SideNavigation() {
             priority
           />
         </Link>
-        <h1 className="text-4xl">Lucca Romaniello</h1>
-        <h2 className="text-2xl">A brazilian Frontend Engineer with product design background. <br /> Open to full-time and freelance opportunities.</h2>
+        <h1 className="text-4xl font-medium">Lucca Romaniello</h1>
+        <h2 className="text-2xl font-light">A brazilian Frontend Engineer with product design background. <br /> Open to full-time and freelance opportunities.</h2>
       </div>
       <nav className="flex flex-col">
         Projects
