@@ -3,7 +3,7 @@ import SideNavigation from "@/components/SideNavigation";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-[400px_1fr] p-12 h-screen">
+    <main className="grid grid-cols-[600px_1fr] p-12 git h-screen">
       <SideNavigation />
       <div>
         Content
