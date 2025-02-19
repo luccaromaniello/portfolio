@@ -1,9 +1,14 @@
+'use client'
+
 import Image from "next/image";
 import Link from "next/link";
 import Footer from "../Footer";
 import { MenuItem } from "../MenuItem";
+import { usePathname } from "next/navigation";
 
 export default function SideNavigation() {
+  const pathname = usePathname();
+
   const cases = [
     {
       href: '/',
@@ -39,7 +44,7 @@ export default function SideNavigation() {
         <ul>
           {cases.map(({ href, title }) => (
             <li className='m-2' key={title}>
-              <MenuItem name={title} pageReference={href} />
+              <MenuItem name={title} pageReference={href} active={pathname === href}/>
             </li>
           ))}
         </ul>
