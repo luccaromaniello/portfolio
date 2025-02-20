@@ -1,21 +1,25 @@
 import SideNavigation from "@/components/SideNavigation";
+import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-[480px_1fr] gap-40 px-40 py-24 h-screen">
-      <SideNavigation />
-      <div>
-        <Image
-          src="/lucca-icon.svg"
-          alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
-          width={60}
-          height={60}
-          priority
-        />
-        <p>I began my career as a software developer, but collaborating with talented designers inspired me to transition into design. Despite the shift, I continued to develop my technical expertise through a Software Engineering degree. </p>
-        <p>Now, I thrive in a role where I can leverage both my design skills and technical knowledge to collaborate effectively with development teams, ensuring designs are technically viable and aligned with user and business goals.</p>
-      </div>
-    </main>
+    <div className="flex flex-col gap-16 px-80 py-8">
+      <TopNavigation />
+      <main className="grid grid-cols-[480px_1fr] h-screen">
+        <SideNavigation />
+        <div>
+          <Image
+            src="/lucca-icon.svg"
+            alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
+            width={60}
+            height={60}
+            priority
+          />
+          <p>I began my career as a software developer, but collaborating with talented designers inspired me to transition into design. Despite the shift, I continued to develop my technical expertise through a Software Engineering degree. </p>
+          <p>Now, I thrive in a role where I can leverage both my design skills and technical knowledge to collaborate effectively with development teams, ensuring designs are technically viable and aligned with user and business goals.</p>
+        </div>
+      </main>
+    </div>
   );
 }
