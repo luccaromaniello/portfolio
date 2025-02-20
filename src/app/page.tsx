@@ -1,39 +1,21 @@
 import SideNavigation from "@/components/SideNavigation";
+import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="grid grid-cols-[600px_1fr] p-12 git h-screen">
+    <main className="grid grid-cols-[480px_1fr] gap-40 px-40 py-24 h-screen">
       <SideNavigation />
       <div>
-        Content
+        <Image
+          src="/lucca-icon.svg"
+          alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
+          width={60}
+          height={60}
+          priority
+        />
+        <p>I began my career as a software developer, but collaborating with talented designers inspired me to transition into design. Despite the shift, I continued to develop my technical expertise through a Software Engineering degree. </p>
+        <p>Now, I thrive in a role where I can leverage both my design skills and technical knowledge to collaborate effectively with development teams, ensuring designs are technically viable and aligned with user and business goals.</p>
       </div>
-      {/* <div className="flex flex-row gap-8 row-start-2 items-center sm:items-start">
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
-        </div>
-      </div> */}
     </main>
   );
 }
