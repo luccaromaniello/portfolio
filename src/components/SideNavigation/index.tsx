@@ -1,10 +1,9 @@
 'use client'
 
-import Image from "next/image";
-import Link from "next/link";
 import Footer from "../Footer";
 import { MenuItem } from "../MenuItem";
 import { usePathname } from "next/navigation";
+import LogoHeader from "../LogoHeader";
 
 export default function SideNavigation() {
   const pathname = usePathname();
@@ -41,19 +40,7 @@ export default function SideNavigation() {
 
   return (
     <aside className="flex flex-col h-full justify-between">
-      <div className="flex flex-col gap-4">
-        <Link href="/">
-          <Image
-            src="/lucca-icon.svg"
-            alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
-            width={80}
-            height={80}
-            priority
-          />
-        </Link>
-        <h1 className="text-4xl font-medium">Lucca Romaniello</h1>
-        <h2 className="text-2xl font-light">A brazilian Frontend Engineer with product design background. <br /> Open to full-time and freelance opportunities.</h2>
-      </div>
+      <LogoHeader />
       <nav className="flex flex-col h-full mt-12">
         <div className="mt-2 mb-2">
           <p className="uppercase mb-2 text-sm text-content-secondary">Code</p>
