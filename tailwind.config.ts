@@ -14,8 +14,9 @@ export default {
         primary: {
           main: "#AE1E5F",
         },
-        secondary: {
-          text: "#B3B5BB", 
+        content: {
+          secondary: "#6F6F6F",
+          tertiary: "#B3B5BB", 
         }
       },
     },

@@ -5,7 +5,7 @@ export default function Footer() {
       <a>GitHub</a>
       <a>Resumé</a>
       <a>Contact</a> <br />
-      <span className="text-xs">
+      <span className="text-xs text-content-secondary">
         Designed and coded by Lucca Romaniello using Next.js and Tailwind CSS. <br />
         Last updated March 2024.
       </span>
