@@ -48,6 +48,6 @@ const TopNavigation =() => {
       </div>
     </nav>
   )
-}
+};
 
 export default TopNavigation;
