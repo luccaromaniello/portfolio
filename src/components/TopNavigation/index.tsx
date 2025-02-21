@@ -13,10 +13,6 @@ const TopNavigation =() => {
       title: 'Home',
     },
     {
-      href: '/about',
-      title: 'About',
-    },
-    {
       href: 'https://www.linkedin.com/in/luccaromaniello/',
       title: 'Resumé',
       external: true,

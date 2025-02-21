@@ -4,6 +4,7 @@ import { MenuItem } from "../MenuItem";
 import { usePathname } from "next/navigation";
 import Footer from "../Footer";
 import Header from "../Header";
+import { FaInfoCircle } from "react-icons/fa";
 
 const SideNavigation = () => {
   const pathname = usePathname();
@@ -43,7 +44,15 @@ const SideNavigation = () => {
       <Header />
       <nav className="flex flex-col h-full mt-12">
         <div className="mt-2 mb-2">
-          <p className="uppercase mb-2 text-sm text-content-secondary">Code</p>
+          <MenuItem name={'About'} pageReference={'/about'} active={pathname === '/about'}/>
+        </div>
+        <div className="mt-2 mb-2">
+          <MenuItem name={'Experience'} pageReference={'/experience'} active={pathname === '/experience'}/>
+        </div>
+        <div className="mt-2 mb-2">
+          <div className="flex flex-row gap-2 items-center mb-2">
+            <p className="uppercase text-sm text-content-secondary">Selected work</p> <FaInfoCircle className="text-xs"/>
+          </div>
           <ul className="text-sm font-medium text-content-secondary">
             🚧 Coming soon!
             {/* {codeCases.map(({ href, title }) => (
@@ -53,8 +62,10 @@ const SideNavigation = () => {
             ))} */}
           </ul>
         </div>
-        <div className="mt-4 mb-2">
-          <p className="uppercase text-sm text-content-secondary">Design</p>
+        <div className="mt-2 mb-2">
+          <div className="flex flex-row gap-2 items-center mb-2">
+            <p className="uppercase text-sm text-content-secondary">Design archive</p> <FaInfoCircle className="text-xs"/>
+          </div>
           <ul>
             {designCases.map(({ href, title }) => (
               <li className="mt-2 mb-2" key={title}>
