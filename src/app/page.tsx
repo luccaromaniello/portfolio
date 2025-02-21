@@ -1,11 +1,9 @@
-import SideNavigation from "@/components/SideNavigation";
-import TopNavigation from "@/components/TopNavigation";
 import Image from "next/image";
 
 export default function Home() {
   return (
     <div>
-      <main className="grid grid-cols-[480px_1fr] h-screen">
+      <main className="grid grid-cols-[480px_1fr]">
         <div>
           <Image
             src="/lucca-icon.svg"
