@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "../styles/globals.css";
 import localFont from 'next/font/local';
+import TopNavigation from "@/components/TopNavigation";
+import SideNavigation from "@/components/SideNavigation";
 
 const satoshiFont = localFont({
   src: '../../public/satoshi/Satoshi-Variable.woff2',
@@ -18,8 +20,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={satoshiFont.className}>
-        {children}
+      <body className={`${satoshiFont.className} flex flex-col gap-16 px-80 py-8`}>
+        <TopNavigation />
+        <div className="grid grid-cols-[600px_1fr] git h-screen">
+          <SideNavigation />
+          {children}
+        </div>
       </body>
     </html>
   );

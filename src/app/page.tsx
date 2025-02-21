@@ -4,10 +4,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-16 px-80 py-8">
-      <TopNavigation />
+    <div>
       <main className="grid grid-cols-[480px_1fr] h-screen">
-        <SideNavigation />
         <div>
           <Image
             src="/lucca-icon.svg"

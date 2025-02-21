@@ -4,7 +4,7 @@ import { MenuItem } from "../MenuItem";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
-export default function SideNavigation() {
+export default function TopNavigation() {
   const pathname = usePathname();
 
   const pages = [
