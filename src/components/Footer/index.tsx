@@ -7,7 +7,7 @@ export default function Footer() {
       <a>Contact</a> <br />
       <span className="text-xs text-content-secondary">
         Designed and coded by Lucca Romaniello using Next.js and Tailwind CSS. <br />
-        Last updated March 2024.
+        Last updated March 2025.
       </span>
     </footer>
   )
