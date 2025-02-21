@@ -25,7 +25,7 @@ const TopNavigation =() => {
   ];
 
   return (
-    <nav className="flex flex-row w-full gap-4 justify-between">
+    <nav className="flex flex-row w-full gap-4 justify-between py-8">
       <Image
         src="/lucca-icon.svg"
         alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
