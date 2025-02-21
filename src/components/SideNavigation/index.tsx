@@ -1,11 +1,11 @@
 'use client'
 
-import Footer from "../Footer";
 import { MenuItem } from "../MenuItem";
 import { usePathname } from "next/navigation";
-import LogoHeader from "../LogoHeader";
+import Footer from "../Footer";
+import Header from "../Header";
 
-export default function SideNavigation() {
+const SideNavigation = () => {
   const pathname = usePathname();
 
   // const codeCases = [
@@ -40,7 +40,7 @@ export default function SideNavigation() {
 
   return (
     <aside className="flex flex-col h-full justify-between">
-      <LogoHeader />
+      <Header />
       <nav className="flex flex-col h-full mt-12">
         <div className="mt-2 mb-2">
           <p className="uppercase mb-2 text-sm text-content-secondary">Code</p>
@@ -68,3 +68,5 @@ export default function SideNavigation() {
     </aside>
   )
 }
+
+export default SideNavigation;
