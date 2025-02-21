@@ -16,6 +16,16 @@ export default function SideNavigation() {
       href: '/about',
       title: 'About',
     },
+    {
+      href: 'https://www.linkedin.com/in/luccaromaniello/',
+      title: 'Resumé',
+      external: true,
+    },
+    {
+      href: 'mailto:hello@luccaromaniello.com',
+      title: 'Contact',
+      external: true,
+    },
   ];
 
   return (
@@ -29,9 +39,9 @@ export default function SideNavigation() {
       />
       <div className="">
         <ul className="flex flex-row gap-8">
-          {pages.map(({ href, title }) => (
+          {pages.map(({ href, title, external }) => (
             <li className="" key={title}>
-              <MenuItem name={title} pageReference={href} active={pathname === href} />
+              <MenuItem name={title} pageReference={href} active={pathname === href} external={external}/>
             </li>
           ))}
         </ul>
