@@ -1,8 +1,8 @@
 'use client'
 
+import { Logo } from "../Logo";
 import { MenuItem } from "../MenuItem";
 import { usePathname } from "next/navigation";
-import Image from "next/image";
 
 const TopNavigation =() => {
   const pathname = usePathname();
@@ -26,13 +26,7 @@ const TopNavigation =() => {
 
   return (
     <nav className="flex flex-row w-full gap-4 justify-between py-8">
-      <Image
-        src="/lucca-icon.svg"
-        alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
-        width={40}
-        height={40}
-        priority
-      />
+      <Logo width={40} height={40}/>
       <div className="">
         <ul className="flex flex-row gap-8">
           {pages.map(({ href, title, external }) => (
