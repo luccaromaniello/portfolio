@@ -23,8 +23,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshiFont.className} flex flex-col 2xl:gap-16 xl:gap-4 h-screen 2xl:px-72 xl:px-20`}>
-        <TopNavigation />
+      <body className={`${satoshiFont.className} flex flex-col 2xl:gap-16 xl:gap-4 h-screen 2xl:px-72 xl:px-20 py-24`}>
+        {/* <TopNavigation /> */}
         <div className="grid grid-cols-[480px_1fr] gap-48 h-full ">
           <SideNavigation />
           {children}
