@@ -3,6 +3,8 @@ import "../styles/globals.css";
 import localFont from 'next/font/local';
 import TopNavigation from "@/components/TopNavigation";
 import SideNavigation from "@/components/SideNavigation";
+import About from "./about/page";
+import AnimaEducacao from "./design/anima-educacao/page";
 
 const satoshiFont = localFont({
   src: '../../public/satoshi/Satoshi-Variable.woff2',
@@ -19,7 +21,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: React.ReactNode
 }>) {
   return (
     <html lang="en">
@@ -27,7 +29,10 @@ export default function RootLayout({
         {/* <TopNavigation /> */}
         <div className="grid grid-cols-[480px_1fr] gap-48 h-full ">
           <SideNavigation />
-          {children}
+          <main>
+            <About />
+            {children}
+          </main>
         </div>
       </body>
     </html>
