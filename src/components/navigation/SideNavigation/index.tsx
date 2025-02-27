@@ -9,40 +9,30 @@ import { FaInfoCircle } from "react-icons/fa";
 const SideNavigation = () => {
   const pathname = usePathname();
 
-  // const codeCases = [
-  //   {
-  //     href: '/code/test1',
-  //     title: 'Test1',
-  //   },
-  //   {
-  //     href: '/code/test2',
-  //     title: 'Test2',
-  //   },
-  //   {
-  //     href: '/code/test3',
-  //     title: 'Test3',
-  //   },
-  //   {
-  //     href: '/code/test4',
-  //     title: 'Test4',
-  //   },
-  // ];
-
-  const designCases = [
-    {
-      href: '/design/abinbev',
-      title: 'AB InBev',
-    },
-    {
-      href: '/design/anima-educacao',
-      title: 'Ânima Educação',
-    },
-  ];
-
   return (
     <aside className="flex flex-col h-full justify-between">
-      <Header />
-      <nav className="flex flex-col h-full mt-12">
+      <nav className="flex flex-row w-full gap-4 justify-between py-8">
+        {/* <Logo width={40} height={40}/> */}
+        <div className="">
+          <ul className="flex flex-row gap-8">
+            {pages.map(({ href, title, external }) => (
+              <li className="" key={title}>
+                <MenuItem name={title} pageReference={href} active={pathname === href} external={external}/>
+              </li>
+            ))}
+          </ul>
+          <button className="absolute right-0 p-5" onClick={toggle}>
+            {/* Close icon */}
+              <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"> 
+                <path
+                  fill="currentColor"
+                  d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                />
+              </svg>
+          </button>
+        </div>
+      </nav>
+      {/* <nav className="flex flex-col h-full mt-12">
         <div className="mt-2 mb-2">
           <MenuItem name={'About'} pageReference={'/about'} active={pathname === '/about'}/>
         </div>
@@ -74,7 +64,7 @@ const SideNavigation = () => {
             ))}
           </ul>
         </div>
-      </nav>
+      </nav> */}
     </aside>
   )
 }
