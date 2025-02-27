@@ -1,9 +1,9 @@
 'use client'
 
-import { MenuItem } from "../MenuItem";
+import { MenuItem } from "../../MenuItem";
 import { usePathname } from "next/navigation";
-import Footer from "../Footer";
-import Header from "../Header";
+import Footer from "../../Footer";
+import Header from "../../Header";
 import { FaInfoCircle } from "react-icons/fa";
 
 const SideNavigation = () => {
@@ -75,7 +75,6 @@ const SideNavigation = () => {
           </ul>
         </div>
       </nav>
-      <Footer />
     </aside>
   )
 }

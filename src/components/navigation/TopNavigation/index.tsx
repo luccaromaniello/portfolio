@@ -1,7 +1,7 @@
 'use client'
 
-import { Logo } from "../Logo";
-import { MenuItem } from "../MenuItem";
+import { Logo } from "../../Logo";
+import { MenuItem } from "../../MenuItem";
 import { usePathname } from "next/navigation";
 
 const TopNavigation =() => {
