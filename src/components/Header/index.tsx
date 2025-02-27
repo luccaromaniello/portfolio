@@ -1,18 +1,12 @@
-import { Logo } from "../Logo";
-
 const Header = () => {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-6 py-12 text-center">
       <div className="flex flex-col gap-4">
-        {/* <Logo width={60} height={60}/> */}
-        <div className="flex flex-col gap-1">
-          <h1 className="text-4xl font-bold">Lucca Romaniello</h1>
-          <h2 className="text-lg font-medium text-content-secondary">Frontend Engineer and former Product Designer.</h2>
+        <div className="flex flex-col gap-3">
+          <h1 className="text-5xl leading-snug font-medium">I&apos;m Lucca Romaniello, a Frontend Engineer with product design background.</h1>
         </div>
       </div>
-      <div className="flex flex-col">
-        <p className="text-content-secondary">Currently working at AB InBev. <br /> Based in Brazil, open to full-time and freelance opportunities.</p>
-      </div>
+      <p className="text-xl text-content-secondary">Based in Brazil, currently working at AB InBev. Open to full-time and freelance opportunities.</p>
     </div>
   )
 };

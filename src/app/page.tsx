@@ -4,8 +4,6 @@ const Home = () => {
   return (
     <div>
       <Header />
-      <Header />
-      <Header />
     </div>
   );
 };
