@@ -10,7 +10,11 @@ const TopNavigation =() => {
   const pages = [
     {
       href: '/',
-      title: 'Home',
+      title: 'Work',
+    },
+    {
+      href: '/about',
+      title: 'About',
     },
     {
       href: 'https://www.linkedin.com/in/luccaromaniello/',

@@ -25,12 +25,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshiFont.className} flex flex-col 2xl:gap-16 xl:gap-4 h-screen 2xl:px-64 xl:px-20 py-24`}>
-        {/* <TopNavigation /> */}
-        <div className="grid grid-cols-[480px_1fr] gap-48 h-full ">
-          <SideNavigation />
+      <body className={`${satoshiFont.className} flex flex-col items-center 2xl:px-96 xl:px-64 lg:px-56`}>
+        <TopNavigation />
+        <div className="flex flex-col">
           <main>
-            <About />
             {children}
           </main>
         </div>
