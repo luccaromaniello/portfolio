@@ -36,7 +36,7 @@ const TopNavigation = () => {
   return (
     <nav className="flex flex-row w-full gap-4 justify-between py-8">
       <Logo width={40} height={40} />
-      <div id="desktop-menu">
+      <div>
         <ul className="flex flex-row gap-8 hidden md:flex">
           {pages.map(({ href, title, external }) => (
             <li className="" key={title}>
@@ -46,7 +46,7 @@ const TopNavigation = () => {
         </ul>
         <IoMenu className={`${isNavOpen ? 'hidden' : 'flex'} text-2xl md:hidden`} onClick={() => setIsNavOpen((prev) => !prev)}/>
       </div>
-      <div id="mobile-menu-expanded" className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-4`}>
+      <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-4`}>
         <div className="flex flex-row justify-between items-center">
           <Logo width={40} height={40} />
           <div onClick={() => setIsNavOpen(false)}>
