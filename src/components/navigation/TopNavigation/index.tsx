@@ -46,16 +46,16 @@ const TopNavigation = () => {
         </ul>
         <IoMenu className={`${isNavOpen ? 'hidden' : 'flex'} text-2xl md:hidden`} onClick={() => setIsNavOpen((prev) => !prev)}/>
       </div>
-      <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-6`}>
+      <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-6 pt-8`}>
         <div className="flex flex-row justify-between items-center">
           <Logo width={40} height={40} />
           <div onClick={() => setIsNavOpen(false)}>
             <IoClose className="text-2xl" onClick={() => setIsNavOpen(false)}/>
           </div>
         </div>
-        <ul className="flex flex-col gap-6 justify-between">
+        <ul className="flex flex-col gap-6 justify-between pb-8">
           {pages.map(({ href, title, external }) => (
-            <li key={title}>
+            <li key={title} onClick={() => setIsNavOpen(false)}>
               <MenuItem name={title} pageReference={href} active={pathname === href} external={external} />
             </li>
           ))}
