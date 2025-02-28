@@ -2,9 +2,6 @@ import type { Metadata } from "next";
 import "../styles/globals.css";
 import localFont from 'next/font/local';
 import TopNavigation from "@/components/navigation/TopNavigation";
-import SideNavigation from "@/components/navigation/SideNavigation";
-import About from "./about/page";
-import AnimaEducacao from "./design/anima-educacao/page";
 import Footer from "@/components/Footer";
 
 const satoshiFont = localFont({
@@ -35,7 +32,6 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
-      {/* 2xl:px-96 xl:px-64 lg:px-56 */}
     </html>
   );
 }
