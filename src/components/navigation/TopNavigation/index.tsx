@@ -7,6 +7,7 @@ import { usePathname } from "next/navigation";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import "./TopNavigation.css"; 
+import Link from "next/link";
 
 const pages = [
   {
@@ -39,7 +40,9 @@ const TopNavigation = () => {
 
   return (
     <nav className="flex flex-row w-full gap-4 justify-between py-8">
-      <Logo width={40} height={40} />
+      <Link href="/">
+        <Logo width={40} height={40} />
+      </Link>
       <div className="flex flex-row justify-between items-center">
         <ul className="flex flex-row gap-8 hidden md:flex">
           {pages.map(({ href, title, external }) => (
@@ -52,7 +55,9 @@ const TopNavigation = () => {
       </div>
       <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-6 pt-8`}>
         <div className="flex flex-row justify-between items-center">
-          <Logo width={40} height={40} />
+          <Link href="/">
+            <Logo width={40} height={40} />
+          </Link>
           <div onClick={handleClick}>
             <IoClose className="text-2xl"/>
           </div>
