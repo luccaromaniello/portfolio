@@ -26,7 +26,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${satoshiFont.className} flex flex-col items-center 2xl:px-96 xl:px-64 lg:px-56`}>
+      <body className={`${satoshiFont.className} flex flex-col items-center px-6 lg:px-56 xl:px-64 2xl:px-96`}>
         <TopNavigation />
         <div className="flex flex-col">
           <main>
@@ -35,6 +35,7 @@ export default function RootLayout({
         </div>
         <Footer />
       </body>
+      {/* 2xl:px-96 xl:px-64 lg:px-56 */}
     </html>
   );
 }
