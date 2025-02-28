@@ -46,7 +46,7 @@ const TopNavigation = () => {
         </ul>
         <IoMenu className={`${isNavOpen ? 'hidden' : 'flex'} text-2xl md:hidden`} onClick={() => setIsNavOpen((prev) => !prev)}/>
       </div>
-      <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-4`}>
+      <div className={`${isNavOpen ? "showMobileNav" : "hideMobileNav"} px-6`}>
         <div className="flex flex-row justify-between items-center">
           <Logo width={40} height={40} />
           <div onClick={() => setIsNavOpen(false)}>
