@@ -12,7 +12,7 @@ const WorkItem = ({ startDate, endDate, role, company, sector, location, current
   return (
     <div className={`flex flex-row justify-between${!current ? 'border-t': ''}`}>
       <p className="text-content-secondary">
-        {startDate} - {current ? <p>{endDate}</p> : <p className="text-primary-main font-medium">now</p>}
+        {startDate} - {current ? <p className="text-primary-main font-medium">now</p> : <p>{endDate}</p>}
       </p>
       <p>{role}</p>
       <p>{company}</p>
