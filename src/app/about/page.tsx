@@ -11,9 +11,9 @@ const About = () => {
           <p>Now, I&apos;m excited to fully embrace frontend development, where I can leverage both my design sensibilities and technical expertise. I thrive in environments that push me to innovate, and I’m ready to take on new challenges where I can continue learning and building impactful digital products.</p>
         </div>
       </div>
-      <div className="flex flex-row gap-16">
+      <div className="flex flex-row sm:gap-16">
         <h2 className="sm:text-4xl">Work</h2>
-        <div className="flex flex-col items-stretch">
+        <div className="flex flex-col w-full">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current/>
           <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" location="Remote" current={false}/>
           <WorkItem startDate="Aug 21" endDate="Feb 22" role="Product Designer" company="fluke" sector="Healthcare" location="Remote" current={false}/>
