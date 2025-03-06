@@ -14,7 +14,7 @@ const About = () => {
       <div className="flex flex-row gap-16">
         <h2 className="sm:text-4xl">Work</h2>
         <div className="flex flex-col items-stretch">
-          <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current={true}/>
+          <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current/>
           <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" location="Remote" current={false}/>
           <WorkItem startDate="Aug 21" endDate="Feb 22" role="Product Designer" company="fluke" sector="Healthcare" location="Remote" current={false}/>
           <WorkItem startDate="Jul 20" endDate="Aug 21" role="Product Designer" company="dti digital + Ânima Educação" sector="Higher education" location="Remote" current={false}/>
