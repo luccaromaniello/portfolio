@@ -2,7 +2,7 @@ import WorkItem from "@/components/WorkItem";
 
 const About = () => {
   return (
-    <>
+    <div className="flex flex-col gap-16">
       <div className="flex flex-col gap-6 text-base/7">
         <h1 className="text-3xl sm:text-5xl leading-tight sm:leading-snug font-medium">I&apos;m currently a Product Designer at AB InBev.</h1>
         <div className="flex flex-col gap-6 text-content-secondary">
@@ -11,7 +11,7 @@ const About = () => {
           <p>Now, I&apos;m excited to fully embrace frontend development, where I can leverage both my design sensibilities and technical expertise. I thrive in environments that push me to innovate, and I’m ready to take on new challenges where I can continue learning and building impactful digital products.</p>
         </div>
       </div>
-      <div className="flex flex-row sm:gap-16">
+      <div className="flex flex-row sm:gap-16 border-t">
         <h2 className="sm:text-4xl">Work</h2>
         <div className="flex flex-col w-full">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current/>
@@ -21,7 +21,7 @@ const About = () => {
           <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital" sector="Car rental" location="Belo Horizonte, Brazil" current={false}/>
         </div>
       </div>
-    </>
+    </div>
   )
 };
 
