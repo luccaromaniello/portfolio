@@ -12,7 +12,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-row sm:gap-16 border-t">
-        <h2 className="sm:text-4xl">Work</h2>
+        <h2 className="sm:text-4xl pt-4">Work</h2>
         <div className="flex flex-col w-full">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current/>
           <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" location="Remote" current={false}/>
