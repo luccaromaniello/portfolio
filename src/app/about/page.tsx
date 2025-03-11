@@ -14,11 +14,15 @@ const About = () => {
       <div className="flex flex-row sm:gap-16 border-t">
         <h2 className="sm:text-4xl pt-4">Work</h2>
         <div className="flex flex-col w-full">
-          <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev (BEES)" sector="E-commerce/SaaS" location="Remote" current/>
-          <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" location="Remote" current={false}/>
-          <WorkItem startDate="Aug 21" endDate="Feb 22" role="Product Designer" company="fluke" sector="Healthcare" location="Remote" current={false}/>
-          <WorkItem startDate="Jul 20" endDate="Aug 21" role="Product Designer" company="dti digital + Ânima Educação" sector="Higher education" location="Remote" current={false}/>
-          <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital" sector="Car rental" location="Belo Horizonte, Brazil" current={false}/>
+          <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev" sector="E-commerce/SaaS" description="BEES is a B2B e-commerce and SaaS platform created by AB InBev, helping more than 6 million small and medium sized
+retailers worldwide." location="Remote" current />
+          <WorkItem 
+            startDate="Aug 21" endDate="Feb 22" role="Product Designer" company="fluke" sector="Healthcare" description="fluke is a brazilian Mobile Virtual Network Operator focused on simplifying processes that are commonly bureaucratic in traditional mobile operators in Brazil. I was responsible for multiple improvements of the SIM card acquisition flow, which resulted in a user contact rate
+reduction and increased customer satisfaction." location="Remote" current={false} />
+          <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" description="Conexa Saúde is recognized as the largest integrated healthcare platform in Latin America, facilitating the connection
+between patients, doctors, and healthcare institutions through telemedicine services." location="Remote" current={false} />
+          <WorkItem startDate="Jul 20" endDate="Aug 21" role="Product Designer" company="dti digital + Ânima Educação" sector="Higher education" description="Ânima Educação is a company responsible for managing multiple private universities within Brazil. I helped to build a web platform that allowed their internal staff from Ânima to generate Bachelor’s and Master’s certificates for their 350.000+ students, following the Brazilian Ministry of Education requirements." location="Remote" current={false} />
+          <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital + Localiza&Co" sector="Car rental" description="Localiza&Co offers complete mobility solutions for individuals and businesses, including daily and monthly rentals, car subscriptions, fleet outsourcing, and sales of vehicles. With over 600,000 vehicles and 1,000 service points, they operate across Brazil and in six Latin American countries through franchises: Argentina, Ecuador, Paraguay, Colombia, Mexico, and Uruguay." location="Belo Horizonte, Brazil" current={false} />
         </div>
       </div>
     </div>
