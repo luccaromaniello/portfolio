@@ -11,8 +11,8 @@ const About = () => {
           <p>Now, I&apos;m excited to fully embrace frontend development, where I can leverage both my design sensibilities and technical expertise. I thrive in environments that push me to innovate, and I’m ready to take on new challenges where I can continue learning and building impactful digital products.</p>
         </div>
       </div>
-      <div className="flex flex-row sm:gap-16 border-t">
-        <h2 className="sm:text-4xl pt-4">Work</h2>
+      <div className="flex flex-col sm:gap-8 border-t">
+        <h2 className="sm:text-4xl pt-16">Work</h2>
         <div className="flex flex-col w-full">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev" sector="E-commerce/SaaS" description="BEES is a B2B e-commerce and SaaS platform created by AB InBev, helping more than 6 million small and medium sized
 retailers worldwide." location="Remote" current />
@@ -22,7 +22,7 @@ reduction and increased customer satisfaction." location="Remote" current={false
           <WorkItem startDate="Feb 22" endDate="Sep 22" role="Product Designer" company="Conexa Saúde" sector="Mobile network" description="Conexa Saúde is recognized as the largest integrated healthcare platform in Latin America, facilitating the connection
 between patients, doctors, and healthcare institutions through telemedicine services." location="Remote" current={false} />
           <WorkItem startDate="Jul 20" endDate="Aug 21" role="Product Designer" company="dti digital + Ânima Educação" sector="Higher education" description="Ânima Educação is a company responsible for managing multiple private universities within Brazil. I helped to build a web platform that allowed their internal staff from Ânima to generate Bachelor’s and Master’s certificates for their 350.000+ students, following the Brazilian Ministry of Education requirements." location="Remote" current={false} />
-          <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital + Localiza&Co" sector="Car rental" description="Localiza&Co offers complete mobility solutions for individuals and businesses, including daily and monthly rentals, car subscriptions, fleet outsourcing, and sales of vehicles. With over 600,000 vehicles and 1,000 service points, they operate across Brazil and in six Latin American countries through franchises: Argentina, Ecuador, Paraguay, Colombia, Mexico, and Uruguay." location="Belo Horizonte, Brazil" current={false} />
+          <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital + Localiza&Co" sector="Urban mobility" description="Localiza&Co offers complete mobility solutions for individuals and businesses, including car rentals, car subscriptions, fleet outsourcing, and sales of vehicles. They operate across 7 countries in Latin America through franchises. There, I was a mobile and backend developer for an app migration from hybrid to native used by thier carport operators." location="Belo Horizonte, Brazil" current={false} />
         </div>
       </div>
     </div>
