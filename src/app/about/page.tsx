@@ -28,8 +28,8 @@ reduction and increased customer satisfaction." location="Remote" current={false
         <h2 className="sm:text-4xl pt-8">Education</h2>
         <div className="flex flex-col w-full">
           <EducationItem description="Self-taught: always learning from every book, article, co-worker, and life experience" location="Anywhere" always/>
-          <EducationItem description="Full Stack Development, Postgraduate degree (Lato sensu)" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2024" endDate="2025" location="Remote" always={false}/>
-          <EducationItem description="Software Engineering, Bachelor’s degree" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2018" endDate="2022" location="Belo Horizonte, Brazil" always={false}/>
+          <EducationItem description="Full Stack Development, Postgraduate degree (Lato sensu)" school="Pontifícia Católica Universidade de Minas Gerais" website="https://www.linkedin.com/school/pucminas/" startDate="2024" endDate="2025" location="Remote" always={false}/>
+          <EducationItem description="Software Engineering, Bachelor’s degree" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2018" website="https://www.linkedin.com/school/pucminas/" endDate="2022" location="Belo Horizonte, Brazil" always={false}/>
         </div>
       </div>
     </div>
