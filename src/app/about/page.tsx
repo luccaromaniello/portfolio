@@ -4,8 +4,8 @@ import Image from "next/image";
 
 const About = () => {
   return (
-    <div className="flex flex-col gap-16">
-      <div className="flex flex-row gap-36">
+    <div className="flex flex-col gap-16 pt-12">
+      <div className="flex flex-row gap-36 pb-16">
         <div className="flex flex-col gap-6 text-base/7">
           <h1 className="text-3xl sm:text-5xl leading-tight sm:leading-snug font-medium">I&apos;m currently a Product Designer at AB InBev.</h1>
           <div className="flex flex-col gap-6 text-lg text-content-secondary">
