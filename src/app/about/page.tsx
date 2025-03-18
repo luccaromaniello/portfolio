@@ -5,7 +5,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="flex flex-col gap-16">
-      <div className="flex flex-row gap-32">
+      <div className="flex flex-row gap-36">
         <div className="flex flex-col gap-6 text-base/7">
           <h1 className="text-3xl sm:text-5xl leading-tight sm:leading-snug font-medium">I&apos;m currently a Product Designer at AB InBev.</h1>
           <div className="flex flex-col gap-6 text-lg text-content-secondary">
@@ -26,7 +26,7 @@ const About = () => {
         </div>
       </div>
       <div className="flex flex-col sm:gap-8 border-t">
-        <h2 className="sm:text-4xl pt-8">Work</h2>
+        <h2 className="sm:text-4xl pt-8">Experience</h2>
         <div className="flex flex-col w-full pb-16">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev" website="https://www.ab-inbev.com/" sector="E-commerce/SaaS" technologies={["User experience", "User research", "Figma"]} description="AB InBev is a global beverage and brewing leader, and owns brands like Budweiser, Corona, and Stella Artois. I led a developer web portal redesign with cross-functional teams, boosting system usability by 9.63%, user satisfaction by 9.21%, and task efficiency by 13.97% in 3 months. I also led development of multiple features for other apps including admin tools, ERP integration, order and deliveries management, resulting in increased efficiency and cost savings." location="Remote" current />
           <WorkItem 
