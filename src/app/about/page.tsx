@@ -5,7 +5,7 @@ import Image from "next/image";
 const About = () => {
   return (
     <div className="flex flex-col gap-16 pt-12">
-      <div className="flex flex-row gap-36 pb-16">
+      <div className="flex flex-row gap-32 pb-16 items-center">
         <div className="flex flex-col gap-6 text-base/7">
           <h1 className="text-3xl sm:text-5xl leading-tight sm:leading-snug font-medium">I&apos;m currently a Product Designer at AB InBev.</h1>
           <div className="flex flex-col gap-6 text-lg text-content-secondary">
@@ -14,14 +14,14 @@ const About = () => {
             <p>Now, I&apos;m excited to focus on frontend development, where I can combine my design sensibilities with technical skills to innovate and build impactful digital products.</p>
           </div>
         </div>
-        <div className="rounded-3xl">
+        <div className="flex flex-row basis-64 shrink-0 relative">
           <Image
             src="/lucca-profile.png"
-            style={{objectFit: "contain"}}
-            width={900}
-            height={900}
             alt="Picture of Lucca Romaniello."
             priority
+            width={280}
+            height={480}
+            className="rounded-lg border border-content-primary object-top" 
           />
         </div>
       </div>
