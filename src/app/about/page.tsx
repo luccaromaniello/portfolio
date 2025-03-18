@@ -1,3 +1,4 @@
+import EducationItem from "@/components/EducationItem";
 import WorkItem from "@/components/WorkItem";
 
 const About = () => {
@@ -13,7 +14,7 @@ const About = () => {
       </div>
       <div className="flex flex-col sm:gap-8 border-t">
         <h2 className="sm:text-4xl pt-8">Work</h2>
-        <div className="flex flex-col w-full pb-8">
+        <div className="flex flex-col w-full pb-16">
           <WorkItem startDate="Sep 22" role="Product Designer" company="AB InBev" sector="E-commerce/SaaS" description="AB InBev is a global beverage and brewing leader, and owns brands like Budweiser, Corona, and Stella Artois. I led a developer web portal redesign with cross-functional teams, boosting system usability by 9.63%, user satisfaction by 9.21%, and task efficiency by 13.97% in 3 months. I also led development of multiple features for other apps including admin tools, ERP integration, order and deliveries management, resulting in increased efficiency and cost savings." location="Remote" current />
           <WorkItem 
             startDate="Aug 21" endDate="Feb 22" role="Product Designer" company="fluke" sector="Healthcare" description="fluke is a brazilian Mobile Virtual Network Operator focused on simplifying processes that are commonly bureaucratic in traditional mobile operators in Brazil. I was responsible for multiple improvements of the SIM card acquisition flow, which resulted in a user contact rate
@@ -24,9 +25,11 @@ reduction and increased customer satisfaction." location="Remote" current={false
         </div>
       </div>
       <div className="flex flex-col sm:gap-8 border-t">
-        <h2 className="sm:text-4xl pt-8">Experience</h2>
-        <div className="flex flex-col w-full pb-8">
-
+        <h2 className="sm:text-4xl pt-8">Education</h2>
+        <div className="flex flex-col w-full pb-16">
+          <EducationItem description="Self-taught: always learning from every book, article, co-worker, and life experience" location="Anywhere" always/>
+          <EducationItem description="Full Stack Development, Postgraduate degree (Lato sensu)" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2024" endDate="2025" location="Remote" always={false}/>
+          <EducationItem description="Software Engineering, Bachelor’s degree" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2018" endDate="2022" location="Belo Horizonte, Brazil" always={false}/>
         </div>
       </div>
     </div>
