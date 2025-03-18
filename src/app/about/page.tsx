@@ -24,7 +24,7 @@ reduction and increased customer satisfaction." location="Remote" current={false
           <WorkItem startDate="Apr 19" endDate="Jul 20" role="Full Stack Developer" company="dti digital + Localiza&Co" sector="Urban mobility" description="Localiza&Co offers complete mobility solutions for individuals and businesses, including car rentals, car subscriptions, fleet outsourcing, and sales of vehicles, operating across 7 countries in Latin America through franchises. There, I was a mobile and backend developer for an app migration from hybrid to native used by thier carport operators." location="Belo Horizonte, Brazil" current={false} />
         </div>
       </div>
-      <div className="flex flex-col sm:gap-8 border-t">
+      <div className="flex flex-col sm:gap-8 pb-24 border-t">
         <h2 className="sm:text-4xl pt-8">Education</h2>
         <div className="flex flex-col w-full">
           <EducationItem description="Self-taught: always learning from every book, article, co-worker, and life experience" location="Anywhere" always/>
