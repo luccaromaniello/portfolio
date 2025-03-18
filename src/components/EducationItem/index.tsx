@@ -9,7 +9,7 @@ interface WorkItemProps {
 
 const EducationItem = ({ startDate, endDate, description, school, location, always }: WorkItemProps) => {
   return (
-    <div className={`flex flex-row w-full justify-between py-4 gap-12 ${!always ? 'border-t': ''}`}>
+    <div className={`flex flex-row w-full justify-between py-4 gap-12 items-center ${!always ? 'border-t': ''}`}>
       <div className="flex flex-col basis-48 shrink-0 gap-1">
         <p className="">{location}</p>
         <p className="text-content-secondary">{always ? <span className="text-primary-main font-medium">Always</span> : <span>{startDate} - {endDate}</span>}</p>
