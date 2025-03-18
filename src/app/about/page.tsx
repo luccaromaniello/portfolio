@@ -26,7 +26,7 @@ reduction and increased customer satisfaction." location="Remote" current={false
       </div>
       <div className="flex flex-col sm:gap-8 border-t">
         <h2 className="sm:text-4xl pt-8">Education</h2>
-        <div className="flex flex-col w-full pb-16">
+        <div className="flex flex-col w-full">
           <EducationItem description="Self-taught: always learning from every book, article, co-worker, and life experience" location="Anywhere" always/>
           <EducationItem description="Full Stack Development, Postgraduate degree (Lato sensu)" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2024" endDate="2025" location="Remote" always={false}/>
           <EducationItem description="Software Engineering, Bachelor’s degree" school="Pontifícia Católica Universidade de Minas Gerais" startDate="2018" endDate="2022" location="Belo Horizonte, Brazil" always={false}/>
