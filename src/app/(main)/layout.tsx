@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
-import "../styles/globals.css";
+import "../../styles/globals.css";
 import localFont from 'next/font/local';
 import TopNavigation from "@/components/navigation/TopNavigation";
 import Footer from "@/components/Footer";
 
 const satoshiFont = localFont({
-  src: '../../public/satoshi/Satoshi-Variable.woff2',
+  src: '../../../public/satoshi/Satoshi-Variable.woff2',
 });
 
 export const metadata: Metadata = {
