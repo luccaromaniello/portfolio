@@ -1,13 +1,15 @@
 interface CaseHeadingProps {
-  text: string,
+  headline: string,
+  company: string,
   link: string,
 }
 
-const CaseHeading = ({ text, link } : CaseHeadingProps) => {
+const CaseHeading = ({ headline, company, link } : CaseHeadingProps) => {
   return (
-    <a className="text-primary-main hover:underline" href={link} rel="noreferrer" target="_blank">
-      {text}
-    </a>
+    <h1 className="text-3xl sm:text-4xl leading-tight sm:leading-snug font-bold pt-8">
+      I helped <a className="text-primary-main hover:underline" href={link} rel="noreferrer" target="_blank"> {company} </a>
+      to {headline}
+    </h1>
   )
 };
 
