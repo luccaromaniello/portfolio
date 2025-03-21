@@ -1,5 +1,5 @@
 import SideMenuAnima from "@/components/cases/SideMenuAnima";
-import CaseHeading from "@/components/typography/CaseHeading";
+import CaseHeading from "@/components/cases/CaseHeading";
 
 export default function AnimaEducacao() {
   return (
