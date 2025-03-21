@@ -1,5 +1,5 @@
-import EducationItem from "@/components/EducationItem";
-import WorkItem from "@/components/WorkItem";
+import EducationItem from "@/components/about/EducationItem";
+import WorkItem from "@/components/about/WorkItem";
 import Image from "next/image";
 
 const About = () => {
