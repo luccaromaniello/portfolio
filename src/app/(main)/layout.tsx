@@ -23,6 +23,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      {/* // TODO:  FIX NAVBAR MOVING WHEN CHANGING BETWEEN MAIN TABS */}
       <body className={`${satoshiFont.className} flex flex-col items-center px-6 lg:px-56 2xl:px-96`}>
         <TopNavigation />
         <div className="flex flex-col">
