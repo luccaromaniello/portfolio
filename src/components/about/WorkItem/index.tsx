@@ -1,4 +1,4 @@
-import Chip from "../Chip";
+import Chip from "@/components/Chip";
 
 interface WorkItemProps {
   startDate: string,
