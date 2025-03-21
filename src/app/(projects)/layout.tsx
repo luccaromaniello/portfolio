@@ -1,5 +1,7 @@
 import { Metadata } from "next";
 import "../../styles/globals.css";
+import TopNavigation from "@/components/navigation/TopNavigation";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Lucca Romaniello — Ânima Educação ",
@@ -17,7 +19,11 @@ export default function ProjectLayout({
   return (
     <html lang="en">
       <body className={`flex flex-col items-center`}>
+        <div className="w-full px-6 lg:px-56 2xl:px-96">
+          <TopNavigation />
+        </div>
         {children}
+        <Footer />
       </body>
     </html>
   )
