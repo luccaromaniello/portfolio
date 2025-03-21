@@ -1,4 +1,5 @@
 import Label from "@/components/cases/Label";
+import Text from "@/components/cases/Text";
 
 interface CaseOverviewProps {
   overview: string,
@@ -10,20 +11,21 @@ interface CaseOverviewProps {
 
 const CaseOverview = ({ overview, date, role, keywords, results }: CaseOverviewProps) => {
   return (
-    <div className="flex flex-row">
+    <div className="flex flex-row gap-24">
       <div className="flex flex-col">
         <Label text="Overview"/>
-        <p>{overview}</p>
-        <p>This was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students.</p>
+        <Text text={overview}/>
       </div>
-      <div className="flex flex-col">
-        <Label text="Role and project duration"/>
-        <p>{date}</p>
-        <p>{role}</p>
-        <p>{keywords}</p>
-        <div>
+      <div className="flex flex-col basis-96 gap-8 shrink-0">
+        <div className="flex flex-col">
+          <Label text="Role and project duration"/>
+          <Text text={date}/>
+          <Text text={role}/>
+          <Text text={keywords}/>
+        </div>
+        <div className="flex flex-col">
           <Label text="Results"/>
-          <p>{results}</p>
+          <Text text={results}/>
         </div>
       </div>
     </div>
