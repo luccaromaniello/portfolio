@@ -37,7 +37,7 @@ export default function AnimaEducacao() {
       </div>
       <div className={defaultAlignment}>
         <HighlightCard 
-          title={"Developing education management software for all higher education institutions in Brazil"} 
+          title={"Developing education management software for all higher education institutions in Brazil."} 
           description={`In 2020, Ânima recognized that its platform could be restructured to serve not only its own needs but also other higher education organizations, as all must comply with Ministry of Education requirements for issuing certificates. 
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}/>
       </div>
