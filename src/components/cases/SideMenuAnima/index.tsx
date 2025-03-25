@@ -2,7 +2,7 @@ const SideMenuAnima = () => {
   const linkStyle = "text-sm font-bold text-content-tertiary hover:text-content-primary";
     
   return (
-    <div className="hidden sm:flex flex-col gap-4 fixed px-4">
+    <div className="hidden sm:flex flex-col gap-4 fixed px-4 z-10">
       <a href="" className={linkStyle}>Overview</a>
       <a href="" className={linkStyle}>Challenge</a>
       <a href="" className={linkStyle}>Research</a>
