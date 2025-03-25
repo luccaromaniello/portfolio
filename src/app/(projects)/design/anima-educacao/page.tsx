@@ -8,7 +8,7 @@ export default function AnimaEducacao() {
   const defaultAlignment = "flex flex-col gap-20 px-6 lg:px-56 2xl:px-96 w-full";
 
   return (
-    <div className="flex flex-col gap-24">
+    <div className="flex flex-col sm:gap-24">
       <SideMenuAnima></SideMenuAnima>
       <div className={defaultAlignment}>
         <Heading
@@ -25,14 +25,14 @@ export default function AnimaEducacao() {
           results="Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students."
         />
       </div>
-      <div className="relative w-full max-w-screen-2xl h-[856px]">
+      <div className="flex flex-row relative w-full 2xl:max-w-screen-4xl h-[360px] sm:h-[856px] 2xl:h-[1048px]">
         <Image
           src="/images/cases/anima/anima-overview.png"
           alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
           priority
           fill
-          className="object-cover object-top"
-          // sizes="100%"
+          className="object-contain object-top"
+          quality={100}
         />
       </div>
       <div className={defaultAlignment}>
