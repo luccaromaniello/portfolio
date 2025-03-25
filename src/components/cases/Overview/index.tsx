@@ -1,7 +1,7 @@
 import Label from "@/components/cases/Label";
 import Text from "@/components/cases/Text";
 
-interface CaseOverviewProps {
+interface OverviewProps {
   overview: string,
   date: string,
   role: string,
@@ -9,7 +9,7 @@ interface CaseOverviewProps {
   results: string,
 }
 
-const CaseOverview = ({ overview, date, role, keywords, results }: CaseOverviewProps) => {
+const Overview = ({ overview, date, role, keywords, results }: OverviewProps) => {
   return (
     <div className="flex flex-col sm:flex-row gap-8 sm:gap-24">
       <div className="flex flex-col">
@@ -32,4 +32,4 @@ const CaseOverview = ({ overview, date, role, keywords, results }: CaseOverviewP
   )
 };
 
-export default CaseOverview;
+export default Overview;
