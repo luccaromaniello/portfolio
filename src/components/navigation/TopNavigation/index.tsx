@@ -8,6 +8,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import "./TopNavigation.css"; 
 import Link from "next/link";
+import { LINKEDIN_URL, MAIL_URL } from "@/constants";
 
 const pages = [
   {
@@ -19,12 +20,12 @@ const pages = [
     title: 'About',
   },
   {
-    href: 'https://www.linkedin.com/in/luccaromaniello/',
+    href: LINKEDIN_URL,
     title: 'Resumé',
     external: true,
   },
   {
-    href: 'mailto:hello@luccaromaniello.com',
+    href: MAIL_URL,
     title: 'Contact',
     external: true,
   },
