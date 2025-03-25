@@ -11,7 +11,7 @@ interface CaseOverviewProps {
 
 const CaseOverview = ({ overview, date, role, keywords, results }: CaseOverviewProps) => {
   return (
-    <div className="flex flex-row gap-24">
+    <div className="flex flex-col sm:flex-row gap-8 sm:gap-24">
       <div className="flex flex-col">
         <Label text="Overview"/>
         <Text text={overview}/>
