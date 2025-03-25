@@ -26,9 +26,9 @@ export default function AnimaEducacao() {
       </div>
       <div className={defaultAlignment}>
         <HighlightCard 
-          title={"Creating education management software that any higher education company in Brazil can use."} 
-          description={`In 2020, Ânima realized that its platform could be restructured to attend not only Ânima itself, but other higher education organizations. This was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students. 
-          \n Then, a company derived from Ânima called A2S Technology for Education came to life and its purpose was to offer education management software for other education organizations, including the certificate emission platform.`}/>
+          title={"Developing education management software for all higher education institutions in Brazil"} 
+          description={`In 2020, Ânima recognized that its platform could be restructured to serve not only its own needs but also other higher education organizations, as all must comply with Ministry of Education requirements for issuing certificates. 
+          \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}/>
       </div>
     </div>
   )
