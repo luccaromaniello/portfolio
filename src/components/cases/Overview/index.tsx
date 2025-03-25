@@ -16,7 +16,7 @@ const Overview = ({ overview, date, role, keywords, results }: OverviewProps) =>
         <Label text="Overview"/>
         <Text text={overview}/>
       </div>
-      <div className="flex flex-col basis-96 gap-8 shrink-0">
+      <div className="flex flex-col sm:basis-96 gap-8 sm:shrink-0">
         <div className="flex flex-col">
           <Label text="Role and project duration"/>
           <Text text={date}/>
