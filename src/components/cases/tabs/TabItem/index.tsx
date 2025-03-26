@@ -12,7 +12,7 @@ interface TabProps {
   tabs: Tab[],
 }
 
-const Tab = ({ tabs }: TabProps) => {
+const TabItem = ({ tabs }: TabProps) => {
   return (
     <div>
       {tabs.map((tab, index) => 
@@ -25,4 +25,4 @@ const Tab = ({ tabs }: TabProps) => {
   )
 };
 
-export default Tab;
+export default TabItem;
