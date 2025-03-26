@@ -34,10 +34,10 @@ const Research = () => {
   ];
 
   return (
-    <div>
+    <div className="flex flex-col gap-8">
       <SectionHeading
         title="Research"
-        text="We needed to understand how the process worked for Ânima since they had an internal platform for certificate emission and what could be considered to other companies."
+        text="We needed to understand Ânima's certificate emission process on their internal platform and what could be applied to other companies."
       />
       <Tab tabs={tabs} />
     </div>
