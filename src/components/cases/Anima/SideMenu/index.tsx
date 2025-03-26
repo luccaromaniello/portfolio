@@ -1,4 +1,4 @@
-const SideMenuAnima = () => {
+const SideMenu = () => {
   const linkStyle = "text-sm font-bold text-content-tertiary hover:text-content-primary";
     
   return (
@@ -15,4 +15,4 @@ const SideMenuAnima = () => {
   );
 }
 
-export default SideMenuAnima;
+export default SideMenu;
