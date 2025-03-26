@@ -1,4 +1,4 @@
-import Label from "@/components/cases/Label";
+import Label from "@/components/cases/typography/Label";
 import Text from "@/components/cases/typography/Text";
 
 interface OverviewProps {
