@@ -1,4 +1,4 @@
-import Text from "@/components/cases/Text";
+import Text from "@/components/cases/typography/Text";
 
 interface SectionHeadingProps {
   title: string;
