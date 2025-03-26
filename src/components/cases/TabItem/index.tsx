@@ -38,7 +38,7 @@ const Tab = ({ tabs }: TabItemProps) => {
       <div>
         {tabs.map((tab, index) => (
           <div key={index}>
-            <p>teste {index}</p>
+            {active == index ? <p>teste{index}</p> : ""}
             {/* <Image src={tab.image.url} alt={tab.image.alt} /> */}
           </div>
         ))}
