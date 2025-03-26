@@ -1,15 +1,15 @@
-import SideMenuAnima from "@/components/cases/SideMenuAnima";
 import Heading from "@/components/cases/Heading";
 import Overview from "@/components/cases/Overview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import Image from "next/image";
+import SideMenu from "@/components/cases/Anima/SideMenu";
 
 export default function AnimaEducacao() {
   const defaultAlignment = "flex flex-col gap-20 px-6 lg:px-56 2xl:px-96 w-full";
 
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
-      <SideMenuAnima></SideMenuAnima>
+      <SideMenu />
       <div className={defaultAlignment}>
         <Heading
           headline="build a web platform that is used to generate Bachelor&apos;s and Master&apos;s certificates for more than 350.000 students in Brazil."
@@ -40,6 +40,9 @@ export default function AnimaEducacao() {
           title={"Developing education management software for all higher education institutions in Brazil."} 
           description={`In 2020, Ânima recognized that its platform could be restructured to serve not only its own needs but also other higher education organizations, as all must comply with Ministry of Education requirements for issuing certificates. 
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}/>
+      </div>
+      <div>
+        {/* <Tab /> */}
       </div>
     </div>
   )
