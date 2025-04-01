@@ -1,26 +1,28 @@
-import Tab from "@/components/cases/TabItem";
+import Tab from "@/components/cases/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
 
 const Research = () => {
   const tabs = [
     {
       title: "User flow",
+      description:
+        "The user flow was created during the MVP definition, aligning with the current Ânima flow and Ministry of Education requirements.",
       image: {
-        url: "",
+        url: null,
         alt: "",
       },
     },
     {
       title: "Personas",
       image: {
-        url: "",
+        url: null,
         alt: "",
       },
     },
     {
       title: "User journey",
       image: {
-        url: "",
+        url: null,
         alt: "",
       },
     },

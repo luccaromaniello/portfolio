@@ -17,8 +17,11 @@ export default {
         content: {
           primary: "#0A0A0A",
           secondary: "#6F6F6F",
-          tertiary: "#B3B5BB", 
-        }
+          tertiary: "#B3B5BB",
+        },
+        neutral: {
+          white: "FFFFFF",
+        },
       },
     },
   },

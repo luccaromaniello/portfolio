@@ -10,7 +10,7 @@ export default function AnimaEducacao() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
-      <div className={`${DEFAULT_ALIGNMENT} gap-12 sm:gap-20 sm:pb-4`}>
+      <div className={`${DEFAULT_ALIGNMENT} gap-12 sm:gap-20 smpb-4`}>
         <CaseHeading
           headline="build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil."
           company="Ânima Educação"
