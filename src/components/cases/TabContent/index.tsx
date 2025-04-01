@@ -13,9 +13,28 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
   switch (type) {
     case TabType.IMAGE: {
       return (
-        <div>
-          {attributes.description ? <Text text={attributes.description} /> : ""}
-        </div>
+        <ImageCard>
+          <div className="flex flex-col gap-8">
+            {attributes.description ? (
+              <Text text={attributes.description} />
+            ) : (
+              ""
+            )}
+            {attributes.image ? (
+              <Image
+                src={attributes.image.url}
+                alt={attributes.image.alt}
+                priority
+                width={480}
+                height={480}
+                className="object-cover object-top"
+                quality={100}
+              />
+            ) : (
+              ""
+            )}
+          </div>
+        </ImageCard>
       );
     }
     case TabType.CUSTOM: {
