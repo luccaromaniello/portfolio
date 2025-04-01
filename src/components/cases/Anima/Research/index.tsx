@@ -5,32 +5,47 @@ const Research = () => {
   const tabs = [
     {
       title: "User flow",
-      description:
-        "The user flow was created during the MVP definition, aligning with the current Ânima flow and Ministry of Education requirements.",
-      image: {
-        url: null,
-        alt: "",
+      type: 0,
+      attributes: {
+        description:
+          "The user flow was created during the MVP definition, aligning with the current Ânima flow and Ministry of Education requirements.",
+        image: {
+          url: "",
+          alt: "",
+        },
       },
     },
     {
       title: "Personas",
-      image: {
-        url: null,
-        alt: "",
+      type: 0,
+      attributes: {
+        description: "teste 2",
+        image: {
+          url: "",
+          alt: "",
+        },
       },
     },
     {
       title: "User journey",
-      image: {
-        url: null,
-        alt: "",
+      type: 0,
+      attributes: {
+        description: "teste 3",
+        image: {
+          url: "",
+          alt: "",
+        },
       },
     },
     {
       title: "MVP definition",
-      image: {
-        url: "",
-        alt: "",
+      type: 0,
+      attributes: {
+        description: "teste 4",
+        image: {
+          url: "",
+          alt: "",
+        },
       },
     },
   ];
