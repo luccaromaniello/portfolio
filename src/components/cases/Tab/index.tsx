@@ -1,15 +1,25 @@
 "use client";
-import Image from "next/image";
 import { useState } from "react";
-import ImageCard from "@/components/cases/ImageCard";
+import TabContent from "../TabContent";
 
-interface TabItem {
-  title: string;
+export enum TabType {
+  IMAGE = 0,
+  CUSTOM = 1,
+}
+
+export interface TabAttributes {
   description?: string;
-  image: {
+  image?: {
     url: string;
     alt: string;
   };
+}
+
+interface TabItem {
+  title: string;
+  type: TabType;
+  attributes: TabAttributes;
+  children?: React.ReactNode;
 }
 
 interface TabItemProps {
@@ -38,17 +48,27 @@ const Tab = ({ tabs }: TabItemProps) => {
         ))}
       </div>
       <div>
-        {tabs.map((tab, index) => (
-          <div key={index}>
-            {active == index ? (
-              <ImageCard description={tab.description}>
-                <Image src={tab.image.url} alt={tab.image.alt} />
-              </ImageCard>
+        {tabs.map((tab, index) =>
+          active == index ? (
+            tab.children ? (
+              <TabContent
+                key={index}
+                type={tab.type}
+                attributes={tab.attributes}
+              >
+                {tab.children}
+              </TabContent>
             ) : (
-              ""
-            )}
-          </div>
-        ))}
+              <TabContent
+                key={index}
+                type={tab.type}
+                attributes={tab.attributes}
+              />
+            )
+          ) : (
+            ""
+          ),
+        )}
       </div>
     </div>
   );
