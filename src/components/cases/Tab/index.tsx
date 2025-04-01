@@ -1,9 +1,11 @@
 "use client";
 import Image from "next/image";
 import { useState } from "react";
+import ImageCard from "@/components/cases/ImageCard";
 
 interface TabItem {
   title: string;
+  description?: string;
   image: {
     url: string;
     alt: string;
@@ -23,7 +25,7 @@ const Tab = ({ tabs }: TabItemProps) => {
 
   return (
     <div>
-      <div className="flex flex-row gap-14 px-6 sm:px-16 justify-center">
+      <div className="flex flex-row flex-wrap gap-8 sm:gap-14 px-6 sm:px-16 justify-center">
         {tabs.map((tab, index) => (
           <div key={index}>
             <button
@@ -38,8 +40,13 @@ const Tab = ({ tabs }: TabItemProps) => {
       <div>
         {tabs.map((tab, index) => (
           <div key={index}>
-            {active == index ? <p>teste{index}</p> : ""}
-            {/* <Image src={tab.image.url} alt={tab.image.alt} /> */}
+            {active == index ? (
+              <ImageCard description={tab.description}>
+                <Image src={tab.image.url} alt={tab.image.alt} />
+              </ImageCard>
+            ) : (
+              ""
+            )}
           </div>
         ))}
       </div>
