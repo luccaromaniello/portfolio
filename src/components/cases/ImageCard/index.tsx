@@ -5,7 +5,7 @@ interface ImageCardProps {
 }
 
 const ImageCard = ({ children }: ImageCardProps) => {
-  return <div className={`${CARD} bg-neutral-white p-10`}>{children}</div>;
+  return <div className={`${CARD} bg-neutral-white p-12`}>{children}</div>;
 };
 
 export default ImageCard;
