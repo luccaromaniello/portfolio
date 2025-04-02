@@ -21,15 +21,16 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
               ""
             )}
             {attributes.image ? (
-              <Image
-                src={attributes.image.url}
-                alt={attributes.image.alt}
-                priority
-                width={480}
-                height={480}
-                className="object-cover object-top"
-                quality={100}
-              />
+              <div className="h-[296px] sm:h-[840px] 2xl:h-[1048px] relative">
+                <Image
+                  src={attributes.image.url}
+                  alt={attributes.image.alt}
+                  priority
+                  fill
+                  className="object-contain object-top"
+                  quality={100}
+                />
+              </div>
             ) : (
               ""
             )}
