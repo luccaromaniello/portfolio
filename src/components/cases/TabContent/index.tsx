@@ -14,21 +14,24 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
     case TabType.IMAGE: {
       return (
         <ImageCard>
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-8 h-full">
             {attributes.description ? (
               <Text text={attributes.description} />
             ) : (
               ""
             )}
             {attributes.image ? (
-              <div className="h-[296px] sm:h-[734px] 2xl:h-[1048px] relative">
+              <div className="relative w-full">
                 <Image
                   src={attributes.image.url}
                   alt={attributes.image.alt}
                   priority
-                  fill
                   className="object-contain object-top"
                   quality={100}
+                  layout="responsive"
+                  width={50}
+                  height={50}
+                  // sizes="100vw"
                 />
               </div>
             ) : (
