@@ -21,7 +21,7 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
               ""
             )}
             {attributes.image ? (
-              <div className="h-[296px] sm:h-[840px] 2xl:h-[1048px] relative">
+              <div className="h-[296px] sm:h-[734px] 2xl:h-[1048px] relative">
                 <Image
                   src={attributes.image.url}
                   alt={attributes.image.alt}
@@ -39,7 +39,7 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
       );
     }
     case TabType.CUSTOM: {
-      // statements;
+      return <div>{children}</div>;
       break;
     }
     default: {

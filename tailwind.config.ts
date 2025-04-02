@@ -20,7 +20,7 @@ export default {
           tertiary: "#B3B5BB",
         },
         neutral: {
-          white: "FFFFFF",
+          white: "#FFFFFF",
         },
       },
     },
