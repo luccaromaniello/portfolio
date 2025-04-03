@@ -1,11 +1,14 @@
 import Text from "@/components/cases/typography/Text";
 import { CARD_RADIUS } from "@/constants";
 import Image from "next/image";
+import Divider from "@/components/Divider";
 
 interface UserFlowItemProps {
   heading: string;
   description?: string;
   personas: Persona[];
+  first?: boolean;
+  last?: boolean;
 }
 
 interface Persona {
@@ -22,12 +25,14 @@ const UserFlowItem = ({
   heading,
   description,
   personas,
+  first = false,
+  last = false,
 }: UserFlowItemProps) => {
   return (
     <div
       className={`${CARD_RADIUS} flex flex-row gap-16 border border-dashed border-primary-main/35 items-center`}
     >
-      <div className="flex flex-col gap-2 w-1/3 px-6">
+      <div className="flex flex-col gap-2 w-1/3 2xl:w-2/5 px-8 2xl:px-12">
         <h5 className="text-lg font-medium text-primary-main">{heading}</h5>
         <Text text={description ? description : ""} type={1} />
       </div>
@@ -38,7 +43,11 @@ const UserFlowItem = ({
           {personas.map((persona, index) => (
             <div key={index} className="flex flex-row gap-12 w-full">
               <div className="flex flex-col items-center">
-                <div className="h-full w-px bg-content-tertiary/40"></div>
+                {first ? (
+                  <Divider type={1} placeholder />
+                ) : (
+                  <Divider type={1} />
+                )}
                 <Image
                   src={persona.image.url}
                   alt={persona.image.alt}
@@ -48,7 +57,7 @@ const UserFlowItem = ({
                   className="object-contain object-top rounded-full border"
                   quality={100}
                 />
-                <div className="h-full w-px bg-content-tertiary/40"></div>
+                {last ? <Divider type={1} placeholder /> : <Divider type={1} />}
               </div>
               <div className="flex flex-col gap-1 py-6">
                 <div className="flex flex-col">
