@@ -27,16 +27,20 @@ const UserFlowItem = ({
         <Text text={description ? description : ""} type={1} />
       </div>
       <div className="flex flex-row w-full">
-        {personas.map((persona, index) => (
-          <div key={index}>
-            <div>Avatar</div>
-            <div className="flex flex-col">
-              <p>{persona.name}</p>
-              <p>{persona.role}</p>
-              <Text text={persona.action} />
+        <div
+          className={personas.length > 1 ? "flex flex-col" : "flex flex-row"}
+        >
+          {personas.map((persona, index) => (
+            <div key={index} className="flex flex-row w-full">
+              <div>Avatar</div>
+              <div className="flex flex-col">
+                <p>{persona.name}</p>
+                <p>{persona.role}</p>
+                <Text text={persona.action} />
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

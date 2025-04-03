@@ -1,6 +1,6 @@
 interface TextProps {
   text: string;
-  type: TextType;
+  type?: TextType;
 }
 
 enum TextType {
@@ -8,7 +8,7 @@ enum TextType {
   SECONDARY = 1,
 }
 
-const Text = ({ text, type }: TextProps) => {
+const Text = ({ text, type = 0 }: TextProps) => {
   switch (type) {
     case TextType.SECONDARY: {
       return (
