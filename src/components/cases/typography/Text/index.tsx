@@ -1,11 +1,26 @@
 interface TextProps {
-  text: string,
+  text: string;
+  type: TextType;
 }
 
-const Text = ({ text }: TextProps) => {
-  return (
-    <p className="leading-7 whitespace-pre-line">{text}</p>
-  )
+enum TextType {
+  PRIMARY = 0,
+  SECONDARY = 1,
+}
+
+const Text = ({ text, type }: TextProps) => {
+  switch (type) {
+    case TextType.SECONDARY: {
+      return (
+        <p className="leading-7 whitespace-pre-line text-content-secondary">
+          {text}
+        </p>
+      );
+    }
+    default: {
+      return <p className="leading-7 whitespace-pre-line">{text}</p>;
+    }
+  }
 };
 
 export default Text;
