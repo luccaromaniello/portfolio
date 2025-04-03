@@ -1,5 +1,6 @@
 import Text from "@/components/cases/typography/Text";
 import { CARD_RADIUS } from "@/constants";
+import Image from "next/image";
 
 interface UserFlowItemProps {
   heading: string;
@@ -9,6 +10,10 @@ interface UserFlowItemProps {
 
 interface Persona {
   name: string;
+  image: {
+    url: string;
+    alt: string;
+  };
   role: string;
   action: string;
 }
@@ -34,7 +39,15 @@ const UserFlowItem = ({
             <div key={index} className="flex flex-row gap-12 w-full">
               <div className="flex flex-col items-center">
                 <div className="h-full w-px bg-content-tertiary/40"></div>
-                <div>Avatar</div>
+                <Image
+                  src={persona.image.url}
+                  alt={persona.image.alt}
+                  priority
+                  width={72}
+                  height={72}
+                  className="object-contain object-top rounded-full border"
+                  quality={100}
+                />
                 <div className="h-full w-px bg-content-tertiary/40"></div>
               </div>
               <div className="flex flex-col gap-1 py-4">
