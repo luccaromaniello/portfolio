@@ -22,8 +22,8 @@ const UserFlowItem = ({
     <div
       className={`${CARD_RADIUS} flex flex-row gap-16 border border-dashed border-primary-main/35`}
     >
-      <div className="flex flex-col w-1/3 px-6 justify-items-center">
-        <h5>{heading}</h5>
+      <div className="flex flex-col gap-2 w-1/3 px-6 justify-items-center">
+        <h5 className="text-lg font-medium text-primary-main">{heading}</h5>
         <Text text={description ? description : ""} type={1} />
       </div>
       <div className="flex flex-row w-full">
@@ -31,11 +31,19 @@ const UserFlowItem = ({
           className={personas.length > 1 ? "flex flex-col" : "flex flex-row"}
         >
           {personas.map((persona, index) => (
-            <div key={index} className="flex flex-row w-full">
-              <div>Avatar</div>
-              <div className="flex flex-col">
-                <p>{persona.name}</p>
-                <p>{persona.role}</p>
+            <div key={index} className="flex flex-row gap-12 w-full">
+              <div className="flex flex-col items-center">
+                <div className="h-full w-px bg-content-tertiary/40"></div>
+                <div>Avatar</div>
+                <div className="h-full w-px bg-content-tertiary/40"></div>
+              </div>
+              <div className="flex flex-col gap-1 py-4">
+                <div className="flex flex-col">
+                  <p className="font-medium">{persona.name}</p>
+                  <p className="text-sm text-content-secondary">
+                    {persona.role}
+                  </p>
+                </div>
                 <Text text={persona.action} />
               </div>
             </div>

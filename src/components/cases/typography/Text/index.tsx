@@ -12,7 +12,7 @@ const Text = ({ text, type = 0 }: TextProps) => {
   switch (type) {
     case TextType.SECONDARY: {
       return (
-        <p className="leading-7 whitespace-pre-line text-content-secondary">
+        <p className="leading-6 whitespace-pre-line text-content-secondary">
           {text}
         </p>
       );
