@@ -1,5 +1,6 @@
 import Tab from "@/components/cases/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
+import UserFlow from "@/components/cases/anima/userFlow/UserFlow";
 
 const Research = () => {
   const tabs = [
@@ -9,8 +10,8 @@ const Research = () => {
       attributes: {
         description:
           "The user flow was created during the MVP definition, aligning with the current Ânima flow and Ministry of Education requirements.",
-        content: <div>teste haha</div>,
       },
+      children: <UserFlow />,
     },
     {
       title: "Personas",
