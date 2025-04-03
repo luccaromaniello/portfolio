@@ -25,9 +25,9 @@ const UserFlowItem = ({
 }: UserFlowItemProps) => {
   return (
     <div
-      className={`${CARD_RADIUS} flex flex-row gap-16 border border-dashed border-primary-main/35`}
+      className={`${CARD_RADIUS} flex flex-row gap-16 border border-dashed border-primary-main/35 items-center`}
     >
-      <div className="flex flex-col gap-2 w-1/3 px-6 justify-items-center">
+      <div className="flex flex-col gap-2 w-1/3 px-6">
         <h5 className="text-lg font-medium text-primary-main">{heading}</h5>
         <Text text={description ? description : ""} type={1} />
       </div>
@@ -50,7 +50,7 @@ const UserFlowItem = ({
                 />
                 <div className="h-full w-px bg-content-tertiary/40"></div>
               </div>
-              <div className="flex flex-col gap-1 py-4">
+              <div className="flex flex-col gap-1 py-6">
                 <div className="flex flex-col">
                   <p className="font-medium">{persona.name}</p>
                   <p className="text-sm text-content-secondary">

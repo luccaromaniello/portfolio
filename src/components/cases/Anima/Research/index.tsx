@@ -20,7 +20,7 @@ const Research = () => {
         description:
           "I conducted user interviews to create personas, highlighting their background, frustrations with the legacy process, and expectations. I also collaborated with developers to uncover undocumented business criteria in the code.",
         image: {
-          url: "/images/cases/anima/personas.png",
+          url: "/images/cases/anima/personas-overview.png",
           alt: "Snapshot for Ânima's persona documentation, derived from thorough user research.",
         },
       },
