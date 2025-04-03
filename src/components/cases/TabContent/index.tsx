@@ -1,7 +1,7 @@
 import { TabAttributes, TabType } from "../Tab";
 import ImageCard from "@/components/cases/ImageCard";
-import Text from "@/components/cases/typography/Text";
 import Image from "next/image";
+import { formatCaseDescription } from "@/components/cases/anima/utils";
 
 interface TabContentProps {
   type: TabType;
@@ -15,11 +15,7 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
       return (
         <ImageCard>
           <div className="flex flex-col gap-8 h-full">
-            {attributes.description ? (
-              <Text text={attributes.description} />
-            ) : (
-              ""
-            )}
+            {formatCaseDescription(attributes.description)}
             {attributes.image ? (
               <div className="relative w-full">
                 <Image
@@ -42,8 +38,14 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
       );
     }
     case TabType.CUSTOM: {
-      return <div>{children}</div>;
-      break;
+      return (
+        <ImageCard>
+          <div className="flex flex-col gap-8 h-full">
+            {formatCaseDescription(attributes.description)}
+            <div>{children}</div>
+          </div>
+        </ImageCard>
+      );
     }
     default: {
       return <div>{children}</div>;
