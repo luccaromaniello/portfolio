@@ -1,8 +1,20 @@
-import UserFlowItem from "../UserFlowItem";
+import UserFlowItem from "@/components/cases/anima/userFlow/UserFlowItem";
+import Divider from "@/components/Divider";
+
+const DividerPlaceholder = () => {
+  return (
+    <div className="flex flex-row w-full gap-16 h-6">
+      <div className="w-1/3"></div>
+      <div className="flex w-full">
+        <Divider type={1} />
+      </div>
+    </div>
+  );
+};
 
 const UserFlow = () => {
   return (
-    <div className="flex flex-col gap-16">
+    <div className="flex flex-col">
       <UserFlowItem
         heading="Graduation"
         personas={[
@@ -16,7 +28,9 @@ const UserFlow = () => {
             action: "He graduates.",
           },
         ]}
+        first
       />
+      <DividerPlaceholder />
       <UserFlowItem
         heading="Certificate Emission"
         description="Validation of Lucas's and the institution's documents to assure authenticity."
@@ -42,6 +56,7 @@ const UserFlow = () => {
           },
         ]}
       />
+      <DividerPlaceholder />
       <UserFlowItem
         heading="Certificate Registration"
         description="This process may be managed by other institutions, making the platform complex.*"
@@ -67,6 +82,7 @@ const UserFlow = () => {
           },
         ]}
       />
+      <DividerPlaceholder />
       <UserFlowItem
         heading="Delivery"
         personas={[
@@ -81,6 +97,7 @@ const UserFlow = () => {
               "Receives the visual representation of the diploma sent by Cleiton.",
           },
         ]}
+        last
       />
     </div>
   );
