@@ -1,5 +1,5 @@
 import Text from "@/components/cases/typography/Text";
-import { CARD_RADIUS } from "@/constants";
+import "@/styles/cards.css";
 
 interface HighlightCardProps {
   title: string;
@@ -9,7 +9,7 @@ interface HighlightCardProps {
 const HighlightCard = ({ title, description }: HighlightCardProps) => {
   return (
     <div
-      className={`${CARD_RADIUS} flex flex-col gap-6 p-6 sm:p-16 sm:my-12 bg-primary-main/5 rounded-2xl`}
+      className={`flex flex-col gap-6 p-6 sm:p-16 sm:my-12 bg-primary-main/5 card-border`}
     >
       <h2 className="text-2xl sm:text-3xl font-bold leading-snug sm:leading-normal">
         {title}

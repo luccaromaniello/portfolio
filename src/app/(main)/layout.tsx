@@ -3,7 +3,7 @@ import "../../styles/globals.css";
 import localFont from "next/font/local";
 import TopNavigation from "@/components/navigation/TopNavigation";
 import Footer from "@/components/Footer";
-import { DEFAULT_ALIGNMENT } from "@/constants";
+import "@/styles/alignments.css";
 
 const satoshiFont = localFont({
   src: "../../../public/satoshi/Satoshi-Variable.woff2",
@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en">
       {/* // TODO:  FIX NAVBAR MOVING WHEN CHANGING BETWEEN MAIN TABS */}
       <body
-        className={`${satoshiFont.className} ${DEFAULT_ALIGNMENT} items-center`}
+        className={`${satoshiFont.className} default-alignment items-center`}
       >
         <TopNavigation />
         <div className="flex flex-col">
