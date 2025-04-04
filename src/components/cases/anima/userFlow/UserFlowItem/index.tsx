@@ -30,13 +30,13 @@ const UserFlowItem = ({
 }: UserFlowItemProps) => {
   return (
     <div
-      className={`flex flex-row gap-16 border border-dashed border-primary-main/35 items-center card-border`}
+      className={`flex flex-row gap-16 lg:gap-4 border border-dashed border-primary-main/35 items-center card-border`}
     >
-      <div className="flex flex-col gap-2 w-1/3 2xl:w-2/5 px-8 2xl:px-12">
+      <div className="flex flex-col gap-2 user-flow-alignment">
         <h5 className="text-lg font-medium text-primary-main">{heading}</h5>
         <Text text={description ? description : ""} type={1} />
       </div>
-      <div className="flex flex-row w-full">
+      <div className="flex flex-row w-full lg:pr-6">
         <div
           className={personas.length > 1 ? "flex flex-col" : "flex flex-row"}
         >
@@ -59,7 +59,7 @@ const UserFlowItem = ({
                 />
                 {last ? <Divider type={1} placeholder /> : <Divider type={1} />}
               </div>
-              <div className="flex flex-col gap-1 py-6">
+              <div className="flex flex-col gap-1 py-6 flex-1">
                 <div className="flex flex-col">
                   <p className="font-medium">{persona.name}</p>
                   <p className="text-sm text-content-secondary">
