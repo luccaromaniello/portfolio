@@ -6,8 +6,8 @@ import "../styles.css";
 const DividerPlaceholder = () => {
   return (
     <div className="flex flex-row w-full h-6 gap-16 lg:gap-4">
-      <div className="user-flow-alignment"></div>
-      <div className="flex flex-row w-full lg:pr-5 2xl:pr-4">
+      <div className="hidden sm:flex sm:flex-col user-flow-alignment"></div>
+      <div className="flex flex-row w-full gap-8 lg:pr-5 2xl:pr-4">
         <div className="flex flex-row w-[72px] justify-center">
           <Divider type={1} />
         </div>
