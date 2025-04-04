@@ -1,0 +1,3 @@
+.text-footer {
+  @apply text-xs text-content-secondary;
+}
