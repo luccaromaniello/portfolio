@@ -1,12 +1,15 @@
 import UserFlowItem from "@/components/cases/anima/userFlow/UserFlowItem";
 import Divider from "@/components/Divider";
+import "@/styles/typography.css";
 
 const DividerPlaceholder = () => {
   return (
     <div className="flex flex-row w-full gap-16 h-6">
-      <div className="w-1/3"></div>
-      <div className="flex w-full">
-        <Divider type={1} />
+      <div className="w-1/3 2xl:w-2/5 px-8 2xl:px-12"></div>
+      <div className="flex flex-row w-full">
+        <div className="flex flex-row w-[72px] justify-center">
+          <Divider type={1} />
+        </div>
       </div>
     </div>
   );
@@ -99,6 +102,28 @@ const UserFlow = () => {
         ]}
         last
       />
+      <div className="flex flex-col gap-4 pt-8">
+        <p className="text-footer">
+          *The separation between employees of the Issuer and Registry
+          Institution exists because some institutions can only issue
+          certificates, not register them. These institutions must send
+          certificates to those authorized for registration, which helps manage
+          authenticity control.
+        </p>
+        <p className="text-footer">
+          Avatars used belong to
+          <span>
+            <a
+              href="https://www.dicebear.com/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              DiceBear
+            </a>
+          </span>
+          .
+        </p>
+      </div>
     </div>
   );
 };
