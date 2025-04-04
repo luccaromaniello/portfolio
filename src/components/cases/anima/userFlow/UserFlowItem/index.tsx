@@ -1,7 +1,7 @@
 import Text from "@/components/cases/typography/Text";
-import { CARD_RADIUS } from "@/constants";
 import Image from "next/image";
 import Divider from "@/components/Divider";
+import "@/styles/cards.css";
 
 interface UserFlowItemProps {
   heading: string;
@@ -30,7 +30,7 @@ const UserFlowItem = ({
 }: UserFlowItemProps) => {
   return (
     <div
-      className={`${CARD_RADIUS} flex flex-row gap-16 border border-dashed border-primary-main/35 items-center`}
+      className={`flex flex-row gap-16 border border-dashed border-primary-main/35 items-center card-radius`}
     >
       <div className="flex flex-col gap-2 w-1/3 2xl:w-2/5 px-8 2xl:px-12">
         <h5 className="text-lg font-medium text-primary-main">{heading}</h5>

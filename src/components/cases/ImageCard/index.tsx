@@ -1,17 +1,11 @@
-import { CARD_SHADOW, CARD_PADDING, CARD_RADIUS } from "@/constants";
+import "@/styles/cards.css";
 
 interface ImageCardProps {
   children?: React.ReactNode;
 }
 
 const ImageCard = ({ children }: ImageCardProps) => {
-  return (
-    <div
-      className={`${CARD_RADIUS} ${CARD_PADDING} ${CARD_SHADOW} bg-neutral-white`}
-    >
-      {children}
-    </div>
-  );
+  return <div className={`image-card`}>{children}</div>;
 };
 
 export default ImageCard;

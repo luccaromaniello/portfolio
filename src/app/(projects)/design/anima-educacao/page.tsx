@@ -2,7 +2,7 @@ import Overview from "@/components/cases/Overview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import Image from "next/image";
 import SideMenu from "@/components/cases/anima/SideMenu";
-import { DEFAULT_ALIGNMENT } from "@/constants";
+import "@/styles/alignments.css";
 import Research from "@/components/cases/anima/Research";
 import CaseHeading from "@/components/cases/typography/CaseHeading";
 
@@ -10,7 +10,7 @@ export default function AnimaEducacao() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
-      <div className={`${DEFAULT_ALIGNMENT} gap-12 sm:gap-20 smpb-4`}>
+      <div className={`default-alignment gap-12 sm:gap-20 smpb-4`}>
         <CaseHeading
           headline="build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil."
           company="Ânima Educação"
@@ -35,7 +35,7 @@ export default function AnimaEducacao() {
           quality={100}
         />
       </div>
-      <div className={DEFAULT_ALIGNMENT}>
+      <div className="default-alignment">
         <HighlightCard
           title={
             "Developing education management software for all higher education institutions in Brazil."
@@ -44,7 +44,7 @@ export default function AnimaEducacao() {
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}
         />
       </div>
-      <div className={DEFAULT_ALIGNMENT}>
+      <div className="default-alignment">
         <Research />
       </div>
     </div>
