@@ -1,15 +1,17 @@
 import UserFlowItem from "@/components/cases/anima/userFlow/UserFlowItem";
 import Divider from "@/components/Divider";
 import "@/styles/typography.css";
+import "../styles.css";
 
 const DividerPlaceholder = () => {
   return (
-    <div className="flex flex-row w-full gap-16 h-6">
-      <div className="w-1/3 2xl:w-2/5 px-8 2xl:px-12"></div>
-      <div className="flex flex-row w-full">
+    <div className="flex flex-row w-full h-6 gap-16 lg:gap-4">
+      <div className="user-flow-alignment"></div>
+      <div className="flex flex-row w-full lg:pr-5 2xl:pr-4">
         <div className="flex flex-row w-[72px] justify-center">
           <Divider type={1} />
         </div>
+        <div className="flex flex-col flex-1"></div>
       </div>
     </div>
   );
@@ -46,7 +48,7 @@ const UserFlow = () => {
               alt: "Illustration of Cleiton, an employee at the issuer institution, with short hair and professional attire.",
             },
             action:
-              "Verifies Lucas's documents, issues the diploma, and sends it to Adalberto.",
+              "Verifies Lucas's documents, issues the diploma, and forwards it to Adalberto.",
           },
           {
             name: "Adalberto",
