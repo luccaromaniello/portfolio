@@ -113,16 +113,15 @@ const UserFlow = () => {
           authenticity control.
         </p>
         <p className="text-footer">
-          Avatars used belong to
-          <span>
-            <a
-              href="https://www.dicebear.com/"
-              rel="noreferrer"
-              target="_blank"
-            >
-              DiceBear
-            </a>
-          </span>
+          The avatars used belong to{" "}
+          <a
+            href="https://www.dicebear.com/"
+            rel="noreferrer"
+            target="_blank"
+            className="font-medium hover:text-content-tertiary"
+          >
+            DiceBear
+          </a>
           .
         </p>
       </div>
