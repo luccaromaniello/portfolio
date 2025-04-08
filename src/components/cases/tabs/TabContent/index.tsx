@@ -5,12 +5,13 @@ import { formatCaseDescription } from "@/components/cases/anima/utils";
 import "@/styles/cards.css";
 
 interface TabContentProps {
+  index: number;
   type: TabType;
   attributes: TabAttributes;
   children?: React.ReactNode;
 }
 
-const TabContent = ({ type, attributes, children }: TabContentProps) => {
+const TabContent = ({ index, type, attributes, children }: TabContentProps) => {
   switch (type) {
     case TabType.IMAGE: {
       return (
@@ -23,14 +24,14 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
                   <Image
                     src={attributes.image.url}
                     alt={attributes.image.alt}
-                    priority
-                    className={`object-contain object-top ${attributes.description ? "" : "card-border"} filter brightness-75`}
+                    priority={index == 0 ? true : false}
+                    className={`object-contain object-top ${attributes.description ? "" : "card-border"} filter brightness-75 hidden sm:block`}
                     quality={100}
                     layout="responsive"
                     width={50}
                     height={50}
                   />
-                  <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-3/4 w-full px-16 mx-auto">
+                  <div className="relative sm:absolute sm:top-2/5 sm:top-1/4 sm:left-1/2 sm:-translate-x-1/2 sm:-translate-y-1/2 w-full sm:px-16 sm:mx-auto">
                     <div className="flex flex-col gap-4 bg-neutral-white p-8 card-border">
                       <h4 className="text-md sm:text-xl font-bold leading-snug sm:leading-normal">
                         {attributes.image.highlight.title}
@@ -46,7 +47,7 @@ const TabContent = ({ type, attributes, children }: TabContentProps) => {
                   <Image
                     src={attributes.image.url}
                     alt={attributes.image.alt}
-                    priority
+                    priority={index == 0 ? true : false}
                     className={`object-contain object-top ${attributes.description ? "" : "card-border"}`}
                     quality={100}
                     layout="responsive"
