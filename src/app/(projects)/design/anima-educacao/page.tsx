@@ -5,6 +5,7 @@ import SideMenu from "@/components/cases/anima/SideMenu";
 import "@/styles/alignments.css";
 import Research from "@/components/cases/anima/Research";
 import CaseHeading from "@/components/cases/typography/CaseHeading";
+import Prototypes from "@/components/cases/anima/Prototypes";
 
 export default function AnimaEducacao() {
   return (
@@ -46,6 +47,7 @@ export default function AnimaEducacao() {
       </div>
       <div className="default-alignment">
         <Research />
+        <Prototypes />
       </div>
     </div>
   );
