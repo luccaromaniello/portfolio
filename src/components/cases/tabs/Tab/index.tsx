@@ -57,6 +57,7 @@ const Tab = ({ tabs }: TabItemProps) => {
             tab.children ? (
               <TabContent
                 key={index}
+                index={index}
                 type={tab.type}
                 attributes={tab.attributes}
               >
@@ -65,6 +66,7 @@ const Tab = ({ tabs }: TabItemProps) => {
             ) : (
               <TabContent
                 key={index}
+                index={index}
                 type={tab.type}
                 attributes={tab.attributes}
               />
