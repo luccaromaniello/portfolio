@@ -59,7 +59,7 @@ const Prototypes = () => {
       attributes: {
         image: {
           url: "/images/cases/anima/prototype-v1-6.png",
-          alt: "Snapshot for Ânima's persona documentation, derived from thorough user research.",
+          alt: "First version of the prototype displaying a table view of certificates pending validation, with a highlighted 'Validate' button for each certificate.",
           highlight: {
             title: "The first prototype was visually confusing.",
             description: `Usability tests revealed users struggled with the information hierarchy, as the screen followed a right-to-left, top-to-bottom layout. This was my first project, and I was unfamiliar with key UI principles like information hierarchy.
