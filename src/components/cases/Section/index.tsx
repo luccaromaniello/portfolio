@@ -12,7 +12,7 @@ interface SectionProps {
 const Section = ({ children, image }: SectionProps) => {
   return (
     <div>
-      <div className="default-alignment">{children}</div>
+      <div className="default-alignment flex flex-col gap-8">{children}</div>
       {image ? <HighlightImage url={image.url} alt={image.alt} /> : ""}
     </div>
   );

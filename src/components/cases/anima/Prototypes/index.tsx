@@ -71,7 +71,7 @@ const Prototypes = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div>
       <SectionHeading
         title="Prototypes and user testing"
         text={`A2S had an ongoing Design System, which I actively contributed to. It enabled efficient creation of high fidelity prototypes using predefined components. Low fidelity prototypes were also made, they were less frequent.
