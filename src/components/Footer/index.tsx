@@ -6,7 +6,7 @@ import "@/styles/typography.css";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col gap-4 items-center p-14 w-full">
+    <footer className="flex flex-col gap-4 items-center p-14 w-full sm:mt-12 mb-4">
       <div className="flex flex-row gap-6 items-center">
         <a href={GITHUB_URL} rel="noreferrer" target="_blank">
           <FaGithub
