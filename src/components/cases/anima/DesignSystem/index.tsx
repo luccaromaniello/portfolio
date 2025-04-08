@@ -5,7 +5,7 @@ const DesignSystem = () => {
     <div>
       <SectionHeading
         title="Design system"
-        text={`While joining the project, I followed and contributed to Ânima's existing design system, which was being developed by other teams. Despite starting a few sprints later, my team heavily focused on the certificate issuance platform due to high demand, taking on significant contributions and design system management throughout the project.`}
+        text={`When I joined the project, I contributed to Ânima's existing design system, which was being developed by other teams. Although we started a few sprints later, my team focused on the certificate issuance platform due to high demand, making significant contributions and managing the design system throughout the project.`}
       />
     </div>
   );
