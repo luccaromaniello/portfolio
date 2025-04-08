@@ -1,6 +1,7 @@
 import Tab from "@/components/cases/tabs/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
 import UserFlow from "@/components/cases/anima/userFlow/UserFlow";
+import "@/styles/alignments.css";
 
 const Research = () => {
   const tabs = [
@@ -52,7 +53,7 @@ const Research = () => {
   ];
 
   return (
-    <div>
+    <div className="section-container">
       <SectionHeading
         title="Research"
         text="We needed to understand Ânima's certificate emission process on their internal platform and what could be applied to other companies."

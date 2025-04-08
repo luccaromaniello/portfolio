@@ -1,5 +1,6 @@
 import Tab from "@/components/cases/tabs/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
+import "@/styles/alignments.css";
 
 const Solution = () => {
   const tabs = [
@@ -66,7 +67,7 @@ const Solution = () => {
   ];
 
   return (
-    <div>
+    <div className="section-container">
       <SectionHeading
         title="Solution"
         text={

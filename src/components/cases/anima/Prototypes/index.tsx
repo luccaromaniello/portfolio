@@ -1,5 +1,6 @@
 import Tab from "@/components/cases/tabs/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
+import "@/styles/alignments.css";
 
 const Prototypes = () => {
   const tabs = [
@@ -71,7 +72,7 @@ const Prototypes = () => {
   ];
 
   return (
-    <div>
+    <div className="section-container">
       <SectionHeading
         title="Prototypes and user testing"
         text={`A2S had an ongoing Design System, which I actively contributed to. It enabled efficient creation of high fidelity prototypes using predefined components. Low fidelity prototypes were also made, they were less frequent.
