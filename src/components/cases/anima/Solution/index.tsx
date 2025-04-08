@@ -66,7 +66,7 @@ const Solution = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div>
       <SectionHeading
         title="Solution"
         text={

@@ -52,7 +52,7 @@ const Research = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
+    <div>
       <SectionHeading
         title="Research"
         text="We needed to understand Ânima's certificate emission process on their internal platform and what could be applied to other companies."

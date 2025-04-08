@@ -4,10 +4,12 @@ import SideMenu from "@/components/cases/anima/SideMenu";
 import "@/styles/alignments.css";
 import CaseHeading from "@/components/cases/typography/CaseHeading";
 import HighlightImage from "@/components/cases/HighlightImage";
+import Section from "@/components/cases/Section";
 import Research from "@/components/cases/anima/Research";
 import Prototypes from "@/components/cases/anima/Prototypes";
 import Solution from "@/components/cases/anima/Solution";
-import Section from "@/components/cases/Section";
+import DesignSystem from "@/components/cases/anima/DesignSystem";
+import DesignDocumentation from "@/components/cases/anima/DesignDocumentation";
 
 export default function AnimaEducacao() {
   return (
@@ -57,7 +59,22 @@ export default function AnimaEducacao() {
           \nFollowing Ânima's acquisition of Laureate's Brazilian assets in early 2021 (another large education group), A2S Technology for Education was discontinued and merged back into Ânima. The focus shifted away from offering the platform to other companies due to Ânima's growing student base, reaching around 350,000 students by June 2021.`}
         />
       </Section>
-      <Section />
+      <Section
+        image={{
+          url: "/images/cases/anima/design-system.png",
+          alt: "A comprehensive mockup overview of Ânima's design system, highlighting a visually cohesive and user-centric interface.",
+        }}
+      >
+        <DesignSystem />
+      </Section>
+      <Section
+        image={{
+          url: "/images/cases/anima/design-documentation.png",
+          alt: "Mockup of Ânima's design documentation system, featuring clear design decisions and a glossary of terms. Streamlined interface for easy access and understanding of key design elements.",
+        }}
+      >
+        <DesignDocumentation />
+      </Section>
     </div>
   );
 }
