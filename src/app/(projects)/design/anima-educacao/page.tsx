@@ -32,7 +32,7 @@ export default function AnimaEducacao() {
         url="/images/cases/anima/anima-overview.png"
         alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
       />
-      <div className="default-alignment">
+      <Section>
         <HighlightCard
           title={
             "Developing education management software for all higher education institutions in Brazil."
@@ -40,7 +40,7 @@ export default function AnimaEducacao() {
           description={`In 2020, Ânima recognized that its platform could be restructured to serve not only its own needs but also other higher education organizations, as all must comply with Ministry of Education requirements for issuing certificates.
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}
         />
-      </div>
+      </Section>
       <Section>
         <Research />
       </Section>
@@ -50,13 +50,14 @@ export default function AnimaEducacao() {
       <Section>
         <Solution />
       </Section>
-      <div className="default-alignment">
+      <Section>
         <HighlightCard
           title={"Results and outcomes"}
           description={`After completing the MVP, the legacy platform was adapted to transfer student data to the new system, with smaller universities prioritized based on student count. The successful certificate issuance process will eventually cover all of Ânima's universities.
           \nFollowing Ânima's acquisition of Laureate's Brazilian assets in early 2021 (another large education group), A2S Technology for Education was discontinued and merged back into Ânima. The focus shifted away from offering the platform to other companies due to Ânima's growing student base, reaching around 350,000 students by June 2021.`}
         />
-      </div>
+      </Section>
+      <Section />
     </div>
   );
 }
