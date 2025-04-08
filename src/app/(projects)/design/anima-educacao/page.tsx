@@ -1,12 +1,13 @@
 import Overview from "@/components/cases/Overview";
 import HighlightCard from "@/components/cases/HighlightCard";
-import Image from "next/image";
 import SideMenu from "@/components/cases/anima/SideMenu";
 import "@/styles/alignments.css";
-import Research from "@/components/cases/anima/Research";
 import CaseHeading from "@/components/cases/typography/CaseHeading";
+import HighlightImage from "@/components/cases/HighlightImage";
+import Research from "@/components/cases/anima/Research";
 import Prototypes from "@/components/cases/anima/Prototypes";
 import Solution from "@/components/cases/anima/Solution";
+import Section from "@/components/cases/Section";
 
 export default function AnimaEducacao() {
   return (
@@ -27,16 +28,10 @@ export default function AnimaEducacao() {
           results="Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students."
         />
       </div>
-      <div className="flex flex-row relative w-full 2xl:max-w-screen-4xl h-[296px] sm:h-[856px] 2xl:h-[1048px]">
-        <Image
-          src="/images/cases/anima/anima-overview.png"
-          alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
-          priority
-          fill
-          className="object-contain object-top"
-          quality={100}
-        />
-      </div>
+      <HighlightImage
+        url="/images/cases/anima/anima-overview.png"
+        alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
+      />
       <div className="default-alignment">
         <HighlightCard
           title={
@@ -46,10 +41,21 @@ export default function AnimaEducacao() {
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}
         />
       </div>
-      <div className="default-alignment">
+      <Section>
         <Research />
+      </Section>
+      <Section>
         <Prototypes />
+      </Section>
+      <Section>
         <Solution />
+      </Section>
+      <div className="default-alignment">
+        <HighlightCard
+          title={"Results and outcomes"}
+          description={`After completing the MVP, the legacy platform was adapted to transfer student data to the new system, with smaller universities prioritized based on student count. The successful certificate issuance process will eventually cover all of Ânima's universities.
+          \nFollowing Ânima's acquisition of Laureate's Brazilian assets in early 2021 (another large education group), A2S Technology for Education was discontinued and merged back into Ânima. The focus shifted away from offering the platform to other companies due to Ânima's growing student base, reaching around 350,000 students by June 2021.`}
+        />
       </div>
     </div>
   );
