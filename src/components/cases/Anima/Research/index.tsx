@@ -1,4 +1,4 @@
-import Tab from "@/components/cases/Tab";
+import Tab from "@/components/cases/tabs/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
 import UserFlow from "@/components/cases/anima/userFlow/UserFlow";
 
