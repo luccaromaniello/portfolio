@@ -1,18 +1,34 @@
+import "./styles.css";
+
 const SideMenu = () => {
-  const linkStyle = "text-sm font-bold text-content-tertiary hover:text-content-primary";
-    
   return (
     <div className="hidden sm:flex flex-col gap-4 fixed px-4 z-10">
-      <a href="" className={linkStyle}>Overview</a>
-      <a href="" className={linkStyle}>Challenge</a>
-      <a href="" className={linkStyle}>Research</a>
-      <a href="" className={linkStyle}>Prototypes</a>
-      <a href="" className={linkStyle}>Solution</a>
-      <a href="" className={linkStyle}>Results</a>
-      <a href="" className={linkStyle}>Design system</a>
-      <a href="" className={linkStyle}>Documentation</a>
+      <a href="" className={"side-link"}>
+        Overview
+      </a>
+      <a href="" className={"side-link"}>
+        Challenge
+      </a>
+      <a href="" className={"side-link"}>
+        Research
+      </a>
+      <a href="" className={"side-link"}>
+        Prototypes
+      </a>
+      <a href="" className={"side-link"}>
+        Solution
+      </a>
+      <a href="" className={"side-link"}>
+        Results
+      </a>
+      <a href="" className={"side-link"}>
+        Design system
+      </a>
+      <a href="" className={"side-link"}>
+        Documentation
+      </a>
     </div>
   );
-}
+};
 
 export default SideMenu;
