@@ -2,6 +2,7 @@ import "@/styles/cards.css";
 import HighlightImage from "@/components/cases/HighlightImage";
 
 interface SectionProps {
+  id: string;
   children?: React.ReactNode;
   image?: {
     url: string;
@@ -9,9 +10,9 @@ interface SectionProps {
   };
 }
 
-const Section = ({ children, image }: SectionProps) => {
+const Section = ({ id, children, image }: SectionProps) => {
   return (
-    <div className="section-container">
+    <div data-section id={id} className="section-container">
       <div className="default-alignment">{children}</div>
       {image ? <HighlightImage url={image.url} alt={image.alt} /> : ""}
     </div>
