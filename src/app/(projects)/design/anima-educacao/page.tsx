@@ -15,26 +15,28 @@ export default function AnimaEducacao() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
-      <div className={`default-alignment gap-12 sm:gap-20 smpb-4`}>
-        <CaseHeading
-          headline="build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil."
-          company="Ânima Educação"
-          link="https://www.linkedin.com/company/animaeducacao/"
-        />
-        <Overview
-          overview={`Ânima Educação is a company responsible for managing multiple private universities within Brazil. In 2020, they realized that its platform could be restructured to attend not only Ânima itself, but other higher education organizations.
-            \nThis was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students.`}
-          date="August 2020 - July 2021"
-          role="Product Designer — dti digital + Ânima Educação"
-          keywords="User research, visual design, usability testing."
-          results="Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students."
+      <div data-section id="overview">
+        <div className={`default-alignment gap-12 sm:gap-20 smpb-4`}>
+          <CaseHeading
+            headline="build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil."
+            company="Ânima Educação"
+            link="https://www.linkedin.com/company/animaeducacao/"
+          />
+          <Overview
+            overview={`Ânima Educação is a company responsible for managing multiple private universities within Brazil. In 2020, they realized that its platform could be restructured to attend not only Ânima itself, but other higher education organizations.
+              \nThis was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students.`}
+            date="August 2020 - July 2021"
+            role="Product Designer — dti digital + Ânima Educação"
+            keywords="User research, visual design, usability testing."
+            results="Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students."
+          />
+        </div>
+        <HighlightImage
+          url="/images/cases/anima/anima-overview.png"
+          alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
         />
       </div>
-      <HighlightImage
-        url="/images/cases/anima/anima-overview.png"
-        alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
-      />
-      <Section>
+      <Section id="challenge">
         <HighlightCard
           title={
             "Developing education management software for all higher education institutions in Brazil."
@@ -43,16 +45,16 @@ export default function AnimaEducacao() {
           \n This led to the creation of A2S Technology for Education, a company derived from Ânima, aiming to offer education management software, including a certificate issuance platform, to other institutions.`}
         />
       </Section>
-      <Section>
+      <Section id="research">
         <Research />
       </Section>
-      <Section>
+      <Section id="prototypes">
         <Prototypes />
       </Section>
-      <Section>
+      <Section id="solution">
         <Solution />
       </Section>
-      <Section>
+      <Section id="results">
         <HighlightCard
           title={"Results and outcomes"}
           description={`After completing the MVP, the legacy platform was adapted to transfer student data to the new system, with smaller universities prioritized based on student count. The successful certificate issuance process will eventually cover all of Ânima's universities.
@@ -60,6 +62,7 @@ export default function AnimaEducacao() {
         />
       </Section>
       <Section
+        id="design-system"
         image={{
           url: "/images/cases/anima/design-system.png",
           alt: "A comprehensive mockup overview of Ânima's design system, highlighting a visually cohesive and user-centric interface.",
@@ -68,6 +71,7 @@ export default function AnimaEducacao() {
         <DesignSystem />
       </Section>
       <Section
+        id="design-documentation"
         image={{
           url: "/images/cases/anima/design-documentation.png",
           alt: "Mockup of Ânima's design documentation system, featuring clear design decisions and a glossary of terms. Streamlined interface for easy access and understanding of key design elements.",
