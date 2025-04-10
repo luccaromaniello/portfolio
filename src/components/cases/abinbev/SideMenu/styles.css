@@ -1,0 +1,7 @@
+.side-link {
+  @apply text-sm font-bold text-content-tertiary hover:text-content-primary;
+}
+
+.active {
+  @apply text-content-primary hover:text-content-tertiary;
+}
