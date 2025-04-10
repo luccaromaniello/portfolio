@@ -1,13 +1,13 @@
 import HighlightCard from "@/components/cases/HighlightCard";
-import SideMenu from "@/components/cases/anima/SideMenu";
 import "@/styles/alignments.css";
 import Section from "@/components/cases/Section";
-import Research from "@/components/cases/anima/Research";
-import Prototypes from "@/components/cases/anima/Prototypes";
-import Solution from "@/components/cases/anima/Solution";
-import DesignSystem from "@/components/cases/anima/DesignSystem";
-import DesignDocumentation from "@/components/cases/anima/DesignDocumentation";
-import CaseOverview from "@/components/cases/anima/CaseOverview";
+import SideMenu from "@/components/cases/Anima/SideMenu";
+import CaseOverview from "@/components/cases/Anima/CaseOverview";
+import DesignDocumentation from "@/components/cases/Anima/DesignDocumentation";
+import DesignSystem from "@/components/cases/Anima/DesignSystem";
+import Prototypes from "@/components/cases/Anima/Prototypes";
+import Research from "@/components/cases/Anima/Research";
+import Solution from "@/components/cases/Anima/Solution";
 
 export default function AnimaEducacao() {
   return (
