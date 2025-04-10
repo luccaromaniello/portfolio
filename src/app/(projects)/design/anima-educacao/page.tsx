@@ -1,15 +1,33 @@
 import HighlightCard from "@/components/cases/HighlightCard";
 import "@/styles/alignments.css";
 import Section from "@/components/cases/Section";
-import SideMenu from "@/components/cases/Anima/SideMenu";
-import CaseOverview from "@/components/cases/Anima/CaseOverview";
-import DesignDocumentation from "@/components/cases/Anima/DesignDocumentation";
-import DesignSystem from "@/components/cases/Anima/DesignSystem";
-import Prototypes from "@/components/cases/Anima/Prototypes";
-import Research from "@/components/cases/Anima/Research";
-import Solution from "@/components/cases/Anima/Solution";
+import SideMenu from "@/components/cases/anima/SideMenu";
+import CaseOverview from "@/components/cases/CaseOverview";
+import DesignDocumentation from "@/components/cases/anima/DesignDocumentation";
+import DesignSystem from "@/components/cases/anima/DesignSystem";
+import Prototypes from "@/components/cases/anima/Prototypes";
+import Research from "@/components/cases/anima/Research";
+import Solution from "@/components/cases/anima/Solution";
 
 export default function AnimaEducacao() {
+  const overview = {
+    heading: {
+      headline:
+        "build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil.",
+      company: "Ânima Educação",
+      link: "https://www.linkedin.com/company/animaeducacao/",
+    },
+    overview: {
+      description: `Ânima Educação is a company responsible for managing multiple private universities within Brazil. In 2020, they realized that its platform could be restructured to attend not only Ânima itself, but other higher education organizations.
+        \nThis was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students.`,
+      date: "August 2020 - July 2021",
+      role: "Product Designer — dti digital + Ânima Educação",
+      keywords: "User research, visual design, usability testing.",
+      results:
+        "Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students.",
+    },
+  };
+
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
@@ -20,7 +38,7 @@ export default function AnimaEducacao() {
           alt: "A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees.",
         }}
       >
-        <CaseOverview />
+        <CaseOverview heading={overview.heading} overview={overview.overview} />
       </Section>
       <Section id="challenge">
         <HighlightCard
