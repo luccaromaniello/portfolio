@@ -1,3 +1,4 @@
+import BeesOverview from "@/components/cases/abinbev/BeesOverview";
 import SideMenu from "@/components/cases/abinbev/SideMenu";
 import CaseOverview from "@/components/cases/CaseOverview";
 import Section from "@/components/cases/Section";
@@ -31,6 +32,9 @@ export default function AbInbev() {
         }}
       >
         <CaseOverview heading={overview.heading} overview={overview.overview} />
+      </Section>
+      <Section id="context">
+        <BeesOverview />
       </Section>
     </div>
   );
