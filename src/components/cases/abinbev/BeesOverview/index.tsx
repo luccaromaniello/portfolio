@@ -9,7 +9,7 @@ const BeesOverview = () => {
         <h2 className="text-2xl sm:text-3xl font-bold leading-snug sm:leading-normal">
           BEES is a worldwide B2B E-commerce and SaaS platform.
         </h2>
-        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 2xl:gap-20 items-center">
+        <div className="flex flex-col sm:flex-row gap-8 sm:gap-16 2xl:gap-20 sm:items-center">
           <div className="flex flex-row gap-4 relative w-full">
             <Image
               src="/images/cases/abinbev/bees-app-1.png"
