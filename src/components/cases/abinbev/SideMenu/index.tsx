@@ -56,6 +56,14 @@ const SideMenu = () => {
       </li>
       <li>
         <a
+          href="#context"
+          className={`side-link ${activeSection === "context" ? "active" : ""}`}
+        >
+          Context
+        </a>
+      </li>
+      <li>
+        <a
           href="#challenge"
           className={`side-link ${activeSection === "challenge" ? "active" : ""}`}
         >
