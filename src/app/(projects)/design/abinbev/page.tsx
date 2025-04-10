@@ -1,3 +1,4 @@
+import ApiContext from "@/components/cases/abinbev/ApiContext";
 import BeesOverview from "@/components/cases/abinbev/BeesOverview";
 import SideMenu from "@/components/cases/abinbev/SideMenu";
 import CaseOverview from "@/components/cases/CaseOverview";
@@ -35,6 +36,7 @@ export default function AbInbev() {
       </Section>
       <Section id="context">
         <BeesOverview />
+        <ApiContext />
       </Section>
     </div>
   );
