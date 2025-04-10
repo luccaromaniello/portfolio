@@ -26,8 +26,8 @@ export default function AbInbev() {
       <Section
         id="overview"
         image={{
-          url: "/images/cases/anima/anima-overview.png",
-          alt: "A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees.",
+          url: "/images/cases/abinbev/abinbev-overview.png",
+          alt: "An illustrative mockup showcasing BEES's developer portal overview, featuring an intuitive user interface with organized sections for APIs, documentation, and developer tools.",
         }}
       >
         <CaseOverview heading={overview.heading} overview={overview.overview} />
