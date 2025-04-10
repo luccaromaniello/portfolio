@@ -1,41 +1,27 @@
-import Overview from "@/components/cases/Overview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import SideMenu from "@/components/cases/anima/SideMenu";
 import "@/styles/alignments.css";
-import CaseHeading from "@/components/cases/typography/CaseHeading";
-import HighlightImage from "@/components/cases/HighlightImage";
 import Section from "@/components/cases/Section";
 import Research from "@/components/cases/anima/Research";
 import Prototypes from "@/components/cases/anima/Prototypes";
 import Solution from "@/components/cases/anima/Solution";
 import DesignSystem from "@/components/cases/anima/DesignSystem";
 import DesignDocumentation from "@/components/cases/anima/DesignDocumentation";
+import CaseOverview from "@/components/cases/anima/CaseOverview";
 
 export default function AnimaEducacao() {
   return (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
-      <div data-section id="overview" className="scroll-m-12">
-        <div className={`default-alignment gap-12 sm:gap-20 sm:pb-8`}>
-          <CaseHeading
-            headline="build a web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil."
-            company="Ânima Educação"
-            link="https://www.linkedin.com/company/animaeducacao/"
-          />
-          <Overview
-            overview={`Ânima Educação is a company responsible for managing multiple private universities within Brazil. In 2020, they realized that its platform could be restructured to attend not only Ânima itself, but other higher education organizations.
-              \nThis was possible since the Ministry of Education requirements should be followed by any organization that provides certificates to their students.`}
-            date="August 2020 - July 2021"
-            role="Product Designer — dti digital + Ânima Educação"
-            keywords="User research, visual design, usability testing."
-            results="Delivered the new platform to Ânima, which by 2021 was used to attend around 350.000 students."
-          />
-        </div>
-        <HighlightImage
-          url="/images/cases/anima/anima-overview.png"
-          alt="A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees."
-        />
-      </div>
+      <Section
+        id="overview"
+        image={{
+          url: "/images/cases/anima/anima-overview.png",
+          alt: "A web platform by Ânima Educação showcasing a user-friendly mockup overview for generating personalized Bachelor's and Master's degrees.",
+        }}
+      >
+        <CaseOverview />
+      </Section>
       <Section id="challenge">
         <HighlightCard
           title={
