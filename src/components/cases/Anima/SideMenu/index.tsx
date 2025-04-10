@@ -3,8 +3,8 @@ import React, { useState, useEffect, useRef } from "react";
 import "./styles.css";
 
 const SideMenu = () => {
-  const [activeSection, setActiveSection] = useState(null);
-  const observer = useRef(null);
+  const [activeSection, setActiveSection] = useState<string | null>(null);
+  const observer = useRef<IntersectionObserver>(null);
 
   useEffect(() => {
     observer.current = new IntersectionObserver(
@@ -25,12 +25,12 @@ const SideMenu = () => {
     const sections = document.querySelectorAll("[data-section]");
 
     sections.forEach((section) => {
-      observer.current.observe(section);
+      observer.current?.observe(section);
     });
 
     return () => {
       sections.forEach((section) => {
-        observer.current.unobserve(section);
+        observer.current?.unobserve(section);
       });
     };
   }, []);
