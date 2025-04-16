@@ -18,6 +18,7 @@ export default {
           primary: "#0A0A0A",
           secondary: "#6F6F6F",
           tertiary: "#B3B5BB",
+          highlight: "#FDFD96",
         },
         neutral: {
           white: "#FFFFFF",
