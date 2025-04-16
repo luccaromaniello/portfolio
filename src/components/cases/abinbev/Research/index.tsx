@@ -1,6 +1,6 @@
 import Tab from "@/components/cases/tabs/Tab";
 import SectionHeading from "@/components/cases/typography/SectionHeading";
-import UserFlow from "@/components/cases/anima/userFlow/UserFlow";
+import ResearchOverview from "@/components/cases/abinbev/ResearchOverview";
 import "@/styles/alignments.css";
 
 const Research = () => {
@@ -8,11 +8,8 @@ const Research = () => {
     {
       title: "Overview",
       type: 1,
-      attributes: {
-        description:
-          "The user flow was created during the MVP definition, aligning with the current Ânima flow and Ministry of Education requirements.",
-      },
-      children: <UserFlow />,
+      attributes: {},
+      children: <ResearchOverview />,
     },
     {
       title: "Interviews and survey",
