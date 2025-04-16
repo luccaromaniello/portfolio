@@ -55,6 +55,13 @@ const TabContent = ({ index, type, attributes, children }: TabContentProps) => {
                     height={50}
                     // sizes="100vw"
                   />
+                  {attributes.image.description ? (
+                    <p className="text-footer text-center pt-4">
+                      {attributes.image.description}
+                    </p>
+                  ) : (
+                    ""
+                  )}
                 </div>
               )
             ) : (
