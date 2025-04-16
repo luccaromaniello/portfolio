@@ -1,5 +1,6 @@
 import ApiContext from "@/components/cases/abinbev/ApiContext";
 import BeesOverview from "@/components/cases/abinbev/BeesOverview";
+import Research from "@/components/cases/abinbev/Research";
 import SideMenu from "@/components/cases/abinbev/SideMenu";
 import CaseOverview from "@/components/cases/CaseOverview";
 import HighlightCard from "@/components/cases/HighlightCard";
@@ -47,6 +48,9 @@ export default function AbInbev() {
           description={`BEES used Stoplight to share API documentation with both internal teams and external partners. For partners, this access is essential to integrate effectively and ensure their products are available on the BEES platform.
           \n Due to budget constraints, BEES planned to phase out Stoplight and move the API docs to a more customizable solution. The goal was to build a secure, flexible platform that preserved Stoplight's strengths while improving on its limitations.`}
         />
+      </Section>
+      <Section id="research">
+        <Research />
       </Section>
     </div>
   );
