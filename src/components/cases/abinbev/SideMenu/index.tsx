@@ -80,6 +80,22 @@ const SideMenu = () => {
       </li>
       <li>
         <a
+          href="#insights"
+          className={`side-link ${activeSection === "insights" ? "active" : ""}`}
+        >
+          Insights
+        </a>
+      </li>
+      <li>
+        <a
+          href="#metrics"
+          className={`side-link ${activeSection === "metrics" ? "active" : ""}`}
+        >
+          Metrics
+        </a>
+      </li>
+      <li>
+        <a
           href="#prototypes"
           className={`side-link ${activeSection === "prototypes" ? "active" : ""}`}
         >
@@ -100,22 +116,6 @@ const SideMenu = () => {
           className={`side-link ${activeSection === "results" ? "active" : ""}`}
         >
           Results
-        </a>
-      </li>
-      <li>
-        <a
-          href="#design-system"
-          className={`side-link ${activeSection === "design-system" ? "active" : ""}`}
-        >
-          Design system
-        </a>
-      </li>
-      <li>
-        <a
-          href="#design-documentation"
-          className={`side-link ${activeSection === "design-documentation" ? "active" : ""}`}
-        >
-          Documentation
         </a>
       </li>
     </ul>
