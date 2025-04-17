@@ -16,11 +16,9 @@ const ResearchOverview = () => {
   ];
 
   return (
-    <div className="flex flex-col gap-8">
-      <div className="flex flex-col sm:flex-row gap-8">
-        <ListCard title="Methodology" list={methodology} />
-        <ListCard title="Objective" list={objective} />
-      </div>
+    <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
+      <ListCard title="Methodology" list={methodology} />
+      <ListCard title="Objective" list={objective} />
     </div>
   );
 };
