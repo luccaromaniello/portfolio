@@ -6,12 +6,6 @@ import "@/styles/alignments.css";
 const Research = () => {
   const tabs = [
     {
-      title: "Overview",
-      type: 1,
-      attributes: {},
-      children: <ResearchOverview />,
-    },
-    {
       title: "Interviews and survey",
       type: 0,
       attributes: {
@@ -72,8 +66,9 @@ const Research = () => {
     <div className="section-container">
       <SectionHeading
         title="Research"
-        text="We wanted to get insights into user difficulties and identifying current problems within the Stoplight documentation."
+        text="We wanted to understand the current user experience and identify challenges users face when navigating the Stoplight documentation."
       />
+      <ResearchOverview />
       <Tab tabs={tabs} />
     </div>
   );
