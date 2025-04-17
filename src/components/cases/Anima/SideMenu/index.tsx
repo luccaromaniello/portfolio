@@ -1,6 +1,6 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
-import "./styles.css";
+import "@/styles/navigation.css";
 
 const SideMenu = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
@@ -37,7 +37,7 @@ const SideMenu = () => {
 
   return (
     <ul
-      className="hidden sm:flex flex-col gap-4 fixed px-4 z-10 sm:top-1/2 sm:ml-16 sm:-translate-x-1/2 sm:-translate-y-1/2"
+      className="side-menu-container"
       onClick={(event: React.SyntheticEvent) => {
         event.preventDefault();
         const target = event.target as HTMLAnchorElement;
