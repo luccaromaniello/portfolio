@@ -1,3 +1,7 @@
+.side-menu-container {
+  @apply hidden sm:flex flex-col gap-3 2xl:gap-2 fixed px-4 z-10 sm:top-1/2 sm:-translate-y-1/2;
+}
+
 .side-link {
   @apply text-sm font-bold text-content-tertiary hover:text-content-primary;
 }
