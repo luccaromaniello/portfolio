@@ -37,7 +37,7 @@ const SideMenu = () => {
 
   return (
     <ul
-      className="hidden sm:flex flex-col gap-4 fixed px-4 z-10"
+      className="hidden sm:flex flex-col gap-4 fixed px-4 z-10 sm:top-1/2 sm:ml-16 sm:-translate-x-1/2 sm:-translate-y-1/2"
       onClick={(event: React.SyntheticEvent) => {
         event.preventDefault();
         const target = event.target as HTMLAnchorElement;
