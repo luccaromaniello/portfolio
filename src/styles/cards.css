@@ -9,3 +9,7 @@
 .card-border {
   @apply rounded-2xl;
 }
+
+.abinbev-highlight {
+  @apply shadow-[inset_8px_0_0] shadow-content-highlight;
+}

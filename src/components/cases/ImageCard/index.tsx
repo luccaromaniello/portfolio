@@ -2,12 +2,26 @@ import "@/styles/cards.css";
 
 interface ImageCardProps {
   padding?: boolean;
+  highlight?: HighlightType;
   children?: React.ReactNode;
 }
 
-const ImageCard = ({ padding = true, children }: ImageCardProps) => {
+enum HighlightType {
+  NONE = 0,
+  ABINBEV = 1,
+}
+
+const ImageCard = ({
+  padding = true,
+  highlight = 0,
+  children,
+}: ImageCardProps) => {
   return padding ? (
-    <div className={`image-card`}>{children}</div>
+    highlight == HighlightType.ABINBEV ? (
+      <div className={`image-card abinbev-highlight`}>{children}</div>
+    ) : (
+      <div className={`image-card`}>{children}</div>
+    )
   ) : (
     <div className={`image-only-card`}>{children}</div>
   );
