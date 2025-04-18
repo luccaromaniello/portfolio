@@ -7,5 +7,5 @@
 }
 
 .active {
-  @apply text-content-primary hover:text-content-tertiary;
+  @apply text-content-primary hover:text-content-secondary;
 }
