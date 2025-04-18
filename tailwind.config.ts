@@ -13,6 +13,7 @@ export default {
         foreground: "var(--foreground)",
         primary: {
           main: "#AE1E5F",
+          background: "#FFEAF2",
         },
         content: {
           primary: "#0A0A0A",
