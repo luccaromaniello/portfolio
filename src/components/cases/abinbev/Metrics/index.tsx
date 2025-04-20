@@ -36,7 +36,7 @@ const Metrics = () => {
               <p className="text-footer">
                 Read more about{" "}
                 <a
-                  href="https://help.qualaroo.com/hc/en-us/articles/360039072752-UMUX-Usability-Metric-for-User-Experience-https://help.qualaroo.com/usability-metric-for-user-experience"
+                  href="https://help.qualaroo.com/usability-metric-for-user-experience"
                   rel="noreferrer"
                   target="_blank"
                   className="font-medium hover:text-content-tertiary"
