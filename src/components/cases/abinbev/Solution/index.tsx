@@ -1,6 +1,6 @@
 import SectionHeading from "@/components/cases/typography/SectionHeading";
 import "@/styles/alignments.css";
-import VideoContainer from "@/components/cases/VideoContainer";
+import VideoContainer from "@/components/cases/media/VideoContainer";
 
 const Solution = () => {
   return (
