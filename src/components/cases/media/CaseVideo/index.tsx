@@ -11,6 +11,7 @@ const CaseVideo = ({ description, url }: CaseVideoProps) => {
       <video
         className={description ? "card-border" : "inner-card-border"}
         controls
+        muted
         preload="auto"
         loop
         controlsList="nodownload"
