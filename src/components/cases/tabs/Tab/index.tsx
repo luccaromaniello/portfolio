@@ -12,7 +12,7 @@ export interface TabAttributes {
   image?: {
     url: string;
     alt: string;
-    description?: string;
+    subtitle?: string;
     highlight?: {
       title: string;
       description: string;

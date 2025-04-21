@@ -1,8 +1,7 @@
 import "@/styles/alignments.css";
 import "@/styles/typography.css";
 import Text from "@/components/cases/typography/Text";
-import Image from "next/image";
-import ImageCard from "@/components/cases/ImageCard";
+import Card from "@/components/cases/Card";
 
 const ApiContext = () => {
   return (
@@ -33,22 +32,16 @@ const ApiContext = () => {
             </p>
           </div>
           <div className="flex flex-col sm:w-7/12 gap-4 text-center">
-            <ImageCard padding={false}>
-              <Image
-                src="/images/cases/abinbev/api-context.png"
-                alt="Visual representation of Stoplight documentation for APIs, focusing on user data. The image illustrates a user-friendly interface with clear documentation, symbolizing efficient management and communication of API-related information."
-                priority
-                className="object-contain object-top"
-                quality={100}
-                layout="responsive"
-                width={50}
-                height={50}
-              />
-            </ImageCard>
-            <p className="text-footer">
-              A sample API for accessing user data showcased in an app named
-              {` "`}Stoplight.{`"`}
-            </p>
+            <Card
+              image={{
+                url: "/images/cases/abinbev/api-context.png",
+                alt: "Visual representation of Stoplight documentation for APIs, focusing on user data. The image illustrates a user-friendly interface with clear documentation, symbolizing efficient management and communication of API-related information.",
+                width: 970,
+                height: 1024,
+                subtitle:
+                  "A sample API for accessing user data showcased in an app named Stoplight.",
+              }}
+            />
           </div>
         </div>
       </div>

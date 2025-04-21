@@ -1,8 +1,9 @@
 import SectionHeading from "@/components/cases/typography/SectionHeading";
 import ReviewCard from "@/components/cases/abinbev/ReviewCard";
-import ImageCard from "@/components/cases/ImageCard";
+import Card from "@/components/cases/Card";
 import UmuxScore from "@/components/cases/abinbev/UmuxScore";
 import Text from "@/components/cases/typography/Text";
+import "@/styles/alignments.css";
 
 const Metrics = () => {
   return (
@@ -11,7 +12,7 @@ const Metrics = () => {
         title="Metrics"
         text="The UX research team at BEES used UMUX as a baseline usability metric during initial interviews to compare results after testing the final solution."
       />
-      <ImageCard highlight={1}>
+      <Card decoration={1}>
         <div className="flex flex-col sm:flex-row gap-12">
           <div className="flex flex-col gap-6 w-full sm:w-4/5">
             <h3 className="text-xl sm:text-2xl font-bold leading-snug sm:leading-normal">
@@ -79,7 +80,7 @@ const Metrics = () => {
             </div>
           </div>
         </div>
-      </ImageCard>
+      </Card>
     </div>
   );
 };
