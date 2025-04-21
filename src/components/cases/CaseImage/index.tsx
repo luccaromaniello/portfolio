@@ -19,15 +19,15 @@ const CaseImage = ({
   image,
 }: CaseImageProps) => {
   return image.highlight ? (
-    <div className="relative w-full">
+    <div className="relative w-full h-full">
       <Image
         src={image.url}
         alt={image.alt}
         priority={priority}
         className={`
-          pointer-events-none w-full h-auto filter brightness-75 hidden sm:block
+          pointer-events-none w-full filter brightness-75 hidden sm:block
           ${image.position == ImagePositionType.LEFT_TOP ? "object-left-top" : "object-top"}
-          ${image.fit == ImageFitType.COVER ? "object-cover" : "object-contain"}
+          ${image.fit == ImageFitType.COVER ? "object-cover h-full" : "object-contain h-auto"}
           ${description ? "card-border" : "inner-card-border"} filter brightness-75 hidden sm:block`}
         quality={100}
         width={image.width}
@@ -44,15 +44,15 @@ const CaseImage = ({
       </div>
     </div>
   ) : (
-    <div className="relative w-full">
+    <div className="relative w-full h-full">
       <Image
         src={image.url}
         alt={image.alt}
         priority={priority}
         className={`
-          pointer-events-none w-full h-auto
+          pointer-events-none w-full
           ${image.position == ImagePositionType.LEFT_TOP ? "object-left-top" : "object-top"}
-          ${image.fit == ImageFitType.COVER ? "object-cover" : "object-contain"}
+          ${image.fit == ImageFitType.COVER ? "object-cover h-full" : "object-contain h-auto"}
           ${description ? "card-border" : "inner-card-border"}`}
         quality={100}
         width={image.width}
