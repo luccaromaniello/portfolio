@@ -3,5 +3,5 @@
 }
 
 .section-container {
-  @apply flex flex-col gap-12;
+  @apply flex flex-col gap-12 my-2 sm:my-6;
 }
