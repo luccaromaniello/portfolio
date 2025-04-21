@@ -1,6 +1,6 @@
 import "@/styles/cards.css";
 import "@/styles/alignments.css";
-import HighlightImage from "@/components/cases/HighlightImage";
+import HighlightImage from "@/components/cases/media/HighlightImage";
 
 interface SectionProps {
   id: string;

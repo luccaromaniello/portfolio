@@ -5,7 +5,7 @@ import {
   CustomImage,
   ImageFitType,
   ImagePositionType,
-} from "@/components/cases/images/utils";
+} from "@/components/cases/media/utils";
 
 interface CaseImageProps {
   priority?: boolean;

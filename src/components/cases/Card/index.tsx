@@ -1,8 +1,8 @@
 import "@/styles/cards.css";
-import { CustomImage } from "@/components/cases/images/utils";
+import { CustomImage } from "@/components/cases/media/utils";
 import { formatCaseDescription } from "@/components/cases/utils";
-import CaseImage from "@/components/cases/CaseImage";
-import CaseVideo from "@/components/cases/CaseVideo";
+import CaseImage from "@/components/cases/media/CaseImage";
+import CaseVideo from "@/components/cases/media/CaseVideo";
 
 interface CardProps {
   description?: string;
