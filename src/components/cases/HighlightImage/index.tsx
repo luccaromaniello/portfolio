@@ -14,7 +14,7 @@ const HighlightImage = ({ url, alt }: HighlightImageProps) => {
         alt={alt}
         priority
         fill
-        className="object-contain object-top"
+        className="object-contain object-top pointer-events-none"
         quality={100}
       />
     </div>
