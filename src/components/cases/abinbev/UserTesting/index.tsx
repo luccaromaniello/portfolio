@@ -12,26 +12,26 @@ const UserTesting = () => {
       />
       <div className="flex flex-col gap-4 text-center">
         <div className="flex flex-row gap-4">
-          <div className="w-full">
-            <Card
-              image={{
-                url: "/images/cases/abinbev/maze.png",
-                alt: "Screenshot of the usability test setting in Maze website.",
-                width: 2170,
-                height: 1440,
-              }}
-            />
-          </div>
-          <div className="w-full">
-            <Card
-              image={{
-                url: "/images/cases/abinbev/usability-test-sheet.png",
-                alt: "A usability test spreadsheet containing the actions we asked our users to take on the prototype, along with follow-up questions.",
-                width: 3840,
-                height: 1940,
-              }}
-            />
-          </div>
+          <Card
+            image={{
+              fit: 1,
+              position: 1,
+              url: "/images/cases/abinbev/maze.png",
+              alt: "Screenshot of the usability test setting in Maze website.",
+              width: 2170,
+              height: 1440,
+            }}
+          />
+          <Card
+            image={{
+              fit: 1,
+              position: 1,
+              url: "/images/cases/abinbev/usability-test-sheet.png",
+              alt: "A usability test spreadsheet containing the actions we asked our users to take on the prototype, along with follow-up questions.",
+              width: 3840,
+              height: 1940,
+            }}
+          />
         </div>
         <p className="text-footer">
           Snapshots of the Maze page used for the usability test and the follow
