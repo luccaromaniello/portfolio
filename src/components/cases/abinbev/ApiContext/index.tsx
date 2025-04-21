@@ -2,6 +2,7 @@ import "@/styles/alignments.css";
 import "@/styles/typography.css";
 import Text from "@/components/cases/typography/Text";
 import Card from "@/components/cases/Card";
+import ExternalLink from "@/components/cases/ExternalLink";
 
 const ApiContext = () => {
   return (
@@ -18,18 +19,12 @@ const ApiContext = () => {
                   \nJust as you enjoy a dish without knowing how it’s made, developers use these actions, like a "Save As" dialog, to improve their apps.`}
               />
             </div>
-            <p className="text-footer">
-              Adapted clarification from{" "}
-              <a
-                href="https://www.howtogeek.com/343877/what-is-an-api/"
-                rel="noreferrer"
-                target="_blank"
-                className="font-medium hover:text-content-tertiary"
-              >
-                HowToGeek
-              </a>
-              .
-            </p>
+            <ExternalLink
+              preText="Adapted clarification from"
+              highlight="HowToGeek"
+              link="https://www.howtogeek.com/343877/what-is-an-api/"
+              postText="."
+            />
           </div>
           <div className="flex flex-col sm:w-7/12 gap-4 text-center">
             <Card

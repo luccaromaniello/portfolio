@@ -20,6 +20,13 @@ export default function AbInbev() {
     overview: {
       description: `Anheuser-Busch InBev (AB InBev) is a global beverage and brewing conglomerate known for brands like Budweiser, Corona, and Stella Artois. In 2019, AB InBev launched BEES, a B2B e-commerce and SaaS platform.
         \nIn 2023, budget constraints led BEES to phase out its existing API documentation tool and migrate its API data to a new platform. This prompted the development of a customized API documentation portal tailored for both developers and business stakeholders, including BEES partners.`,
+      shoutout: {
+        preText: "Cheers to",
+        highlight: "Daniella Obi",
+        link: "https://www.linkedin.com/in/daniellaobi/",
+        postText: ", my design partner on this project!",
+        paddingTop: true,
+      },
       date: "April 2023 - June 2023",
       role: "Product Designer — AB InBev (BEES)",
       keywords: "User interviews, information architecture, usability testing.",

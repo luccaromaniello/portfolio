@@ -1,6 +1,7 @@
 import "@/styles/alignments.css";
 import CaseHeading from "@/components/cases/typography/CaseHeading";
 import Overview from "@/components/cases/Overview";
+import { ExternalLinkProps } from "@/components/cases/ExternalLink";
 
 interface CaseOverviewProps {
   heading: {
@@ -10,6 +11,7 @@ interface CaseOverviewProps {
   };
   overview: {
     description: string;
+    shoutout?: ExternalLinkProps;
     date: string;
     role: string;
     keywords: string;
@@ -27,6 +29,7 @@ const CaseOverview = ({ heading, overview }: CaseOverviewProps) => {
       />
       <Overview
         description={overview.description}
+        shoutout={overview.shoutout}
         date={overview.date}
         role={overview.role}
         keywords={overview.keywords}

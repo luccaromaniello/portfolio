@@ -4,6 +4,7 @@ import Card from "@/components/cases/Card";
 import UmuxScore from "@/components/cases/abinbev/UmuxScore";
 import Text from "@/components/cases/typography/Text";
 import "@/styles/alignments.css";
+import ExternalLink from "@/components/cases/ExternalLink";
 
 const Metrics = () => {
   return (
@@ -34,18 +35,12 @@ const Metrics = () => {
                   }
                 />
               </div>
-              <p className="text-footer">
-                Read more about{" "}
-                <a
-                  href="https://help.qualaroo.com/usability-metric-for-user-experience"
-                  rel="noreferrer"
-                  target="_blank"
-                  className="font-medium hover:text-content-tertiary"
-                >
-                  UMUX
-                </a>
-                .
-              </p>
+              <ExternalLink
+                preText="Read more about"
+                highlight="UMUX"
+                link="https://help.qualaroo.com/usability-metric-for-user-experience"
+                postText="."
+              />
             </div>
           </div>
           <div className="flex flex-col gap-6 w-full">
