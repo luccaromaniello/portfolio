@@ -10,7 +10,7 @@ interface VideoContainerProps {
 
 const VideoContainer = ({ url, title, description }: VideoContainerProps) => {
   return (
-    <div className="flex flex-col-reverse sm:flex-row gap-12 items-center">
+    <div className="flex flex-col-reverse sm:flex-row gap-8 sm:gap-16 items-center">
       <div className="w-full sm:w-2/3">
         <Card video={{ url: url }} />
       </div>
