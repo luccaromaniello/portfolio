@@ -1,5 +1,6 @@
 import Label from "@/components/cases/typography/Label";
 import Text from "@/components/cases/typography/Text";
+import ExternalLink from "@/components/cases/ExternalLink";
 
 interface OverviewProps {
   description: string;
@@ -21,6 +22,13 @@ const Overview = ({
       <div className="flex flex-col">
         <Label text="Overview" />
         <Text text={description} />
+        <ExternalLink
+          preText="Cheers to"
+          highlight="Daniella Obi"
+          link="https://www.linkedin.com/in/daniellaobi/"
+          postText=", my design partner on this project!"
+          paddingTop
+        />
       </div>
       <div className="flex flex-col sm:basis-96 gap-8 sm:shrink-0">
         <div className="flex flex-col">
