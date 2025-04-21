@@ -9,11 +9,15 @@ import {
 
 interface CaseImageProps {
   priority?: boolean;
-  description?: string;
+  description?: boolean;
   image: CustomImage;
 }
 
-const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
+const CaseImage = ({
+  priority = true,
+  description = false,
+  image,
+}: CaseImageProps) => {
   return image.highlight ? (
     <div className="relative w-full">
       <Image
@@ -40,7 +44,7 @@ const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
       </div>
     </div>
   ) : (
-    <div className="relative h-full w-full">
+    <div className="relative w-full">
       <Image
         src={image.url}
         alt={image.alt}
@@ -56,7 +60,11 @@ const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
         sizes="100%"
       />
       {image.subtitle ? (
-        <p className="text-footer text-center pt-4">{image.subtitle}</p>
+        <p
+          className={`text-footer text-center ${description ? "pt-4" : "py-4"}`}
+        >
+          {image.subtitle}
+        </p>
       ) : (
         ""
       )}
