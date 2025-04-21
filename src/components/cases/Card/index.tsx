@@ -18,7 +18,7 @@ enum DecorationType {
 const Card = ({ description, decoration = 0, image, children }: CardProps) => {
   return (
     <div
-      className={`${description || children ? "flex flex-col gap-8 card" : "image-only-card"} ${decoration == DecorationType.ABINBEV ? "abinbev-highlight" : ""}`}
+      className={`w-full ${description || children ? "flex flex-col gap-8 card" : "image-only-card"} ${decoration == DecorationType.ABINBEV ? "abinbev-highlight" : ""}`}
     >
       {description ? formatCaseDescription(description) : ""}
       {children}
