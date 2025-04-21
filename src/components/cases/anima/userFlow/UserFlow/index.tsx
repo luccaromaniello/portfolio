@@ -2,6 +2,7 @@ import UserFlowItem from "@/components/cases/anima/userFlow/UserFlowItem";
 import Divider from "@/components/Divider";
 import "@/styles/typography.css";
 import "../styles.css";
+import ExternalLink from "@/components/cases/ExternalLink";
 
 const DividerPlaceholder = () => {
   return (
@@ -112,18 +113,12 @@ const UserFlow = () => {
           certificates to those authorized for registration, which helps manage
           authenticity control.
         </p>
-        <p className="text-footer">
-          The avatars used belong to{" "}
-          <a
-            href="https://www.dicebear.com/"
-            rel="noreferrer"
-            target="_blank"
-            className="font-medium hover:text-content-tertiary"
-          >
-            DiceBear
-          </a>
-          .
-        </p>
+        <ExternalLink
+          preText="The avatars used belong to"
+          highlight="DiceBear"
+          link="https://www.dicebear.com/"
+          postText="."
+        />
       </div>
     </div>
   );

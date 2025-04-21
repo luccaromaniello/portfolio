@@ -40,7 +40,7 @@ const Tab = ({ tabs }: TabItemProps) => {
 
   return (
     <div className="flex flex-col gap-8">
-      <div className="flex flex-row flex-wrap gap-8 sm:gap-14 px-6 sm:px-16 justify-center">
+      <div className="flex flex-row flex-wrap gap-8 sm:gap-12 2xl:gap-16 px-6 sm:px-16 justify-center">
         {tabs.map((tab, index) => (
           <div key={index}>
             <button
