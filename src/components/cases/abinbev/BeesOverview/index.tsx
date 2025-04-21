@@ -15,7 +15,7 @@ const BeesOverview = () => {
               src="/images/cases/abinbev/bees-app-1.png"
               alt="Example of BEES B2B e-commerce app home screen, highlighting an interface for beverage purchases and streamlined shopping experiences, with integrated reward program benefits."
               priority
-              className="object-contain object-top"
+              className="object-contain object-top pointer-events-none"
               quality={100}
               layout="responsive"
               width={50}
@@ -25,7 +25,7 @@ const BeesOverview = () => {
               src="/images/cases/abinbev/bees-app-2.png"
               alt="Example of BEES B2B e-commerce app home screen, highlighting an interface for beverage purchases and streamlined shopping experiences, with integrated reward program benefits."
               priority
-              className="object-contain object-top"
+              className="object-contain object-top pointer-events-none"
               quality={100}
               layout="responsive"
               width={400}
