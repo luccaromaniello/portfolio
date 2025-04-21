@@ -96,10 +96,10 @@ const SideMenu = () => {
       </li>
       <li>
         <a
-          href="#prototypes"
-          className={`side-link ${activeSection === "prototypes" ? "active" : ""}`}
+          href="#user-testing"
+          className={`side-link ${activeSection === "user-testing" ? "active" : ""}`}
         >
-          Prototypes
+          User testing
         </a>
       </li>
       <li>
