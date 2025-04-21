@@ -16,7 +16,7 @@ const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
         src={image.url}
         alt={image.alt}
         priority={priority}
-        className={`object-contain object-top ${description ? "card-border" : "inner-card-border"} filter brightness-75 hidden sm:block`}
+        className={`object-contain object-top pointer-events-none ${description ? "card-border" : "inner-card-border"} filter brightness-75 hidden sm:block`}
         quality={100}
         layout="responsive"
         width={image.width}
@@ -37,7 +37,7 @@ const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
         src={image.url}
         alt={image.alt}
         priority={priority}
-        className={`object-contain object-top ${description ? "card-border" : "inner-card-border"}`}
+        className={`object-contain object-top pointer-events-none ${description ? "card-border" : "inner-card-border"}`}
         quality={100}
         layout="responsive"
         width={50}
