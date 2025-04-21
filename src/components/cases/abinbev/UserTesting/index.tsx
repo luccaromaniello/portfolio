@@ -11,7 +11,7 @@ const UserTesting = () => {
           \nVisually, the design remains nearly identical and will be detailed in the next section.`}
       />
       <div className="flex flex-col gap-4 text-center">
-        <div className="flex flex-row gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <Card
             image={{
               fit: 1,
