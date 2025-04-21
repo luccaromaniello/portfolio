@@ -55,7 +55,7 @@ const Solution = () => {
       },
     },
     {
-      title: "6. Documentation",
+      title: "6. Docs",
       type: 0,
       attributes: {
         image: {
