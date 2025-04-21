@@ -9,6 +9,7 @@ import Solution from "@/components/cases/abinbev/Solution";
 import CaseOverview from "@/components/cases/CaseOverview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import Section from "@/components/cases/Section";
+import Results from "@/components/cases/abinbev/Results";
 
 export default function AbInbev() {
   const overview = {
@@ -74,6 +75,9 @@ export default function AbInbev() {
       </Section>
       <Section id="solution">
         <Solution />
+      </Section>
+      <Section id="results">
+        <Results />
       </Section>
     </div>
   );
