@@ -9,7 +9,7 @@ const Results = () => {
   return (
     <div className="section-container">
       <SectionHeading
-        title="Results"
+        title="Results and outcomes"
         text="Using the initial UMUX results as a baseline, we conducted the questionnaire again after testing the final solution. Here are the outcomes for the developer portal."
       />
       <Card decoration={1}>
