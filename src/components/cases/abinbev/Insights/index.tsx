@@ -38,7 +38,7 @@ const Insights = () => {
         title="Insights"
         text="Our findings highlighted key user difficulties and helped identify specific problem areas within the current documentation."
       />
-      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8 sm:mb-24">
+      <div className="flex flex-col sm:flex-row gap-4 sm:gap-8">
         <ListCard
           title="Documentation and access challenges"
           list={insights[0]}

@@ -5,6 +5,7 @@ import Metrics from "@/components/cases/abinbev/Metrics";
 import Research from "@/components/cases/abinbev/Research";
 import SideMenu from "@/components/cases/abinbev/SideMenu";
 import UserTesting from "@/components/cases/abinbev/UserTesting";
+import Solution from "@/components/cases/abinbev/Solution";
 import CaseOverview from "@/components/cases/CaseOverview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import Section from "@/components/cases/Section";
@@ -70,6 +71,9 @@ export default function AbInbev() {
       </Section>
       <Section id="user-testing">
         <UserTesting />
+      </Section>
+      <Section id="solution">
+        <Solution />
       </Section>
     </div>
   );
