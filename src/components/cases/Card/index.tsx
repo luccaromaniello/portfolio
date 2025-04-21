@@ -22,7 +22,11 @@ const Card = ({ description, decoration = 0, image, children }: CardProps) => {
     >
       {description ? formatCaseDescription(description) : ""}
       {children}
-      {image ? <CaseImage image={image} /> : ""}
+      {image ? (
+        <CaseImage description={description ? true : false} image={image} />
+      ) : (
+        ""
+      )}
     </div>
   );
 };

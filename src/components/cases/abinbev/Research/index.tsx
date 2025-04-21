@@ -29,7 +29,7 @@ const Research = () => {
         image: {
           url: "/images/cases/abinbev/information-architecture.png",
           alt: "Screenshot featuring an Information architecture diagram, illustrating the hierarchical structure and relationships within the system, enhancing user understanding of content organization and navigation pathways.",
-          description:
+          subtitle:
             "Here’s the high-level structure we built. Due to privacy, we can't share full details, but it’s reflected in the final prototypes.",
         },
       },
@@ -55,7 +55,7 @@ const Research = () => {
         image: {
           url: "/images/cases/abinbev/benchmark-visual.png",
           alt: "Screenshot showcasing examples of competitors in a side-by-side visual comparison.",
-          description:
+          subtitle:
             "A quick overview of snapshots, featuring portals from Spotify, iFood, and Mercado Livre.",
         },
       },
