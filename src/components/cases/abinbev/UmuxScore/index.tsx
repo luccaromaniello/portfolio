@@ -21,7 +21,7 @@ const UmuxScore = ({
     <div className="flex flex-col gap-4 p-6 sm:p-8 rounded-lg border border-content-secondary/25">
       <div className="flex flex-col sm:flex-row gap-2 w-full">
         <div className="flex flex-col sm:gap-2 sm:pr-2 sm:pb-0">
-          <span className="text-lg sm:text-xl font-medium">{tool} score:</span>
+          <span className="text-lg font-medium">{tool} score:</span>
           <h4 className="text-5xl sm:text-5xl font-bold leading-snug">
             {score}
           </h4>

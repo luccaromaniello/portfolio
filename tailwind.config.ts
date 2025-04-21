@@ -21,6 +21,9 @@ export default {
           tertiary: "#B3B5BB",
           highlight: "#FDFD96",
         },
+        feedback: {
+          success: "#176D38",
+        },
         neutral: {
           white: "#FFFFFF",
         },
