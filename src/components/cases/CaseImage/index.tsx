@@ -40,8 +40,8 @@ const CaseImage = ({ priority = true, description, image }: CaseImageProps) => {
         className={`object-contain object-top pointer-events-none ${description ? "card-border" : "inner-card-border"}`}
         quality={100}
         layout="responsive"
-        width={50}
-        height={50}
+        width={image.width}
+        height={image.height}
         // sizes="100vw"
       />
       {image.subtitle ? (
