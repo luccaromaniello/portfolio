@@ -50,11 +50,11 @@ const UmuxScore = ({
           src="/images/cases/abinbev/umux-ruler.png"
           alt="Visual representation of Stoplight documentation for APIs, focusing on user data. The image illustrates a user-friendly interface with clear documentation, symbolizing efficient management and communication of API-related information."
           priority
-          className="object-contain object-top"
+          className="w-full h-auto object-contain object-top"
           quality={100}
-          layout="responsive"
           width={50}
           height={50}
+          sizes="100%"
         />
       </div>
     </div>
