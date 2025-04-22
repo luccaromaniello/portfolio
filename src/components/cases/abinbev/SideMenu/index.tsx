@@ -4,10 +4,11 @@ import "@/styles/navigation.css";
 
 const SideMenu = () => {
   const [activeSection, setActiveSection] = useState<string | null>(null);
-  const observer = useRef<IntersectionObserver>(null);
+  const shortSectionObserver = useRef<IntersectionObserver>(null);
+  const longSectionObserver = useRef<IntersectionObserver>(null);
 
   useEffect(() => {
-    observer.current = new IntersectionObserver(
+    shortSectionObserver.current = new IntersectionObserver(
       (entries) => {
         const visibleSection = entries.find(
           (entry) => entry.isIntersecting,
@@ -22,15 +23,38 @@ const SideMenu = () => {
       },
     );
 
-    const sections = document.querySelectorAll("[data-section]");
+    longSectionObserver.current = new IntersectionObserver(
+      (entries) => {
+        const visibleSection = entries.find(
+          (entry) => entry.isIntersecting,
+        )?.target;
 
-    sections.forEach((section) => {
-      observer.current?.observe(section);
+        if (visibleSection) {
+          setActiveSection(visibleSection.id);
+        }
+      },
+      {
+        threshold: 0.25,
+      },
+    );
+
+    const shortSections = document.querySelectorAll(".short-section");
+    const longSections = document.querySelectorAll(".long-section");
+
+    shortSections.forEach((section) => {
+      shortSectionObserver.current?.observe(section);
+    });
+
+    longSections.forEach((section) => {
+      longSectionObserver.current?.observe(section);
     });
 
     return () => {
-      sections.forEach((section) => {
-        observer.current?.unobserve(section);
+      shortSections.forEach((section) => {
+        shortSectionObserver.current?.unobserve(section);
+      });
+      longSections.forEach((section) => {
+        longSectionObserver.current?.unobserve(section);
       });
     };
   }, []);
