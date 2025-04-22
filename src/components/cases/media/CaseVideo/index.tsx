@@ -9,6 +9,7 @@ const CaseVideo = ({ description, url }: CaseVideoProps) => {
   return (
     <div className="relative w-full h-full">
       <video
+        src={url}
         className={description ? "card-border" : "inner-card-border"}
         controls
         muted
