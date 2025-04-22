@@ -1,3 +1,19 @@
 .text-footer {
   @apply text-xs text-content-secondary;
 }
+
+.light-theme-link {
+  @apply text-base font-medium hover:text-content-tertiary;
+}
+
+.dark-theme-link {
+  @apply text-base font-medium text-content-secondary hover:text-content-tertiary;
+}
+
+.active-light-theme-link {
+  @apply text-primary-main;
+}
+
+.active-dark-theme-link {
+  @apply text-neutral-white hover:text-content-tertiary;
+}
