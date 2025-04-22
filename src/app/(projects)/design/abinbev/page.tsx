@@ -73,7 +73,7 @@ export default function AbInbev() {
       <Section id="user-testing">
         <UserTesting />
       </Section>
-      <Section id="solution">
+      <Section size={1} id="solution">
         <Solution />
       </Section>
       <Section id="results">
