@@ -10,6 +10,16 @@ import CaseOverview from "@/components/cases/CaseOverview";
 import HighlightCard from "@/components/cases/HighlightCard";
 import Section from "@/components/cases/Section";
 import Results from "@/components/cases/abinbev/Results";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Lucca Romaniello — AB InBev",
+  description:
+    "A design case study by Lucca Romaniello - Helping build a web portal used for mapping AB InBev's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
+  icons: {
+    icon: "/lucca-icon.svg",
+  },
+};
 
 export default function AbInbev() {
   const overview = {

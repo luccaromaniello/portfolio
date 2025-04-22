@@ -8,6 +8,16 @@ import Prototypes from "@/components/cases/anima/Prototypes";
 import Research from "@/components/cases/anima/Research";
 import Solution from "@/components/cases/anima/Solution";
 import SideMenu from "@/components/cases/anima/SideMenu";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Lucca Romaniello — Ânima Educação",
+  description:
+    "A design case study by Lucca Romaniello — helping to build Ânima's Educação a web platform that allowed their internal staff to generate Bachelor’s and Master’s certificates for their 350.000+ students, following the Brazilian Ministry of Education requirements.",
+  icons: {
+    icon: "/lucca-icon.svg",
+  },
+};
 
 export default function AnimaEducacao() {
   const overview = {
