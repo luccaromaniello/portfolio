@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HeaderLogo = () => {
   return (
-    <div>
+    <div className="after:absolute after:top-0 after:left-0 after:w-full after:h-full after:opacity-0 after:bg-[url('/test-lucca-real.png')] after:bg-cover after:bg-center after:transition-opacity after:duration-300 after:ease-out hover:after:opacity-100">
       <Image
         src="/lucca-icon.png"
         alt="Picture of Lucca Romaniello."
