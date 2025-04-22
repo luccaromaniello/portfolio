@@ -42,7 +42,7 @@ const Results = () => {
             <h3 className="text-xl sm:text-2xl font-bold leading-snug sm:leading-normal">
               Statements score
             </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 sm:grid-rows-2 gap-4 sm:gap-8">
+            <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-4 sm:gap-6 2xl:gap-8">
               <ReviewCard
                 emoji="😐"
                 percentage="72.28"
