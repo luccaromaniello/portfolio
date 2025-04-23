@@ -22,7 +22,6 @@ const Header = () => {
           opportunities.
         </p>
       </div>
-      c
       <div className="relative w-2/3 h-full">
         <HeaderLogo />
       </div>
