@@ -33,15 +33,6 @@ const HeaderLogo = () => {
 
   return (
     <div id="header-logo-container" className="relative">
-      {/* <Image
-        src="/lucca-icon.png"
-        alt="Picture of Lucca Romaniello."
-        priority
-        className="object-contain rounded-lg object-top w-full h-full absolute top-0 left-0"
-        width={360}
-        height={480}
-        sizes="100%"
-      /> */}
       <Image
         style={{
           maskImage: "url(mask.svg)",
