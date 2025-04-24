@@ -33,17 +33,8 @@ const HeaderLogo = () => {
 
   return (
     <div id="header-logo-container" className="relative">
-      <Image
-        src="/lucca-icon.png"
-        alt="Picture of Lucca Romaniello."
-        priority
-        className="object-contain rounded-lg object-top w-full h-full relative cursor-default z-1"
-        width={360}
-        height={480}
-        sizes="100%"
-      />
       {/* <Image
-        src="/lucca-overlay-bw.png"
+        src="/lucca-icon.png"
         alt="Picture of Lucca Romaniello."
         priority
         className="object-contain rounded-lg object-top w-full h-full absolute top-0 left-0"
@@ -51,18 +42,30 @@ const HeaderLogo = () => {
         height={480}
         sizes="100%"
       /> */}
-      <div
+      <Image
         style={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          background: "black",
-          pointerEvents: "none",
-          clipPath: `circle(10% at ${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%)`,
+          maskImage: "url(mask.svg)",
+          maskRepeat: "no-repeat",
+          maskPosition: `${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%`,
+          maskComposite: "exclude",
         }}
-      ></div>
+        src="/lucca-overlay-bw.png"
+        alt="Picture of Lucca Romaniello."
+        priority
+        className="object-contain rounded-lg object-top w-full h-full relative cursor-default z-10"
+        width={360}
+        height={480}
+        sizes="100%"
+      />
+      <Image
+        src="/lucca-icon.png"
+        alt="Illustration of Lucca Romaniello."
+        priority
+        className="object-contain rounded-lg object-top w-full h-full absolute top-0 left-0"
+        width={360}
+        height={480}
+        sizes="100%"
+      />
     </div>
   );
 };
