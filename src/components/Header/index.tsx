@@ -1,8 +1,27 @@
+"use client";
 import HeaderLogo from "@/components/HeaderLogo";
+import React, { useEffect } from "react";
 
 const Header = () => {
+  useEffect(() => {
+    const container = document.getElementById("header-container");
+
+    const preventRightClick = (event: MouseEvent) => {
+      event.preventDefault();
+    };
+
+    container?.addEventListener("contextmenu", preventRightClick);
+
+    return () => {
+      container?.removeEventListener("contextmenu", preventRightClick);
+    };
+  }, []);
+
   return (
-    <div className="flex flex-row gap-24 items-center relative h-full pt-8 pb-16">
+    <div
+      id="header-container"
+      className="flex flex-row gap-24 items-center relative h-full pt-8 pb-16"
+    >
       <div className="flex w-1/3"></div>
       <div className="flex flex-col gap-8 z-10 absolute left-0 top-1/2 sm:-translate-y-1/2">
         <div className="flex flex-col">
