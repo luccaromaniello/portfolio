@@ -6,9 +6,12 @@ import TopNavigation from "@/components/navigation/TopNavigation";
 const Home = () => {
   return (
     <div className="flex flex-col bg-content-primary">
-      <div className="flex flex-col px-6 lg:px-56 2xl:px-96 w-full min-h-96">
-        <TopNavigation darkTheme />
-        <Header />
+      <div className="flex flex-col px-6 lg:px-56 2xl:px-96 w-full min-h-96 relative">
+        <div className="absolute inset-0 bg-[url('/background-galaxy.png')] bg-cover bg-center bg-repeat pointer-events-none z-0" />
+        <div className="relative z-10">
+          <TopNavigation darkTheme />
+          <Header />
+        </div>
       </div>
       <div className="pt-32 bg-background default-alignment">
         <Solution />
