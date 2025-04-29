@@ -33,7 +33,7 @@ const About = () => {
             </p>
           </div>
         </div>
-        <div className="hidden sm:flex flex-row basis-64 shrink-0 relative">
+        <div className="hidden sm:flex flex-row basis-64 shrink-0 relative pointer-events-none">
           <Image
             src="/images/lucca-profile.png"
             alt="Picture of Lucca Romaniello."
