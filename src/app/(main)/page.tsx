@@ -15,7 +15,6 @@ const Home = () => {
   useEffect(() => {
     // this eases the spotlight mouse movement
     let frame: number;
-
     const animate = () => {
       setRenderedPosition((prev) => ({
         x: prev.x + (mousePosition.x - prev.x) * 0.15,
@@ -23,9 +22,7 @@ const Home = () => {
       }));
       frame = requestAnimationFrame(animate);
     };
-
     animate();
-
     return () => cancelAnimationFrame(frame);
   }, [mousePosition]);
 
