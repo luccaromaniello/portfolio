@@ -17,8 +17,8 @@ const Home = () => {
       if (!backgroundContainer) return;
       const { left, top } = backgroundContainer.getBoundingClientRect();
       const spotlightSize = 300;
-      const x = event.pageX - left - spotlightSize / 2;
-      const y = event.pageY - top - spotlightSize / 2;
+      const x = event.clientX - left - spotlightSize / 2;
+      const y = event.clientY - top - spotlightSize / 2;
 
       setMousePosition({
         x: Math.max(
