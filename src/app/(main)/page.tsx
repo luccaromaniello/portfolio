@@ -6,10 +6,28 @@ import TopNavigation from "@/components/navigation/TopNavigation";
 import { useEffect, useState } from "react";
 
 const Home = () => {
+  const [renderedPosition, setRenderedPosition] = useState({ x: 0, y: 0 });
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({
     x: 0,
     y: 0,
   });
+
+  useEffect(() => {
+    // this eases the spotlight mouse movement
+    let frame: number;
+
+    const animate = () => {
+      setRenderedPosition((prev) => ({
+        x: prev.x + (mousePosition.x - prev.x) * 0.15,
+        y: prev.y + (mousePosition.y - prev.y) * 0.15,
+      }));
+      frame = requestAnimationFrame(animate);
+    };
+
+    animate();
+
+    return () => cancelAnimationFrame(frame);
+  }, [mousePosition]);
 
   useEffect(() => {
     const backgroundContainer = document.getElementById("background-container");
@@ -49,8 +67,8 @@ const Home = () => {
         <div
           id="spotlight"
           style={{
-            top: `${mousePosition.y}px`,
-            left: `${mousePosition.x}px`,
+            top: `${renderedPosition.y}px`,
+            left: `${renderedPosition.x}px`,
             backgroundImage: `radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%)`,
             pointerEvents: "none",
             mixBlendMode: "lighten",
