@@ -30,21 +30,12 @@ const Home = () => {
     const backgroundContainer = document.getElementById("background-container");
     const handleMouseMove = (event: MouseEvent) => {
       if (!backgroundContainer) return;
-      const { left, top } = backgroundContainer.getBoundingClientRect();
+      const rect = backgroundContainer.getBoundingClientRect();
       const spotlightSize = 300;
-      const x = event.clientX - left - spotlightSize / 2;
-      const y = event.clientY - top - spotlightSize / 2;
+      const x = event.clientX - rect.left - spotlightSize / 2;
+      const y = event.clientY - rect.top - spotlightSize / 2;
 
-      setMousePosition({
-        x: Math.max(
-          0,
-          Math.min(x, backgroundContainer.offsetWidth - spotlightSize),
-        ),
-        y: Math.max(
-          0,
-          Math.min(y, backgroundContainer.offsetHeight - spotlightSize),
-        ),
-      });
+      setMousePosition({ x: x, y: y });
     };
 
     backgroundContainer?.addEventListener("mousemove", handleMouseMove);
