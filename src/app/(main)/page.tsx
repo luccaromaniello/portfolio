@@ -34,21 +34,23 @@ const Home = () => {
   }, []);
 
   return (
-    <div id="background-container" className="flex flex-col bg-content-primary">
-      <div className="flex flex-col px-6 lg:px-56 2xl:px-96 w-full min-h-96 relative">
-        <div className="absolute inset-0 bg-[url('/background-galaxy.png')] bg-cover bg-center bg-repeat z-0 hover:brightness-50" />
+    <div className="flex flex-col bg-content-primary">
+      <div
+        id="background-container"
+        className="flex flex-col px-6 lg:px-56 2xl:px-96 w-full min-h-96 relative overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-[url('/background-galaxy.png')] bg-cover bg-center bg-repeat z-0 brightness-50" />
         <div className="relative z-10">
           <div
             id="spotlight"
             style={{
-              top: `${mousePosition.y - 128}px`,
-              left: `${mousePosition.x - 128}px`,
-              background:
-                "radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 60%, rgba(0, 0, 0, 0.8) 100%)",
+              top: `${mousePosition.y - 64}px`,
+              left: `${mousePosition.x - 64}px`,
+              backgroundImage: `radial-gradient(circle, rgba(255, 255, 255, 0.08) 0%, transparent 50%, rgba(0, 0, 0, 0.6) 100%)`,
               pointerEvents: "none",
               mixBlendMode: "lighten",
             }}
-            className="absolute w-48 h-48 z-10 rounded-full"
+            className="absolute w-full h-full z-10 rounded-full"
           />
           <TopNavigation darkTheme />
           <Header />
