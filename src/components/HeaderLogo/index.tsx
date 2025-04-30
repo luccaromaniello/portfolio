@@ -35,10 +35,14 @@ const HeaderLogo = () => {
     <div id="header-logo-container" className="relative">
       <Image
         style={{
-          maskImage: "url(mask.svg)",
+          maskImage: `url('/mask.svg')`,
+          WebkitMaskImage: `url('/mask.svg')`,
           maskRepeat: "no-repeat",
+          WebkitMaskRepeat: "no-repeat",
           maskPosition: `${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%`,
+          WebkitMaskPosition: `${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%`,
           maskComposite: "exclude",
+          WebkitMaskComposite: "exclude",
         }}
         src="/lucca-overlay-bw.png"
         alt="Picture of Lucca Romaniello."
