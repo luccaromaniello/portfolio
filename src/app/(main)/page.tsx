@@ -6,25 +6,6 @@ import TopNavigation from "@/components/navigation/TopNavigation";
 import { useEffect, useState } from "react";
 
 const Home = () => {
-  // useEffect(() => {
-  //   const spotlight = document.getElementById("spotlight");
-  //   if (!spotlight) return;
-
-  //   const spotlightSize = "40px, rgba(0,0,0,0.8)_30% 40px";
-
-  //   const updateSpotlight = (e: MouseEvent) => {
-  //     const x = e.pageX;
-  //     const y = e.pageY;
-  //     spotlight.style.backgroundImage = `radial-gradient(circle at ${x}px ${y}px, ${spotlightSize})`;
-  //   };
-
-  //   spotlight?.addEventListener("mousemove", updateSpotlight);
-
-  //   return () => {
-  //     spotlight?.removeEventListener("mousemove", updateSpotlight);
-  //   };
-  // }, []);
-
   const [mousePosition, setMousePosition] = useState<{ x: number; y: number }>({
     x: 0,
     y: 0,
@@ -69,18 +50,6 @@ const Home = () => {
             }}
             className="absolute w-48 h-48 z-10 rounded-full"
           />
-
-          {/* <div
-            style={{
-              backgroundImage: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent 80px, rgba(0, 0, 0, 0.7) 120px)`,
-              pointerEvents: "none",
-            }}
-            id="spotlight"
-            className="absolute inset-0 z-10"
-          >
-            {mousePosition.x}
-            {mousePosition.y}
-          </div> */}
           <TopNavigation darkTheme />
           <Header />
         </div>
