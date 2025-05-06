@@ -23,16 +23,16 @@ const Header = () => {
       className="flex flex-row gap-24 items-center relative h-full pt-8 pb-16"
     >
       <div className="hidden w-full sm:flex sm:w-1/3"></div>
-      <div className="flex flex-col gap-8 sm:z-10 absolute left-0 top-0 sm:top-1/2 sm:-translate-y-1/2">
+      <div className="flex flex-col gap-6 sm:gap-8 sm:z-10 absolute left-0 top-0 sm:top-1/2 sm:-translate-y-1/2">
         <div className="flex flex-col">
           <h1 className="text-3xl sm:text-6xl leading-tight sm:leading-snug font-medium text-neutral-white">
             Lucca Romaniello
           </h1>
-          <h2 className="text-lg sm:text-2xl leading-tight sm:leading-snug text-content-tertiary">
+          <h2 className="text-lg sm:text-2xl leading-tight text-content-tertiary">
             Frontend Engineer and former Product Designer
           </h2>
         </div>
-        <p className="text-md sm:text-xl text-content-tertiary w-full sm:w-2/3">
+        <p className="text-base sm:text-lg text-content-tertiary w-full sm:w-2/3">
           Blending design sensibility and engineering expertise across startups
           and global teams for 6+ years.
         </p>
