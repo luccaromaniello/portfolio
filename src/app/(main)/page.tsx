@@ -49,7 +49,7 @@ const Home = () => {
     <div className="flex flex-col bg-content-primary">
       <div
         id="background-container"
-        className="flex flex-col px-6 lg:px-56 2xl:px-96 w-full min-h-96 relative overflow-hidden"
+        className="flex flex-col lg:px-56 2xl:px-96 w-full min-h-96 relative overflow-hidden"
       >
         <div className="absolute inset-0 bg-[url('/background-galaxy.png')] bg-cover bg-center bg-repeat z-0 brightness-50" />
         <div
@@ -63,9 +63,9 @@ const Home = () => {
             width: "300px",
             height: "300px",
           }}
-          className="absolute z-10 rounded-full"
+          className="hidden sm:block absolute z-10 rounded-full"
         />
-        <div className="relative z-10">
+        <div className="px-6 relative z-10">
           <TopNavigation darkTheme />
           <Header />
         </div>

@@ -47,7 +47,7 @@ const TopNavigation = ({ darkTheme = false }: TopNavigationProps) => {
       <Link href="/">
         <Logo width={40} height={40} />
       </Link>
-      <div className="flex flex-row justify-between items-center">
+      <div className="flex flex-row justify-between items-center text-content-tertiary">
         <ul className="hidden md:flex flex-row gap-8">
           {pages.map(({ href, title, external }) => (
             <li key={title}>
