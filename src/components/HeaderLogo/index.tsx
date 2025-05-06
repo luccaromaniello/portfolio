@@ -10,6 +10,7 @@ const HeaderLogo = () => {
 
   useEffect(() => {
     const container = document.getElementById("header-logo-container");
+
     const handleMouseMove = (event: MouseEvent) => {
       if (!container) return;
       const rect = container.getBoundingClientRect();
@@ -24,10 +25,16 @@ const HeaderLogo = () => {
       });
     };
 
+    const handleMouseLeave = () => {
+      setMousePosition({ x: -100, y: -100 });
+    };
+
     container?.addEventListener("mousemove", handleMouseMove);
+    container?.addEventListener("mouseleave", handleMouseLeave);
 
     return () => {
       container?.removeEventListener("mousemove", handleMouseMove);
+      container?.addEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
