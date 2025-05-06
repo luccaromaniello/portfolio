@@ -20,15 +20,15 @@ const Header = () => {
   return (
     <div
       id="header-container"
-      className="flex flex-row gap-24 items-center relative h-full pt-8 pb-16"
+      className="flex flex-row gap-24 items-center relative h-full pt-8 pb-16 text-center sm:text-left"
     >
       <div className="hidden w-full sm:flex sm:w-1/3"></div>
       <div className="flex flex-col gap-6 sm:gap-8 sm:z-10 absolute left-0 top-0 sm:top-1/2 sm:-translate-y-1/2">
         <div className="flex flex-col">
-          <h1 className="text-3xl sm:text-6xl leading-tight sm:leading-snug font-medium text-neutral-white">
+          <h1 className="text-4xl sm:text-6xl leading-tight sm:leading-snug 2xl:leading-tight font-medium text-neutral-white">
             Lucca Romaniello
           </h1>
-          <h2 className="text-lg sm:text-2xl leading-tight text-content-tertiary">
+          <h2 className="text-xl sm:text-2xl leading-tight text-content-tertiary">
             Frontend Engineer and former Product Designer
           </h2>
         </div>
