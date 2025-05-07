@@ -1,13 +1,18 @@
-import { auth } from "./actions";
+"use client";
 import "@/styles/forms.css";
 import { MdOutlineLock } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 
-const NotAuthenticated = () => {
+interface NotAuthenticatedProps {
+  handleAuth: (formData: FormData) => void;
+}
+
+const NotAuthenticated = ({ handleAuth }: NotAuthenticatedProps) => {
   return (
     <form
-      action={auth}
+      action={handleAuth}
       className="flex flex-col flex-1 gap-12 items-center justify-center w-full"
+      // onSubmit={(e) => e.preventDefault()}
     >
       <div className="flex flex-col gap-4 items-center">
         <MdOutlineLock size={40} className="text-content-tertiary" />

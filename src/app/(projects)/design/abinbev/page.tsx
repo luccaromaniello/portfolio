@@ -11,8 +11,7 @@ import HighlightCard from "@/components/cases/HighlightCard";
 import Section from "@/components/cases/Section";
 import Results from "@/components/cases/abinbev/Results";
 import type { Metadata } from "next";
-import { getSession } from "@/utils/auth";
-import NotAuthenticated from "@/components/NotAuthenticated";
+import ProtectedPage from "@/components/ProtectedPage";
 
 export const metadata: Metadata = {
   title: "Lucca Romaniello — AB InBev",
@@ -48,53 +47,54 @@ export default async function AbInbev() {
     },
   };
 
-  const session = await getSession();
-
-  return session.isAuthenticated ? (
-    <div className="flex flex-col gap-12 sm:gap-16">
-      <SideMenu />
-      <Section
-        id="overview"
-        image={{
-          url: "/images/cases/abinbev/abinbev-overview.png",
-          alt: "An illustrative mockup showcasing BEES's developer portal overview, featuring an intuitive user interface with organized sections for APIs, documentation, and developer tools.",
-        }}
-      >
-        <CaseOverview heading={overview.heading} overview={overview.overview} />
-      </Section>
-      <Section id="context">
-        <BeesOverview />
-        <ApiContext />
-      </Section>
-      <Section id="challenge">
-        <HighlightCard
-          title={
-            "Creating a unified API documentation platform for BEES developers and partners."
-          }
-          description={`BEES used Stoplight to share API documentation with both internal teams and external partners. For partners, this access is essential to integrate effectively and ensure their products are available on the BEES platform.
+  return (
+    <ProtectedPage>
+      <div className="flex flex-col gap-12 sm:gap-16">
+        <SideMenu />
+        <Section
+          id="overview"
+          image={{
+            url: "/images/cases/abinbev/abinbev-overview.png",
+            alt: "An illustrative mockup showcasing BEES's developer portal overview, featuring an intuitive user interface with organized sections for APIs, documentation, and developer tools.",
+          }}
+        >
+          <CaseOverview
+            heading={overview.heading}
+            overview={overview.overview}
+          />
+        </Section>
+        <Section id="context">
+          <BeesOverview />
+          <ApiContext />
+        </Section>
+        <Section id="challenge">
+          <HighlightCard
+            title={
+              "Creating a unified API documentation platform for BEES developers and partners."
+            }
+            description={`BEES used Stoplight to share API documentation with both internal teams and external partners. For partners, this access is essential to integrate effectively and ensure their products are available on the BEES platform.
             \n Due to budget constraints, BEES planned to phase out Stoplight and move the API docs to a more customizable solution. The goal was to build a secure, flexible platform that preserved Stoplight's strengths while improving on its limitations.`}
-        />
-      </Section>
-      <Section id="research">
-        <Research />
-      </Section>
-      <Section id="insights">
-        <Insights />
-      </Section>
-      <Section id="metrics">
-        <Metrics />
-      </Section>
-      <Section id="user-testing">
-        <UserTesting />
-      </Section>
-      <Section size={1} id="solution">
-        <Solution />
-      </Section>
-      <Section id="results">
-        <Results />
-      </Section>
-    </div>
-  ) : (
-    <NotAuthenticated />
+          />
+        </Section>
+        <Section id="research">
+          <Research />
+        </Section>
+        <Section id="insights">
+          <Insights />
+        </Section>
+        <Section id="metrics">
+          <Metrics />
+        </Section>
+        <Section id="user-testing">
+          <UserTesting />
+        </Section>
+        <Section size={1} id="solution">
+          <Solution />
+        </Section>
+        <Section id="results">
+          <Results />
+        </Section>
+      </div>
+    </ProtectedPage>
   );
 }

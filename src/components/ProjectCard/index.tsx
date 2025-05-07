@@ -8,7 +8,7 @@ interface ProjectCardProps {
   company: string;
   description: string;
   link: string;
-  externalLink?: string;
+  // externalLink?: string;
   image?: CustomImage;
 }
 
@@ -17,7 +17,7 @@ const ProjectCard = ({
   company,
   description,
   link,
-  externalLink,
+  // externalLink,
   image,
 }: ProjectCardProps) => {
   return (
