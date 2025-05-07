@@ -1,0 +1,11 @@
+.input {
+  @apply rounded-xl p-4 shadow-[0_4px_16px_rgba(17,17,26,0.02)] min-w-80;
+}
+
+.button {
+  @apply font-medium;
+}
+
+.primary-button {
+  @apply text-primary-main;
+}
