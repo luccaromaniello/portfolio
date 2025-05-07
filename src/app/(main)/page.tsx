@@ -71,7 +71,13 @@ const Home = () => {
         </div>
       </div>
       <div className="pt-32 bg-background default-alignment">
-        <Solution />
+        <div className="flex flex-col w-full text-center text-content-secondary font-medium">
+          <p>
+            🚧 I&apos;m actively updating my portfolio. Coding projects are
+            coming soon!
+          </p>
+        </div>
+        <DesignArchive />
       </div>
     </div>
   );
