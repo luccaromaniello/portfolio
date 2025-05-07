@@ -1,18 +1,33 @@
-"use client";
 import "@/styles/forms.css";
 import { MdOutlineLock } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
+import { useState } from "react";
 
 interface NotAuthenticatedProps {
-  handleAuth: (formData: FormData) => void;
+  handleAuth: (formData: FormData) => Promise<{ success: boolean }>;
+  refetchSession: () => void;
 }
 
-const NotAuthenticated = ({ handleAuth }: NotAuthenticatedProps) => {
+const NotAuthenticated = ({
+  handleAuth,
+  refetchSession,
+}: NotAuthenticatedProps) => {
+  const [error, setError] = useState<string | null>(null);
+
+  const onSubmit = async (formData: FormData) => {
+    const result = await handleAuth(formData);
+
+    if (result.success) {
+      refetchSession();
+    } else {
+      setError("Invalid password.");
+    }
+  };
+
   return (
     <form
-      action={handleAuth}
+      action={onSubmit}
       className="flex flex-col flex-1 gap-12 items-center justify-center w-full"
-      // onSubmit={(e) => e.preventDefault()}
     >
       <div className="flex flex-col gap-4 items-center">
         <MdOutlineLock size={40} className="text-content-tertiary" />
@@ -24,14 +39,17 @@ const NotAuthenticated = ({ handleAuth }: NotAuthenticatedProps) => {
         </p>
       </div>
       <div className="flex flex-row gap-8">
-        <input
-          className="input"
-          name="password"
-          type="password"
-          placeholder="Enter password"
-          required
-          autoFocus
-        />
+        <div className="flex flex-col gap-2">
+          <input
+            className="input"
+            name="password"
+            type="password"
+            placeholder="Enter password"
+            required
+            autoFocus
+          />
+          {error ? <p className="text-sm text-red-600">{error}</p> : ""}
+        </div>
         <button type="submit" className="button primary-button">
           <div className="flex flex-row gap-2 items-center">
             <span>Access content </span>

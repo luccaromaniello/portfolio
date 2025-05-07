@@ -6,19 +6,27 @@ export function useAuth() {
   const isAuthenticated = session && session.isAuthenticated;
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    async function fetchSession() {
-      try {
-        const res = await fetch("/api/session");
-        setSession(await res.json());
-      } catch (error) {
-        console.error(error);
-      } finally {
-        setIsLoading(false);
+  // Function to fetch the session data from the server
+  const fetchSession = async () => {
+    try {
+      const res = await fetch("/api/session");
+      if (res.ok) {
+        const sessionData = await res.json();
+        setSession(sessionData); // Update session state with fetched data
+      } else {
+        setSession(null); // If the session doesn't exist or isn't valid, clear the session
       }
+    } catch (error) {
+      console.error("Error fetching session:", error);
+    } finally {
+      setIsLoading(false);
     }
-    fetchSession();
-  }, []);
+  };
 
-  return { isAuthenticated, isLoading };
+  // Fetch session when the component mounts
+  useEffect(() => {
+    fetchSession();
+  }, []); // Empty dependency array ensures it runs once when the component mounts
+
+  return { isAuthenticated, isLoading, refetchSession: fetchSession };
 }

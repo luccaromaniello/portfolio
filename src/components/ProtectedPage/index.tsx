@@ -7,13 +7,17 @@ interface ProtectedPageProps {
 }
 
 const ProtectedPage = ({ children }: ProtectedPageProps) => {
-  const { isLoading, isAuthenticated } = useAuth();
+  const { isLoading, isAuthenticated, refetchSession } = useAuth();
 
   if (isLoading) {
     return "Loading...";
   }
 
-  return isAuthenticated ? <div>{children}</div> : <NotAuthenticatedWrapper />;
+  return isAuthenticated ? (
+    <div>{children}</div>
+  ) : (
+    <NotAuthenticatedWrapper refetchSession={refetchSession} />
+  );
 };
 
 export default ProtectedPage;

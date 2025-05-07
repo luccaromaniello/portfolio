@@ -7,7 +7,6 @@ export async function auth(formData: FormData) {
     formData.get("password") == process.env.IRON_SESSION_PASSWORD;
 
   session.isAuthenticated = shouldAuthenticate;
-  console.log(session.isAuthenticated);
-
   await session.save();
+  return { success: shouldAuthenticate };
 }
