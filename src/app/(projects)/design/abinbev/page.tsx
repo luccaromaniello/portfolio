@@ -11,6 +11,8 @@ import HighlightCard from "@/components/cases/HighlightCard";
 import Section from "@/components/cases/Section";
 import Results from "@/components/cases/abinbev/Results";
 import type { Metadata } from "next";
+import { getSession } from "@/utils/auth";
+import NotAuthenticated from "@/components/NotAuthenticated";
 
 export const metadata: Metadata = {
   title: "Lucca Romaniello — AB InBev",
@@ -21,7 +23,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default function AbInbev() {
+export default async function AbInbev() {
   const overview = {
     heading: {
       headline:
@@ -46,7 +48,9 @@ export default function AbInbev() {
     },
   };
 
-  return (
+  const session = await getSession();
+
+  return session.isAuthenticated ? (
     <div className="flex flex-col gap-12 sm:gap-16">
       <SideMenu />
       <Section
@@ -68,7 +72,7 @@ export default function AbInbev() {
             "Creating a unified API documentation platform for BEES developers and partners."
           }
           description={`BEES used Stoplight to share API documentation with both internal teams and external partners. For partners, this access is essential to integrate effectively and ensure their products are available on the BEES platform.
-          \n Due to budget constraints, BEES planned to phase out Stoplight and move the API docs to a more customizable solution. The goal was to build a secure, flexible platform that preserved Stoplight's strengths while improving on its limitations.`}
+            \n Due to budget constraints, BEES planned to phase out Stoplight and move the API docs to a more customizable solution. The goal was to build a secure, flexible platform that preserved Stoplight's strengths while improving on its limitations.`}
         />
       </Section>
       <Section id="research">
@@ -90,5 +94,7 @@ export default function AbInbev() {
         <Results />
       </Section>
     </div>
+  ) : (
+    <NotAuthenticated />
   );
 }
