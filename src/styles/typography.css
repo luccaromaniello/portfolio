@@ -3,7 +3,7 @@
 }
 
 .light-theme-link {
-  @apply text-base font-medium hover:text-content-tertiary;
+  @apply text-base font-medium text-content-primary hover:text-content-tertiary;
 }
 
 .dark-theme-link {
