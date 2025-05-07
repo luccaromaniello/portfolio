@@ -1,4 +1,5 @@
 import ProjectCard from "@/components/ProjectCard";
+import { useState } from "react";
 
 const DesignArchive = () => {
   const projects = [
@@ -43,6 +44,8 @@ const DesignArchive = () => {
     },
   ];
 
+  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+
   return (
     <div className="flex flex-col gap-12 items-center">
       <h3 className="2xl:text-lg uppercase text-content-secondary">
@@ -54,15 +57,21 @@ const DesignArchive = () => {
             { title, company, description, link, externalLink, image },
             index,
           ) => (
-            <ProjectCard
+            <div
               key={index}
-              title={title}
-              company={company}
-              description={description}
-              link={link}
-              externalLink={externalLink ? externalLink : ""}
-              image={image ?? image}
-            />
+              className={`relative transition-opacity duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? "opacity-40" : "opacity-100"}`}
+              onMouseEnter={() => setHoveredIndex(index)}
+              onMouseLeave={() => setHoveredIndex(null)}
+            >
+              <ProjectCard
+                title={title}
+                company={company}
+                description={description}
+                link={link}
+                externalLink={externalLink ? externalLink : ""}
+                image={image ?? image}
+              />
+            </div>
           ),
         )}
       </div>
