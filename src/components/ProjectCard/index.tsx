@@ -2,6 +2,7 @@ import { CustomImage } from "@/components/cases/media/utils";
 import CaseImage from "@/components/cases/media/CaseImage";
 import "@/styles/cards.css";
 import Link from "next/link";
+import { MdOutlineLock } from "react-icons/md";
 
 interface ProjectCardProps {
   title: string;
@@ -10,6 +11,7 @@ interface ProjectCardProps {
   link: string;
   // externalLink?: string;
   image?: CustomImage;
+  locked?: boolean;
 }
 
 const ProjectCard = ({
@@ -19,6 +21,7 @@ const ProjectCard = ({
   link,
   // externalLink,
   image,
+  locked = false,
 }: ProjectCardProps) => {
   return (
     <Link href={link}>
@@ -28,9 +31,16 @@ const ProjectCard = ({
         </div>
         <div className="flex flex-col w-full gap-2">
           <div className="flex flex-col">
-            <h4 className="text-base 2xl:text-lg leading-relaxed font-medium">
-              {title}
-            </h4>
+            <div className="flex flex-row gap-2 items-center">
+              <h4 className="text-base 2xl:text-lg leading-relaxed font-medium">
+                {title}{" "}
+              </h4>
+              {locked ? (
+                <MdOutlineLock size={20} className="text-content-primary" />
+              ) : (
+                ""
+              )}
+            </div>
             <p className="text-sm 2xl:text-base text-content-secondary">
               {company}
             </p>
