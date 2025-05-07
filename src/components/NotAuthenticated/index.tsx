@@ -1,6 +1,6 @@
 import { auth } from "./actions";
 import "@/styles/forms.css";
-import { IoMdLock } from "react-icons/io";
+import { MdOutlineLock } from "react-icons/md";
 import { FaArrowRight } from "react-icons/fa6";
 
 const NotAuthenticated = () => {
@@ -10,7 +10,7 @@ const NotAuthenticated = () => {
       className="flex flex-col flex-1 gap-12 items-center justify-center w-full"
     >
       <div className="flex flex-col gap-4 items-center">
-        <IoMdLock size={40} />
+        <MdOutlineLock size={40} className="text-content-tertiary" />
         <h1 className="text-2xl font-medium">
           This content is password protected.
         </h1>
