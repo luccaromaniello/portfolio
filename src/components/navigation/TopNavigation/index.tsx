@@ -62,7 +62,7 @@ const TopNavigation = ({ darkTheme = false }: TopNavigationProps) => {
           ))}
         </ul>
         <IoMenu
-          className={`${isNavOpen ? "hidden" : "flex"} text-2xl md:hidden`}
+          className={`${isNavOpen ? "hidden" : "flex"} ${darkTheme ? "dark-theme-icon" : "light-theme-icon"} text-2xl md:hidden`}
           onClick={handleClick}
         />
       </div>

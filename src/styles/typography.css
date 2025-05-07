@@ -17,3 +17,11 @@
 .active-dark-theme-link {
   @apply text-neutral-white hover:text-content-tertiary;
 }
+
+.light-theme-icon {
+  @apply font-medium text-content-primary;
+}
+
+.dark-theme-icon {
+  @apply font-medium text-neutral-white;
+}
