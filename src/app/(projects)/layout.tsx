@@ -1,4 +1,5 @@
-import "../../styles/globals.css";
+import "@/styles/globals.css";
+import "@/styles/alignments.css";
 import TopNavigation from "@/components/navigation/TopNavigation";
 import Footer from "@/components/Footer";
 import localFont from "next/font/local";
@@ -15,7 +16,7 @@ export default function ProjectLayout({
   return (
     <html lang="en">
       <body className={`${satoshiFont.className} flex flex-col items-center`}>
-        <div className="w-full px-6 lg:px-56 2xl:px-96">
+        <div className="default-alignment">
           <TopNavigation />
         </div>
         {children}
