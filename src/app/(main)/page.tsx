@@ -72,10 +72,12 @@ const Home = () => {
       </div>
       <div className="pt-32 bg-background default-alignment">
         <div className="flex flex-col w-full text-center text-content-secondary font-medium">
-          <p>
-            🚧 I&apos;m actively updating my portfolio. Coding projects are
-            coming soon!
-          </p>
+          <div className="p-4 sm:p-12">
+            <p>
+              🚧 I&apos;m actively updating my portfolio. Coding projects are
+              coming soon!
+            </p>
+          </div>
         </div>
         <DesignArchive />
       </div>
