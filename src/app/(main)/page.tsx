@@ -65,7 +65,7 @@ const Home = () => {
           }}
           className="hidden sm:block absolute z-10 rounded-full"
         />
-        <div className="relative z-10">
+        <div className="px-6 sm:px-0 relative z-10">
           <TopNavigation darkTheme />
           <Header />
         </div>
