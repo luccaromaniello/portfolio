@@ -7,7 +7,7 @@ import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import "./TopNavigation.css";
 import Link from "next/link";
-import { LINKEDIN_URL, MAIL_URL } from "@/constants";
+import { LINKEDIN_URL, MAIL_URL } from "@/utils/constants";
 
 const pages = [
   {

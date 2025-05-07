@@ -1,7 +1,7 @@
 import { FaGithub } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaEnvelope } from "react-icons/fa6";
-import { GITHUB_URL, LINKEDIN_URL, MAIL_URL } from "@/constants";
+import { GITHUB_URL, LINKEDIN_URL, MAIL_URL } from "@/utils/constants";
 import "@/styles/typography.css";
 
 const Footer = () => {
