@@ -4,7 +4,7 @@ import { useState } from "react";
 const DesignArchive = () => {
   const projects = [
     {
-      title: "Developer portal",
+      title: "Developer Portal",
       company: "AB InBev",
       description:
         "A web portal used for mapping their APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
@@ -31,10 +31,10 @@ const DesignArchive = () => {
       },
     },
     {
-      title: "Certificate Emission Platform",
-      company: "Ânima Educação",
+      title: "Government Website Usability Audit",
+      company: "Secretary of Finance of Minas Gerais",
       description:
-        "A web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil.",
+        "An academic research on the usability of Brazilian public-sector websites using SUS, heuristic evaluation, and UX surveys to identify design issues and user experience improvements.",
       link: "/design/anima-educacao",
       image: {
         url: "/images/home/home-animaeducacao.png",
