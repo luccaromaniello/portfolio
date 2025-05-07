@@ -7,7 +7,7 @@ const DesignArchive = () => {
       title: "Developer Portal",
       company: "AB InBev",
       description:
-        "A web portal used for mapping their APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
+        "A web portal used for mapping ABI's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
       link: "/design/abinbev",
       image: {
         url: "/images/home/home-devportal.png",
