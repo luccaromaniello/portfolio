@@ -30,9 +30,9 @@ export const MenuItem = ({
       href={pageReference}
       className={`
         ${
-          !darkTheme
-            ? `light-theme-link ${active ? "active-light-theme-link" : ""}`
-            : `dark-theme-link ${active ? "active-dark-theme-link" : ""}`
+          darkTheme
+            ? `dark-theme-link ${active ? "active-dark-theme-link" : ""}`
+            : `light-theme-link ${active ? "active-light-theme-link" : ""}`
         }`}
     >
       {name}
