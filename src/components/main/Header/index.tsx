@@ -1,5 +1,5 @@
 "use client";
-import HeaderLogo from "@/components/HeaderLogo";
+import HeaderLogo from "@/components/main/HeaderLogo";
 import React, { useEffect } from "react";
 
 const Header = () => {

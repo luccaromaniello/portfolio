@@ -1,9 +1,9 @@
 "use client";
-import Header from "@/components/Header";
+import Header from "@/components/main/Header";
 import "@/styles/alignments.css";
-import Solution from "@/components/cases/abinbev/Solution";
 import TopNavigation from "@/components/navigation/TopNavigation";
 import { useEffect, useState } from "react";
+import DesignArchive from "@/components/main/DesignArchive/DesignArchive";
 
 const Home = () => {
   const [renderedPosition, setRenderedPosition] = useState({ x: 0, y: 0 });
