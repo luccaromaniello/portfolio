@@ -34,7 +34,7 @@ const DesignArchive = () => {
       title: "Government Website Usability Audit",
       company: "Secretary of Finance of Minas Gerais",
       description:
-        "An academic research on the usability of Brazilian public-sector websites using SUS, heuristic evaluation, and UX surveys to identify design issues and user experience improvements.",
+        "An academic research on the usability of Brazilian public-sector websites using SUS, heuristic evaluation, and UX surveys to identify design issues and user experience possible improvements.",
       link: "/design/anima-educacao",
       image: {
         url: "/images/home/home-animaeducacao.png",
