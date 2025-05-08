@@ -1,11 +1,19 @@
 .input {
-  @apply rounded-xl p-4 shadow-[0_4px_16px_rgba(17,17,26,0.02)] min-w-80;
+  @apply rounded-xl p-4 shadow-[0_4px_16px_rgba(17,17,26,0.02)] min-w-24 sm:min-w-80 w-full;
+}
+
+.input-error {
+  outline: 2px solid red;
 }
 
 .button {
-  @apply font-medium;
+  @apply font-medium p-4;
 }
 
 .primary-button {
   @apply text-primary-main;
+}
+
+.primary-button:hover {
+  @apply bg-primary-main/5 rounded-xl;
 }
