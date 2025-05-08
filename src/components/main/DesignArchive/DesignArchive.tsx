@@ -37,8 +37,8 @@ const DesignArchive = () => {
         "An academic research on the usability of Brazilian public-sector websites using SUS, heuristic evaluation, and UX surveys to identify design issues and user experience possible improvements.",
       link: "/design/anima-educacao",
       image: {
-        url: "/images/home/home-animaeducacao.png",
-        alt: "An overview of Anima's initial page, which displays a list of diplomas waiting to be validated by the user.",
+        url: "/images/home/academic-research-overview.png",
+        alt: "Overview of a study on the usability of Brazilian public-sector websites using SUS, heuristics, and UX surveys.",
         width: 40,
         height: 40,
       },
