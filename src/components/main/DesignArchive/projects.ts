@@ -14,6 +14,20 @@ const projects = [
     locked: true,
   },
   {
+    title: "Developer Portal",
+    company: "AB InBev",
+    description:
+      "A web portal used for mapping ABI's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
+    link: "/design/abinbev",
+    image: {
+      url: "/images/home/home-devportal.png",
+      alt: "An overview of AB InBev's developer initial page, which mainly displays reasons for using the web portal as a marketing strategy.",
+      width: 40,
+      height: 40,
+    },
+    locked: true,
+  },
+  {
     title: "Certificate Emission Platform",
     company: "Ânima Educação",
     description:

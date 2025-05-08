@@ -1,5 +1,5 @@
 import { CustomImage } from "@/components/cases/media/utils";
-import CaseImage from "@/components/cases/media/CaseImage";
+import ProjectImage from "@/components/main/ProjectImage";
 import "@/styles/cards.css";
 import Link from "next/link";
 import { MdOutlineLock } from "react-icons/md";
@@ -28,7 +28,7 @@ const ProjectCard = ({
     <Link href={link}>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-2 sm:py-6 sm:px-4 card-border hover:bg-primary-main/5">
         <div className="flex w-full sm:w-2/3">
-          {image ? <CaseImage image={image} /> : ""}
+          {image ? <ProjectImage image={image} /> : ""}
         </div>
         <div className="flex flex-col w-full gap-2">
           <div className="flex flex-col gap-1">
