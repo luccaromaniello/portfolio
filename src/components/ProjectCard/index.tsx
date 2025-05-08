@@ -3,13 +3,14 @@ import CaseImage from "@/components/cases/media/CaseImage";
 import "@/styles/cards.css";
 import Link from "next/link";
 import { MdOutlineLock } from "react-icons/md";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 interface ProjectCardProps {
   title: string;
   company: string;
   description: string;
   link: string;
-  // externalLink?: string;
+  externalLink?: boolean;
   image?: CustomImage;
   locked?: boolean;
 }
@@ -19,7 +20,7 @@ const ProjectCard = ({
   company,
   description,
   link,
-  // externalLink,
+  externalLink = false,
   image,
   locked = false,
 }: ProjectCardProps) => {
@@ -30,17 +31,26 @@ const ProjectCard = ({
           {image ? <CaseImage image={image} /> : ""}
         </div>
         <div className="flex flex-col w-full gap-2">
-          <div className="flex flex-col">
-            <div className="flex flex-row gap-2 items-center">
-              <h4 className="text-base 2xl:text-lg leading-relaxed font-medium">
-                {title}{" "}
-              </h4>
-              {locked ? (
-                <MdOutlineLock size={20} className="text-content-primary" />
-              ) : (
-                ""
+          <div className="flex flex-col gap-1">
+            <h4 className="text-lg leading-tight font-medium">
+              <span>{title} </span>
+              {(locked || externalLink) && (
+                <span className="inline-block align-[0.2rem]">
+                  {locked && (
+                    <MdOutlineLock
+                      size={20}
+                      className="inline-block text-content-primary"
+                    />
+                  )}
+                  {externalLink && (
+                    <HiOutlineExternalLink
+                      size={20}
+                      className={`inline-block text-content-primary ${locked && "ml-1"}`}
+                    />
+                  )}
+                </span>
               )}
-            </div>
+            </h4>
             <p className="text-sm 2xl:text-base text-content-secondary">
               {company}
             </p>

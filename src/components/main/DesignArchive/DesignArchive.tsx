@@ -12,7 +12,10 @@ const DesignArchive = () => {
       </h3>
       <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-y-12 gap-x-16 sm:gap-y-8 sm:justify-between">
         {projects.map(
-          ({ title, company, description, link, image, locked }, index) => (
+          (
+            { title, company, description, link, externalLink, image, locked },
+            index,
+          ) => (
             <div
               key={index}
               className={`relative transition-opacity duration-300 ${hoveredIndex !== null && hoveredIndex !== index ? "opacity-40" : "opacity-100"}`}
@@ -24,7 +27,7 @@ const DesignArchive = () => {
                 company={company}
                 description={description}
                 link={link}
-                // externalLink={externalLink ? externalLink : ""}
+                externalLink={externalLink}
                 image={image ?? image}
                 locked={locked ?? locked}
               />

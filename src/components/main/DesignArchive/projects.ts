@@ -31,7 +31,8 @@ const projects = [
     company: "Secretary of Finance of Minas Gerais",
     description:
       "An academic research on the usability of Brazilian public-sector websites using SUS, heuristic evaluation, and UX surveys to identify design issues and user experience possible improvements.",
-    link: "/design/anima-educacao",
+    link: "/government-website-usability-audit.pdf",
+    externalLink: true,
     image: {
       url: "/images/home/academic-research-overview.png",
       alt: "Overview of a study on the usability of Brazilian public-sector websites using SUS, heuristics, and UX surveys.",
