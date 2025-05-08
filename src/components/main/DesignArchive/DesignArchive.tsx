@@ -10,7 +10,7 @@ const DesignArchive = () => {
       <h3 className="2xl:text-lg uppercase text-content-secondary">
         Design archive
       </h3>
-      <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-y-12 gap-x-16 sm:gap-y-8 sm:justify-between">
+      <div className="grid grid-cols-1 grid-rows-4 sm:grid-cols-2 sm:grid-rows-2 gap-y-0 gap-x-16 sm:gap-y-8 sm:justify-between">
         {projects.map(
           (
             { title, company, description, link, externalLink, image, locked },
