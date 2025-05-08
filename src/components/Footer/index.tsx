@@ -26,7 +26,7 @@ const Footer = () => {
       </div>
       <div className="flex flex-col gap-2 text-footer items-center">
         <p>Designed and coded by Lucca Romaniello.</p>
-        <p>Last updated April 2025.</p>
+        <p>Last updated May 2025.</p>
       </div>
     </footer>
   );
