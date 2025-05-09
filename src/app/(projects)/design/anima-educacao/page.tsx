@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   description:
     "A design case study by Lucca Romaniello — helping to build Ânima's Educação a web platform that allowed their internal staff to generate Bachelor’s and Master’s certificates for their 350.000+ students, following the Brazilian Ministry of Education requirements.",
   icons: {
-    icon: "/lucca-icon.svg",
+    icon: "/images/icons/lucca-icon.svg",
   },
 };
 

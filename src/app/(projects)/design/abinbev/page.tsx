@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   description:
     "A design case study by Lucca Romaniello - Helping build a web portal used for mapping AB InBev's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
   icons: {
-    icon: "/lucca-icon.svg",
+    icon: "/images/icons/lucca-icon.svg",
   },
 };
 

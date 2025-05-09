@@ -51,7 +51,7 @@ const Home = () => {
         id="background-container"
         className="flex flex-col lg:px-56 2xl:px-96 w-full min-h-96 relative overflow-hidden"
       >
-        <div className="absolute inset-0 bg-[url('/background-galaxy.png')] bg-cover bg-center bg-repeat z-0 brightness-50" />
+        <div className="absolute inset-0 bg-[url('/images/home/background-galaxy.png')] bg-cover bg-center bg-repeat z-0 brightness-50" />
         <div
           id="spotlight"
           style={{

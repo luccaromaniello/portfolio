@@ -35,7 +35,7 @@ const About = () => {
         </div>
         <div className="hidden sm:flex flex-row basis-64 shrink-0 relative pointer-events-none">
           <Image
-            src="/images/lucca-profile.png"
+            src="/images/icons/lucca-profile.png"
             alt="Picture of Lucca Romaniello."
             priority
             width={280}

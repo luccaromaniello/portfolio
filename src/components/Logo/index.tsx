@@ -8,7 +8,7 @@ interface LogoProps {
 export const Logo = ({ width, height }: LogoProps) => {
   return (
     <Image
-      src="/lucca-icon.svg"
+      src="/images/icons/lucca-icon.svg"
       alt="An illustration of Lucca holding a laptop with mountains and a galaxy sky behind."
       className="pointer-events-none"
       width={width}

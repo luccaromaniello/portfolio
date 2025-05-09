@@ -11,10 +11,8 @@ const satoshiFont = localFont({
 
 export const metadata: Metadata = {
   title: "Lucca Romaniello — About",
-  description:
-    "Software Engineer specializing in Frontend development, with 6+ years of experience across startups and multinational companies. Former Product Designer, bringing a strong design sense and user-focused mindset to engineering teams. Proven ability to combine design and development skills to deliver high-quality, and scalable products.",
   icons: {
-    icon: "/lucca-icon.svg",
+    icon: "/images/icons/lucca-icon.svg",
   },
 };
 

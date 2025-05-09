@@ -42,16 +42,16 @@ const HeaderLogo = () => {
     <div id="header-logo-container" className="relative">
       <Image
         style={{
-          WebkitMaskImage: `url('/mask.svg')`,
+          WebkitMaskImage: `url('/images/icons/mask.svg')`,
           WebkitMaskRepeat: "no-repeat",
           WebkitMaskPosition: `${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%`,
           WebkitMaskComposite: "exclude",
-          maskImage: `url('/mask.svg')`,
+          maskImage: `url('/images/icons/mask.svg')`,
           maskRepeat: "no-repeat",
           maskPosition: `${mousePosition.x.toFixed(0)}% ${mousePosition.y.toFixed(0)}%`,
           maskComposite: "exclude",
         }}
-        src="/lucca-overlay-bw.png"
+        src="/images/icons/lucca-overlay-bw.png"
         alt="Picture of Lucca Romaniello."
         priority
         className="object-contain rounded-lg object-top w-full h-full relative cursor-default z-10"
@@ -60,7 +60,7 @@ const HeaderLogo = () => {
         sizes="100%"
       />
       <Image
-        src="/lucca-icon.png"
+        src="/images/icons/lucca-icon.png"
         alt="Illustration of Lucca Romaniello."
         priority
         className="object-contain rounded-lg object-top w-full h-full absolute top-0 left-0"
