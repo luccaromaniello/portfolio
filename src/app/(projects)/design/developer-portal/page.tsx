@@ -14,7 +14,7 @@ import type { Metadata } from "next";
 import ProtectedPage from "@/components/ProtectedPage";
 
 export const metadata: Metadata = {
-  title: "Lucca Romaniello — AB InBev",
+  title: "Lucca Romaniello — Developer Portal (AB InBev)",
   description:
     "A design case study by Lucca Romaniello - Helping build a web portal used for mapping AB InBev's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
   icons: {

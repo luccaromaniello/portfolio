@@ -18,7 +18,7 @@ const projects = [
     company: "AB InBev",
     description:
       "A web portal used for mapping ABI's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
-    link: "/design/abinbev",
+    link: "/design/developer-portal",
     image: {
       url: "/images/home/home-devportal.png",
       alt: "An overview of AB InBev's developer initial page, which mainly displays reasons for using the web portal as a marketing strategy.",
@@ -32,7 +32,7 @@ const projects = [
     company: "Ânima Educação",
     description:
       "A web platform that is used to generate Bachelor's and Master's certificates for more than 350.000 students in Brazil.",
-    link: "/design/anima-educacao",
+    link: "/design/certificate-emission-platform",
     image: {
       url: "/images/home/home-animaeducacao.png",
       alt: "An overview of Anima's initial page, which displays a list of diplomas waiting to be validated by the user.",
