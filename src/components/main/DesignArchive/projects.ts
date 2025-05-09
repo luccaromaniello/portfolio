@@ -3,7 +3,7 @@ const projects = [
     title: "BEES One: Design Evolution & Future Vision",
     company: "AB InBev",
     description:
-      "A web portal used for mapping ABI's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
+      "A SaaS platform that helps retailers manage orders, deliveries, and insights more easily. Highlights include key upgrades from 2024 and the future direction for 2025.",
     link: "/design/bees-one",
     image: {
       url: "/images/home/home-devportal.png",
