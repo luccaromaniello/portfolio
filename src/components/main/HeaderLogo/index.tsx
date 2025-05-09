@@ -34,7 +34,7 @@ const HeaderLogo = () => {
 
     return () => {
       container?.removeEventListener("mousemove", handleMouseMove);
-      container?.addEventListener("mouseleave", handleMouseLeave);
+      container?.removeEventListener("mouseleave", handleMouseLeave);
     };
   }, []);
 
