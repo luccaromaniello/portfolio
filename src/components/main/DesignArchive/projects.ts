@@ -1,10 +1,10 @@
 const projects = [
   {
-    title: "Developer Portal",
+    title: "BEES One: Design Evolution & Future Vision",
     company: "AB InBev",
     description:
       "A web portal used for mapping ABI's APIs, facilitating integration with partners by enhancing documentation used by technical teams.",
-    link: "/design/abinbev",
+    link: "/design/bees-one",
     image: {
       url: "/images/home/home-devportal.png",
       alt: "An overview of AB InBev's developer initial page, which mainly displays reasons for using the web portal as a marketing strategy.",
