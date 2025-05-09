@@ -15,6 +15,23 @@ interface ProjectCardProps {
   locked?: boolean;
 }
 
+interface LinkWrapperProps {
+  external: boolean;
+  href: string;
+  children: React.ReactNode;
+}
+
+const LinkWrapper = ({ external, href, children }: LinkWrapperProps) => {
+  if (external) {
+    return (
+      <a href={href} rel="noopener noreferrer" target="_blank">
+        {children}
+      </a>
+    );
+  }
+  return <Link href={href}>{children}</Link>;
+};
+
 const ProjectCard = ({
   title,
   company,
@@ -25,7 +42,7 @@ const ProjectCard = ({
   locked = false,
 }: ProjectCardProps) => {
   return (
-    <Link href={link}>
+    <LinkWrapper external={externalLink} href={link}>
       <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 p-2 sm:py-6 sm:px-4 card-border hover:bg-primary-main/5">
         <div className="flex w-full sm:w-2/3">
           {image ? <ProjectImage image={image} /> : ""}
@@ -58,7 +75,7 @@ const ProjectCard = ({
           <p className="text-sm">{description}</p>
         </div>
       </div>
-    </Link>
+    </LinkWrapper>
   );
 };
 
