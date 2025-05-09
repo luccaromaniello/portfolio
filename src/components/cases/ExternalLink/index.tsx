@@ -20,7 +20,7 @@ const ExternalLink = ({
       {preText}{" "}
       <a
         href={link}
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
         className="font-medium hover:text-content-tertiary"
       >

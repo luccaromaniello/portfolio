@@ -8,13 +8,13 @@ const Footer = () => {
   return (
     <footer className="flex flex-col gap-4 items-center p-14 w-full sm:mt-12 mb-4">
       <div className="flex flex-row gap-6 items-center text-content-secondary">
-        <a href={GITHUB_URL} rel="noreferrer" target="_blank">
+        <a href={GITHUB_URL} rel="noopener noreferrer" target="_blank">
           <IoLogoGithub
             size={24}
             className="text-2xl hover:text-content-primary"
           />
         </a>
-        <a href={LINKEDIN_URL} rel="noreferrer" target="_blank">
+        <a href={LINKEDIN_URL} rel="noopener noreferrer" target="_blank">
           <IoLogoLinkedin
             size={24}
             className="text-2xl hover:text-content-primary"

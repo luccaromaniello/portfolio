@@ -11,7 +11,7 @@ const CaseHeading = ({ headline, company, link }: CaseHeadingProps) => {
       <a
         className="text-primary-main hover:underline"
         href={link}
-        rel="noreferrer"
+        rel="noopener noreferrer"
         target="_blank"
       >
         {" "}
